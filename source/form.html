@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+
+  <header class="main-header">
+    <div class="main-header__container">
+      <a href="" class="main-header__logo">
+        <img class="main-header__logo-image" src="#" alt="Логотип Кэт энерджи.">
+      </a>
+      <button class="main-header__toggle">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="main-nav">
+        <div class="main-nav__container">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--current">
+              <a href="" class="main-nav__link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="" class="main-nav__link">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="" class="main-nav-link">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <mian class="main-form">
+    <div class="main-form__container">
+      <section class="program-form">
+        <h1 class="program-form__title">Подбор программы</h1>
+        <p class="program-form__descr">Заполните анкету, и мы подберемпрограмму питания для вашего кота</p>
+        <form class="program-form__form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="program-form__user-info">
+            <label class="program-form__field">
+              <span class="program-form__label">Имя:*</span>
+              <input class="program-form__input" type="text" id="program-form-cat-name" name="cat-name"
+                placeholder="Барсик" required>
+            </label>
+            <label class="program-form__field">
+              <span class="program-form__label">Вес (кг):*</span>
+              <input class="program-form__input" type="text" id="program-form-cat-weight" name="cat-weight"
+                placeholder="7" required>
+            </label>
+            <label class="program-form__field">
+              <span class="program-form__label">Вес (кг):*</span>
+              <input class="program-form__input" type="text" id="program-form-cat-age" name="cat-age" placeholder="7"
+                required>
+            </label>
+          </fieldset>
+
+          <fieldset class="program-form__select-program">
+            <label class="program-form__field"><input class="program-form__radio" type="radio" name="program-types"
+                id="program-slim" checked>
+              <span class="program-form__label">Похудение</span>
+            </label>
+            <label class="program-form__field"><input class="program-form__radio" type="radio" name="program-types"
+                id="program-mass">
+              <span class="program-form__label">Набор массы</span>
+            </label>
+            <label class="program-form__field"><input class="program-form__radio" type="radio" name="program-types"
+                id="program-unknown">
+              <span class="program-form__label">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="program-form__contacts">
+            <legend class="program-form__subtitle">Контактные данные (владельца кота)</legend>
+            <label class="program-form__field">
+              <span class="program-form__label">E-mail:*</span>
+              <input class="program-form__input program-form__input--icon-mail" type="text" id="program-form-email"
+                placeholder="kuklachev@gmail.com">
+            </label>
+            <label class="program-form__field">
+              <span class="program-form__label">Телефон:*</span>
+              <input class="program-form__input program-form__input--icon-phone" type="text" id="program-form-phone"
+                placeholder="8 (960) 900-60-90">
+            </label>
+          </fieldset>
+
+          <fieldset class="program-form__comment">
+            <legend class="program-form__subtitle">Комментарий</legend>
+            <textarea class="program-form__comments" id="program-form-comment" name="comment"
+              placeholder="Расскажите обо всех повадках кота" required></textarea>
+          </fieldset>
+
+          <fieldset class="program-form__extra">
+            <legend class="program-form__subtitle">Дополнительно</legend>
+            <label class="program-form__field"><input type="checkbox" name="extra-sweetener"
+                id="extra-sweetener-checkbox" checked>
+              <span class="program-form__label">Cахарозаменитель</span></label>
+            <label class="program-form__field"><input type="checkbox" name="extra-water" id="extra-water-checkbox">
+              <span class="program-form__label">Питьевая вода</span></label>
+            <label class="program-form__field"><input type="checkbox" name="extra-milk" id="extra-milk-checkbox">
+              <span class="program-form__label">Молоко</span></label>
+            <label class="program-form__field"><input type="checkbox" name="extra-vitamins"
+                id="extra-vitamins-checkbox">
+              <span class="program-form__label">Витамины</span></label>
+          </fieldset>
+
+          <button class="program-form__button button button--green" type="submit">Отправить заявку</button>
+          <p class="program-form__footnote">* — Обязательные поля</p>
+
+        </form>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__container">
+          <div class="contacts__text-content">
+            <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+          </div>
+          <iframe class="contacts__map" width="320" height="362"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ce5e59beeaad92a430c0a1f580c103606c84bb01859606abf5e28c924734dc4&amp;source=constructor">
+          </iframe>
+        </div>
+      </section>
+    </div>
+
+  </mian>
+
+  <footer class="main-footer">
+    <div class="main-footer__container">
+      <a href="" class="main-footer__title">
+        <img class="footer__logo" src="#" alt="Логотип Кэт Энерджи.">
+      </a>
+      <ul class="main-footer__list social-list">
+        <li class="social-list__item">
+          <a href="#" class="social__link social__link--vk" aria-label="Вконтакте">
+            <svg></svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social__link social__link--youtube" aria-label="Youtube">
+            <svg></svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social__link social__link--tg" aria-label="Telegram">
+            <svg></svg>
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__bottom copyright">
+        <a href="#" class="copyright__link">HTML Academy</a>
+        <a href="#" class="copyright__link">
+          <svg></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
