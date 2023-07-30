@@ -19,14 +19,14 @@
       <nav class="main-nav">
         <div class="main-nav__container">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a href="" class="main-nav__link">Главная</a>
+            <li class="site-list__item ">
+              <a href="index.html" class="main-nav__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="" class="main-nav__link">Каталог продукции</a>
+              <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="" class="main-nav-link">Подбор программы</a>
+              <a href="#" class="main-nav-link site-list__item--current">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -130,30 +130,40 @@
 
   <footer class="main-footer">
     <div class="main-footer__container">
-      <a href="" class="main-footer__title">
-        <img class="footer__logo" src="#" alt="Логотип Кэт Энерджи.">
+      <a class="main-footer__title" href="index.html">
+        <svg lass="footer__logo" aria-label="Логотип Кэт Энерджи.">
+          <use xlink:href="img/sprite.svg#footer-logo" xmlns="http://www.w3.org/2000/svg"></use>
+        </svg>
       </a>
       <ul class="main-footer__list social-list">
         <li class="social-list__item">
           <a href="#" class="social__link social__link--vk" aria-label="Вконтакте">
-            <svg></svg>
+            <svg class="social__link-icon social__link-icon--vk">
+              <use xlink:href="img/sprite.svg#icon-vk" xmlns="http://www.w3.org/2000/svg"></use>
+            </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#" class="social__link social__link--youtube" aria-label="Youtube">
-            <svg></svg>
+            <svg class="social__link-icon social__link-icon--youtube">
+              <use xlink:href="img/sprite.svg#icon-youtube" xmlns="http://www.w3.org/2000/svg"></use>
+            </svg>
           </a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social__link social__link--tg" aria-label="Telegram">
-            <svg></svg>
+          <a href="#" class="social__link social__link--telegram" aria-label="Telegram">
+            <svg class="social__link-icon social__link-icon--telegram">
+              <use xlink:href="img/sprite.svg#icon-telegram" xmlns="http://www.w3.org/2000/svg"></use>
+            </svg>
           </a>
         </li>
       </ul>
-      <div class="main-footer__bottom copyright">
-        <a href="#" class="copyright__link">HTML Academy</a>
-        <a href="#" class="copyright__link">
-          <svg></svg>
+      <div class="main-footer__copyright">
+        <a href="#" class="main-footer__link">HTML Academy</a>
+        <a href="#" class="main-footer__link">
+          <svg class="main-footer__link-icon">
+            <use xlink:href="img/sprite.svg#logo-html-academy" xmlns="http://www.w3.org/2000/svg"></use>
+          </svg>
         </a>
       </div>
     </div>
