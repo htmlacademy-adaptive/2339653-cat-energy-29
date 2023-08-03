@@ -15,7 +15,7 @@
     content: "";
     width: 24px;
     height: 2px;
-    background-color: $main-color;
+    background: $main-color;
     transform: translateY(-10px);
     box-shadow: 0 8px $main-color;
   }
@@ -25,8 +25,33 @@
     content: "";
     width: 24px;
     height: 2px;
-    background-color: $main-color;
+    background: $main-color;
     transform: translateY(6px);
+  }
+
+  &--close {
+    height: 24px;
+    padding: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 24px;
+      background: url("../../img/Burger-close.svg");
+      background-size: 18px 18px;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: none;
+      transform: translateY(-1px);
+
+    }
+
+    &::after {
+      display: none;
+    }
+
+
 
   }
 }
