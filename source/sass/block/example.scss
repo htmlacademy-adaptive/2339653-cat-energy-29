@@ -1,0 +1,74 @@
+.example {
+  padding: 25px 20px 40px 20px;
+  background-color: $basic-grey;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: $font-huge;
+    color: $main-color;
+    line-height: 40px;
+    font-weight: 400;
+  }
+
+  &__descr {
+    font-family: $font-second;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 34px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px 5px;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+  }
+
+  &__block-title {
+    margin: 0;
+    width: 100px;
+    text-align: center;
+    font-size: $font-big;
+    line-height: 24px;
+    color: $main-color;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  &__block-descr {
+    margin: 0;
+    width: 80px;
+    font-size: $font-small;
+    line-height: 12px;
+    text-align: center;
+    padding: 0 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20px;
+    background: $basic-grey;
+  }
+
+  &__expenses {
+    margin: 0;
+    margin-bottom: 20px;
+    color: $main-color;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+}

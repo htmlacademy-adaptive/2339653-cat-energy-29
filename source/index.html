@@ -69,19 +69,31 @@
     <section class="programs">
       <h2 class="visually-hidden">Программы питания для котов</h2>
       <div class="programs__container">
-        <article class="programs__item programs__item--slim">
-          <h3 class="programs__item-title">Похудение</h3>
-          <p class="programs__item-descr">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+        <article class="programs__item">
+          <svg class="programs__logo programs__logo--slim" role="img" aria-label="Logo Programs">
+            <use xlink:href="img/sprite.svg#cat-program-slim" xmlns="http://www.w3.org/2000/svg"></use>
+          </svg>
+          <h3 class="programs__title">Похудение</h3>
+          <p class="programs__descr">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="programs__catalog-link" href="#">Каталог Slim</a>
+          <a class="programs__catalog-link" href="#">
+            Каталог Slim
+
+          </a>
         </article>
       </div>
       <div class="programs__container">
-        <article class="programs__item programs__item--mass">
-          <h3 class="programs__item-title">Набор массы</h3>
-          <p class="programs__item-descr">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+        <article class="programs__item">
+          <svg class="programs__logo programs__logo--mass" role="img" aria-label="Logo Programs">
+            <use xlink:href="img/sprite.svg#cat-program-mass" xmlns="http://www.w3.org/2000/svg"></use>
+          </svg>
+          <h3 class="programs__title">Набор массы</h3>
+          <p class="programs__descr">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
             поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="programs__catalog-link" href="#">Каталог Pro</a>
+          <a class="programs__catalog-link" href="#">
+            Каталог Pro
+
+          </a>
         </article>
       </div>
     </section>
@@ -118,7 +130,7 @@
             <span class="example__block-descr">снижение веса</span>
           </div>
           <div class="example__block">
-            <span class="example__block-title">60 днец</span>
+            <span class="example__block-title">60 дней</span>
             <span class="example__block-descr">затрачено времени</span>
           </div>
         </div>
@@ -134,7 +146,7 @@
               <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
               <source media="(min-width: 760px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
               <img class="slider__image-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
-                alt="Фотография толстого кота до вступления в программу питания Кэт Энерджи.">
+                alt="Фотография толстого кота.">
             </picture>
             <picture>
               <source type="image/webp" media="(min-width: 760px)"
@@ -142,7 +154,7 @@
               <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
               <source media="(min-width: 760px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
               <img class="slider__image-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
-                alt="Фотография худого кота после прохождения программы питания Кэт Энерджи">
+                alt="Фотография худого кота">
             </picture>
             <button class="slider__toggle" type="button">Бегунок</button>
           </div>
@@ -151,7 +163,6 @@
     </section>
 
     <section class="contacts">
-      <div class="contacts__container">
         <div class="contacts__text-content">
           <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
@@ -159,53 +170,51 @@
         <iframe class="contacts__map"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ce5e59beeaad92a430c0a1f580c103606c84bb01859606abf5e28c924734dc4&amp;source=constructor">
         </iframe>
-      </div>
     </section>
 
   </main>
 
   <footer class="main-footer">
     <div class="main-footer__container">
-      <a class="main-footer__title" href="#">
-        <svg lass="footer__logo" width="128" height="24" role="img" aria-label="Logo Cat Enerdgy.">
+      <a class="main-footer__logo" href="#">
+        <svg lass="main-footer__logo-image" width="128" height="24" role="img" aria-label="Logo Cat Enerdgy.">
           <use xlink:href="img/sprite.svg#footer-logo" xmlns="http://www.w3.org/2000/svg"></use>
         </svg>
       </a>
       <ul class="main-footer__list social-list">
         <li class="social-list__item">
-          <a href="#" class="social__link social__link--vk" aria-label="Вконтакте">
-            <svg class="social__link-icon social__link-icon--vk">
+          <a href="#" class="social-list__link" aria-label="Вконтакте">
+            <svg class="social-list__link-icon">
               <use xlink:href="img/sprite.svg#icon-vk" xmlns="http://www.w3.org/2000/svg"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social__link social__link--youtube" aria-label="Youtube">
-            <svg class="social__link-icon social__link-icon--youtube">
+          <a href="#" class="social__link" aria-label="Youtube">
+            <svg class="social-list__link-icon">
               <use xlink:href="img/sprite.svg#icon-youtube" xmlns="http://www.w3.org/2000/svg"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social__link social__link--telegram" aria-label="Telegram">
-            <svg class="social__link-icon social__link-icon--telegram">
+          <a href="#" class="social__link" aria-label="Telegram">
+            <svg class="social-list__link-icon">
               <use xlink:href="img/sprite.svg#icon-telegram" xmlns="http://www.w3.org/2000/svg"></use>
             </svg>
           </a>
         </li>
       </ul>
-      <div class="main-footer__copyright">
-        <a href="#" class="main-footer__link">HTML Academy</a>
-        <a href="#" class="main-footer__link">
+
+        <a href="#" class="main-footer__link"><span>HTML Academy</span>
           <svg class="main-footer__link-icon" role="img" aria-label="Logo HTML Academy">
             <use xlink:href="img/sprite.svg#logo-html-academy" xmlns="http://www.w3.org/2000/svg"></use>
           </svg>
         </a>
-      </div>
+
     </div>
   </footer>
 
-<script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

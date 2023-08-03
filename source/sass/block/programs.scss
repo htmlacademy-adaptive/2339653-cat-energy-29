@@ -1,0 +1,90 @@
+.programs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+
+  &__container {
+
+    display: flex;
+    flex-direction: column;
+    background-color: $basic-grey;
+    padding: 20px 33px 18px 20px;
+  }
+
+  &__item {
+    //display: flex;
+    //flex-wrap: wrap;
+    //align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    align-items: center;
+  }
+
+  &__logo {
+
+    &--slim {
+      width: 50px;
+      height: 50px;
+    }
+
+    &--mass {
+      width: 67px;
+      height: 50px;
+      margin-left: -10px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: $font-big;
+    color: $main-color;
+    line-height: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    grid-column: span 3;
+  }
+
+  &__descr {
+    margin: 0;
+    padding: 22px 0;
+    font-family: $font-second;
+    line-height: 18px;
+    grid-column: span 4;
+    border-bottom: 1px solid #d9d9d9;
+    ;
+
+  }
+
+  &__catalog-link {
+    font-size: $font-medium;
+    line-height: 16px;
+    text-transform: uppercase;
+    grid-column: span 2;
+    @include link-style;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 15px;
+    color: $main-color;
+    position: relative;
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 25px;
+      height: 12px;
+      background-image: url("../../img/icon_arrow.svg");
+      transform: translateX(400%);
+
+    }
+
+    &:hover {
+opacity: 0.3;
+    }
+
+  }
+
+}

@@ -2,12 +2,41 @@
   width: 192px;
   padding: 8px 20px;
   border: none;
-  color: $light-color;
+  font-family: inherit;
+  color: inherit;
+  font-size: 16px;
   text-align: center;
   text-transform: uppercase;
-  line-height: 18px;
+  line-height: 20px;
 
   &--green {
+    color: $light-color;
     background-color: $basic-green;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      background-color: #5eaa2f;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--grey {
+
+    background-color: $basic-grey;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: rgba(235, 235, 235);
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }
+
+
+
