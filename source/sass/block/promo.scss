@@ -1,0 +1,44 @@
+.promo {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text-content {
+    background:
+      url("../img/promo-background-mobile.jpg") no-repeat,
+      $basic-green;
+    background-size: cover;
+    padding: 27px 30px 164px 30px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: $font-huge;
+    line-height: 36px;
+    font-weight: 400;
+    color: $light-color;
+    text-align: center;
+  }
+
+  &__descr {
+    margin: 0;
+    color: $light-color;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-align: center;
+
+  }
+
+  &__image {
+    margin-top: -135px;
+  }
+
+  &__button {
+    @include link-style;
+    margin: 0 auto;
+  }
+}

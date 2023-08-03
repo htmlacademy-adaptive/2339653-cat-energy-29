@@ -1,0 +1,32 @@
+.burger-button {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  padding: 4px 0;
+  border: none;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: $main-color;
+    transform: translateY(-10px);
+    box-shadow: 0 8px $main-color;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: $main-color;
+    transform: translateY(6px);
+
+  }
+}

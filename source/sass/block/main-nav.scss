@@ -1,0 +1,28 @@
+.main-nav {
+   &__container {
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+
+  &__list {
+  @include list-reset;
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+  }
+
+  &__item {
+    padding: 22px 20px 24px 20px;
+    border-bottom: 1px solid #e6e6e6;
+
+  }
+
+  &__link {
+    @include link-style;
+    text-transform: uppercase;
+    text-align: center;
+    color: $main-color;
+    font-size: 20px;
+
+  }
+}

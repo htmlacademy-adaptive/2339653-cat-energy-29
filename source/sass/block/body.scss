@@ -1,8 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  font-family: $font-main;
-  color: #000000;
-
+  font-family: $font-page;
+  font-weight: 400;
+  color: $content-color;
+  font-size: 14px;
+  line-height: 18px;
 }
