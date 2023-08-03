@@ -8,11 +8,31 @@
 
   &__link {
     display: block;
+
+    &:focus-within {
+      fill: $basic-green;
+      outline: none;
+    }
+
   }
 
   &__link-icon {
     width: 28px;
     height: 22px;
+
+
+
+    &:hover
+     {
+      fill: $basic-green;
+    }
+
+    &:active {
+      fill: rgba(104, 183, 56, 0.3)
+    }
+
   }
+
+
 
 }

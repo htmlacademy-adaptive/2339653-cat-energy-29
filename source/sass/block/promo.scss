@@ -8,6 +8,7 @@
   }
 
   &__text-content {
+    width: 100%;
     background:
       url("../img/promo-background-mobile.jpg") no-repeat,
       $basic-green;
@@ -41,5 +42,57 @@
   &__button {
     @include link-style;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    &__container {
+     min-height: 800px;
+      position: relative;
+      align-items: start;
+      margin-left: 120px;
+      margin-bottom: 0;
+    }
+
+    &__text-content {
+      width: 520px;
+      background: none;
+      padding: 0;
+
+
+    }
+
+    &__title {
+      color: $main-color;
+      font-size: 60px;
+      line-height: 60px;
+      text-align: start;
+      margin-bottom: 40px;
+    }
+
+    &__descr {
+      color: $main-color;
+      text-align: start;
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 50px;
+    }
+
+    &__image {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 42%;
+      left: -14%;
+
+
+    }
+
+    &__button {
+margin: 0;
+    }
+
+
   }
 }

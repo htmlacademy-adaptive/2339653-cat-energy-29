@@ -9,7 +9,6 @@
 
   &__container {
     display: block;
-
     position: absolute;
     background-color: $light-color;
     width: 100%;
@@ -33,6 +32,58 @@
     text-align: center;
     color: $main-color;
     font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+
+    &:focus {
+      opacity: 0.5;
+      outline: none;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
 
   }
+}
+
+@media (min-width: $tablet-width) {
+.main-nav {
+  display: flex;
+
+  &__container {
+    position: static;
+  }
+
+  &__list {
+    min-width: 436px;
+    display: flex;
+    justify-content: space-between;
+    gap: 33px;
+    border: none;
+  }
+
+  &__item {
+    border: none;
+    padding: 0;
+
+  }
+
+  &__item--current {
+    border-bottom: 1px solid $basic-green;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__link--current {
+  border-bottom: 2px solid $basic-green;
+  padding-bottom: 10px;
+  }
+}
 }

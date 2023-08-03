@@ -10,13 +10,17 @@
   }
 
   &__logo {
+    transition: opacity 0.3s ease-in-out;
 
-    &:hover {
-      opacity: 0.8;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+      outline: none;
     }
 
     &:active {
-      opacity: 0.6;
+      opacity: 0.4;
     }
 
   }
@@ -26,11 +30,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
-  }
-
-  &__copyrigh {
-    width: 100%;
-
   }
 
   &__link {
@@ -43,11 +42,30 @@
     color: inherit;
     font-size: $font-medium;
     line-height: 20px;
+
+
+
+
+    &:focus-within {
+      fill: $basic-green;
+      outline: none;
+    }
+
+    &:hover {
+      fill: $basic-green;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+      fill: rgba(104, 183, 56, 0.3);
+    }
+
   }
 
   &__link-icon {
     width: 27px;
     height: 34px;
+
   }
 
 

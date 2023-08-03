@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
 
   &::before {
     position: absolute;
@@ -50,8 +51,27 @@
     &::after {
       display: none;
     }
-
-
-
   }
+
+  &:focus {
+    opacity: 0.5;
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+
 }
+
+@media (min-width: $tablet-width) {
+
+    .burger-button {
+      display: none;
+    }
+  }
+
