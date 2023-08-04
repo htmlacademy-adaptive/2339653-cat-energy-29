@@ -22,7 +22,6 @@
     &:active {
       opacity: 0.4;
     }
-
   }
 
   &__list {
@@ -43,9 +42,6 @@
     font-size: $font-medium;
     line-height: 20px;
 
-
-
-
     &:focus-within {
       fill: $basic-green;
       outline: none;
@@ -59,14 +55,33 @@
       color: rgba(68, 68, 68, 0.3);
       fill: rgba(104, 183, 56, 0.3);
     }
-
   }
 
   &__link-icon {
     width: 27px;
     height: 34px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+
+    &__container {
+      padding: 61px 30px;
+      background-color: $basic-grey;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+    }
+
+    &__link {
+      gap: 23px;
+      justify-content: end;
+      font-family: $font-second;
+      color: inherit;
+      font-size: $font-medium;
+      line-height: 20px;
+    }
 
   }
-
-
 }

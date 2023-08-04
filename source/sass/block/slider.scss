@@ -2,13 +2,15 @@
   position: relative;
   // overflow: hidden;
   width: 100%;
-  background-color: $basic-grey;
+  // background-color: $basic-grey;
 
   &__image {
+    display: block;
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
+
   }
 
   &__before {
@@ -47,4 +49,18 @@
 
     }
   }
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    width: 560px;
+    height: 512px;
+    background: linear-gradient(to top, $basic-grey 70%, $light-color 70%);
+
+    &__before,
+    &__after {
+      background: linear-gradient(to top, $basic-grey 70%, $light-color 70%);
+    }
+  }
+
 }

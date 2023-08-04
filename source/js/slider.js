@@ -7,7 +7,7 @@ let slider = document.querySelector('.slider');
 let before = slider.querySelector('.slider__before');
 let beforeImage = before.querySelector('.slider__before-image');
 let toggle = slider.querySelector('.slider__toggle');
-let body = document.body;
+let body = slider;
 
 let isActive = false;
 

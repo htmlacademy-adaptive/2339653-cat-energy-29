@@ -1,22 +1,8 @@
 .main-nav {
-
   display: none;
   opacity: 0;
 
-  animation: fadeInFromNone 0.5s ease-in-out;
-
-  @keyframes fadeInFromNone {
-    0% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0;
-    }
-  }
-
-
-  &--show {
+    &--show {
     display: block;
     position: relativ;
     opacity: 1;
@@ -51,13 +37,11 @@
   &__list {
     @include list-reset;
     border-top: 1px solid #e6e6e6;
-
   }
 
   &__item {
     padding: 22px 20px 24px 20px;
     border-bottom: 1px solid #e6e6e6;
-
   }
 
   &__link {
@@ -80,13 +64,13 @@
     &:active {
       opacity: 0.2;
     }
-
   }
 }
 
 @media (min-width: $tablet-width) {
 .main-nav {
   display: flex;
+  opacity: 1;
 
   &__container {
     position: static;

@@ -1,11 +1,12 @@
 .example {
-  padding: 25px 20px 40px 20px;
   background-color: $basic-grey;
 
   &__container {
+    padding: 25px 20px 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 99px;
   }
 
   &__title {
@@ -53,6 +54,7 @@
   &__block-descr {
     margin: 0;
     width: 80px;
+    font-family: $font-second;
     font-size: $font-small;
     line-height: 12px;
     text-align: center;
@@ -70,55 +72,54 @@
     line-height: 20px;
     text-transform: uppercase;
   }
-
-
 }
 
 @media (min-width: $tablet-width) {
-
   .example {
-    padding: 45px 31px;
     background-color: inherit;
 
     &__container {
+      padding: 45px 31px;
+      padding-bottom: 0;
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr;
     }
 
     &__title {
       margin-bottom: 40px;
-      font-size: $font-huge;
-      color: $main-color;
-      line-height: 40px;
-      font-weight: 400;
-      grid-column: 2 span;
+      font-size: 60px;
+      line-height: 60px;
+      grid-column: 4 span;
     }
 
     &__descr {
       padding: 0;
-      font-family: $font-second;
       font-size: $font-medium;
       line-height: 24px;
       margin-bottom: 55px;
-      grid-column: 2 span;
+      grid-column: 4 span;
     }
 
     &__blocks {
-      display: flex;
-      justify-content: space-between;
+      grid-column: 1/4;
+      justify-content: start;
       gap: 42px;
-      grid-column: 1/2;
       margin: 0;
     }
 
     &__block {
       display: flex;
       flex-direction: column;
+
       align-items: center;
-      padding: 15px 30px 25px 30px;
+      padding: 15px 10px 25px 10px;
       border: 1px solid #d9d9d9;
       border-radius: 5px;
+
+      &--size {
+        padding: 15px 25px 25px 25px;
+      }
     }
 
     &__block-title {
@@ -133,20 +134,21 @@
     }
 
     &__block-descr {
-      margin: 0;
-      width: 80px;
-      font-size: $font-small;
-      line-height: 12px;
+      margin-bottom: -30px;
+      width: 140px;
+      font-size: 14px;
+      line-height: 14px;
       text-align: center;
-      padding: 0 10px 0;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: -20px;
-      background: $basic-grey;
+      padding: 0;
+      background: $light-color;
+
+      &--size {
+        width: 110px;
+      }
     }
 
     &__expenses {
-      grid-column: 2/3;
+      grid-column: 4/5;
       max-width: 250px;
       display: flex;
       flex-direction: column;
@@ -160,12 +162,12 @@
       text-transform: uppercase;
     }
 
-    &__changing {
-      padding-top: 250px;
-      grid-column: 2 span;
-      margin: 0 auto;
-
-
+    &__container--slider {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(to top, $basic-grey 70%, $light-color 70%);
     }
 
   }

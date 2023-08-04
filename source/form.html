@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
   <title>Кэт энерджи</title>
 </head>
 
@@ -10,23 +12,29 @@
 
   <header class="main-header">
     <div class="main-header__container">
-      <a href="" class="main-header__logo">
-        <img class="main-header__logo-image" src="#" alt="Логотип Кэт энерджи.">
-      </a>
-      <button class="main-header__toggle">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="main-header__top">
+        <a href="index.html" class="main-header__logo">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/header-logo-desktop.svg">
+            <source media="(min-width: 760px)" srcset="img/header-logo-tablet.svg">
+            <img class="main-header__logo-image" src="img/header-logo-mobile.svg" alt="Логотип Кэт энерджи.">
+          </picture>
+        </a>
+        <button class="main-header__toggle burger-button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <nav class="main-nav">
         <div class="main-nav__container">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item ">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a href="index.html" class="main-nav__link">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a href="#" class="main-nav-link site-list__item--current">Подбор программы</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="#">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -168,7 +176,7 @@
       </div>
     </div>
   </footer>
-
+  <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

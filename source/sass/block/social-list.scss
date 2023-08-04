@@ -22,17 +22,19 @@
 
 
 
-    &:hover
-     {
+    &:hover {
       fill: $basic-green;
     }
 
     &:active {
       fill: rgba(104, 183, 56, 0.3)
     }
-
   }
+}
 
-
-
+@media (min-width: $tablet-width) {
+  .social-list {
+    border: none;
+    padding: 0;
+  }
 }
