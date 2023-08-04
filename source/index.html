@@ -138,38 +138,42 @@
           <span>Затраты на питание: </span>
           <span>15 000 РУБ.</span>
         </p>
-        <div class="example__changing">
+        <div class="example__changing example__changing--grey">
           <div class="slider">
-            <picture>
-              <source type="image/webp" media="(min-width: 760px)"
-                srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
-              <source media="(min-width: 760px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
-              <img class="slider__image-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
-                alt="Фотография толстого кота.">
-            </picture>
-            <picture>
-              <source type="image/webp" media="(min-width: 760px)"
-                srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
-              <source media="(min-width: 760px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
-              <img class="slider__image-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
-                alt="Фотография худого кота">
-            </picture>
-            <button class="slider__toggle" type="button">Бегунок</button>
+            <div class="slider__before">
+              <picture>
+                <source type="image/webp" media="(min-width: 760px)"
+                  srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
+                <source media="(min-width: 760px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                <img class="slider__before-image slider__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
+                  alt="Фотография толстого кота.">
+              </picture>
+            </div>
+            <div class="slider__after">
+              <picture>
+                <source type="image/webp" media="(min-width: 760px)"
+                  srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
+                <source media="(min-width: 760px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                <img class="slider__after-image slider__img" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
+                  alt="Фотография худого кота">
+              </picture>
+            </div>
+            <div class="slider__toggle"></div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="contacts">
-        <div class="contacts__text-content">
-          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
-        </div>
-        <iframe class="contacts__map"
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ce5e59beeaad92a430c0a1f580c103606c84bb01859606abf5e28c924734dc4&amp;source=constructor">
-        </iframe>
+      <div class="contacts__text-content">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+      </div>
+      <iframe class="contacts__map"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ce5e59beeaad92a430c0a1f580c103606c84bb01859606abf5e28c924734dc4&amp;source=constructor">
+      </iframe>
     </section>
 
   </main>
@@ -205,11 +209,11 @@
         </li>
       </ul>
 
-        <a href="#" class="main-footer__link" target="_blank"><span>HTML Academy</span>
-          <svg class="main-footer__link-icon" role="img" aria-label="Logo HTML Academy">
-            <use xlink:href="img/sprite.svg#logo-html-academy" xmlns="http://www.w3.org/2000/svg"></use>
-          </svg>
-        </a>
+      <a href="#" class="main-footer__link" target="_blank"><span>HTML Academy</span>
+        <svg class="main-footer__link-icon" role="img" aria-label="Logo HTML Academy">
+          <use xlink:href="img/sprite.svg#logo-html-academy" xmlns="http://www.w3.org/2000/svg"></use>
+        </svg>
+      </a>
 
     </div>
   </footer>
