@@ -66,6 +66,7 @@
   }
 
   &__expenses {
+
     margin: 0;
     margin-bottom: 20px;
     color: $main-color;
@@ -83,7 +84,7 @@
       padding-bottom: 0;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
+      grid-template-rows: 4 1fr;
     }
 
     &__title {
@@ -148,11 +149,12 @@
     }
 
     &__expenses {
-      grid-column: 4/5;
+      grid-row: 4;
+      grid-column: 1/4 span;
       max-width: 250px;
       display: flex;
-      flex-direction: column;
-      gap: 9px;
+      flex-direction: row;
+
       align-items: end;
       margin: 0;
       margin-left: auto;
@@ -170,6 +172,73 @@
       background: linear-gradient(to top, $basic-grey 70%, $light-color 70%);
     }
 
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+  .example {
+    background: linear-gradient(to top, $basic-grey 70%, $light-color 70%);
+    display: flex;
+    align-items: center;
+
+    &__container {
+      padding: 0;
+      padding: 70px 110px 75 110px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      margin-bottom: 0;
+    }
+
+    &__title {
+      margin-bottom: 146px;
+    }
+
+    &__descr {
+      margin: 0;
+      margin-bottom: 70px;
+      grid-column: 3 span;
+      padding-right: 35px;
+
+    }
+
+    &__blocks {
+      margin-bottom: 60px;
+
+    }
+
+    &__block-descr {
+      &-descr {
+        background: $basic-grey;
+
+    }
+
+    &__expenses {
+      grid-row: 4;
+      grid-column: 1/4;
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      gap: 63px;
+
+      &-title {
+        flex-shrink: 0;
+      }
+
+      &-summ {
+        flex-shrink: 0;
+      }
+
+      &__container--slider-white {
+        padding: 0;
+        margin: 0;
+        align-self: end;
+
+
+      }
+    }
   }
 
 }

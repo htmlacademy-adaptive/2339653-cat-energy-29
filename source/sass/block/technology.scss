@@ -68,7 +68,7 @@
 @media (min-width: $tablet-width) {
   .technology {
     padding: 45px 30px 104px 30px;
-        border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
 
     &__title {
       margin: 0;
@@ -85,9 +85,6 @@
       row-gap: 77px;
       //счётчик
       counter-reset: background-counter;
-
-
-
     }
 
     &__item {
@@ -127,6 +124,8 @@
       }
     }
 
+    // ВОПРОС О ПРИЧИНАХ НЕ СРАБАТЫВАНИЯ
+
     &__item--icon-leaf {
       &::before {
         background-image: url("../../img/icon_leaf.png");
@@ -151,7 +150,21 @@
       }
     }
   }
+}
 
 
+@media (min-width: $desktop-width) {
+  .technology {
+    padding: 71px 110px 57px 110px;
+    border-bottom: none;
 
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      row-gap: 77px;
+      //счётчик
+      counter-reset: background-counter;
+    }
+  }
 }

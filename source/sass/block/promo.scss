@@ -48,7 +48,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     &__container {
-     min-height: 800px;
+      min-height: 800px;
       position: relative;
       align-items: start;
       margin-left: 120px;
@@ -90,9 +90,51 @@
     }
 
     &__button {
-margin: 0;
+      margin: 0;
     }
 
 
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .promo {
+    position: relative;
+
+    &--bcg::before {
+      content: "";
+      position: absolute;
+      background:
+        url("../../img/promo-background-desktop.jpg"),
+        $basic-green;
+      background-repeat: no-repeat;
+      width: 50%;
+      height: 100%;
+      background-size: cover;
+      right: 0;
+
+    }
+
+    &__container {
+      width: 100%;
+      min-height: 694px;
+      position: relative;
+      margin: 0;
+      padding: 0 190px;
+      justify-content: center;
+
+    }
+
+    &__image {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 16%;
+      left: 58%;
+      transform: translate(-50%, 30%);
+
+
+    }
   }
 }
