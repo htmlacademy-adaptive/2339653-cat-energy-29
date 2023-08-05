@@ -5,7 +5,7 @@
 }
 
 body {
-  max-width: 1440px;
+border: 2px solid black;
   margin: 0 auto;
   padding: 0;
   background-color: $light-color;
@@ -16,4 +16,8 @@ body {
   line-height: 18px;
 }
 
-
+@media (min-width: $desktop-width) {
+  body {
+    max-width: 1440px;
+  }
+}

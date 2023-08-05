@@ -82,6 +82,14 @@
       font-size: $font-medium;
       line-height: 20px;
     }
+  }
+}
 
+@media (min-width: $tablet-width) {
+  .main-footer {
+
+    &__container {
+      padding: 70px 110px;
+    }
   }
 }

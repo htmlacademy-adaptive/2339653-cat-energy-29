@@ -59,8 +59,7 @@
       width: 520px;
       background: none;
       padding: 0;
-
-
+      margin-bottom: 50px;
     }
 
     &__title {
@@ -76,7 +75,7 @@
       text-align: start;
       font-size: 20px;
       line-height: 20px;
-      margin-bottom: 50px;
+
     }
 
     &__image {
@@ -96,7 +95,6 @@
 
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .promo {
@@ -121,10 +119,20 @@
       min-height: 694px;
       position: relative;
       margin: 0;
-      padding: 0 190px;
-      justify-content: center;
+      padding: 118px 190px 0 190px;
+      justify-content: flex-start;
 
     }
+
+    &__text-content {
+      max-width: 480px;
+      min-height: 184px;
+      background: none;
+      margin-top: 107px;
+      padding: 0;
+
+    }
+
 
     &__image {
       display: block;
@@ -132,7 +140,7 @@
       z-index: 1;
       top: 16%;
       left: 58%;
-      transform: translate(-50%, 30%);
+      transform: translate(-50%, 33%);
 
 
     }

@@ -70,21 +70,26 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 460px;
     opacity: 1;
 
     &__container {
+
       position: static;
     }
 
     &__list {
-      min-width: 436px;
+      padding-top: 10px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       gap: 33px;
       border: none;
     }
 
     &__item {
+      max-width: 180px;
       border: none;
       padding: 0;
 
@@ -108,21 +113,26 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    max-width: 650px;
 
     &__container {
       background: none;
+    }
+
+    &__list {
+      padding: 20px 0;
     }
 
     &__link {
       font-size: 20px;
       line-height: 20px;
       //color: $light-color;
-      color: black;
+      color: $light-color;
     }
 
     &__link--current {
       border-bottom: 2px solid $light-color;
-      padding-bottom: 8px;
+      padding-bottom: 11px;
     }
   }
 }

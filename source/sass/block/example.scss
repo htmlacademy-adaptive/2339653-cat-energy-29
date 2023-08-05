@@ -124,13 +124,10 @@
     }
 
     &__block-title {
-      margin: 0;
       width: 102px;
-      text-align: center;
       font-size: 30px;
       line-height: 37pxpx;
       color: $main-color;
-      text-transform: uppercase;
       margin-bottom: 8px;
     }
 
@@ -164,16 +161,14 @@
       text-transform: uppercase;
     }
 
-    &__container--slider {
+    &__slider-container {
       width: 100%;
       padding: 0;
       display: flex;
       justify-content: center;
       background: linear-gradient(to top, $basic-grey 70%, $light-color 70%);
     }
-
   }
-
 }
 
 
@@ -184,10 +179,11 @@
     align-items: center;
 
     &__container {
+      width: 71%;
       padding: 0;
-      padding: 70px 110px 75 110px;
+      padding: 70px 114px 75px 110px;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
       margin-bottom: 0;
     }
@@ -200,7 +196,7 @@
       margin: 0;
       margin-bottom: 70px;
       grid-column: 3 span;
-      padding-right: 35px;
+      padding-right: 0;
 
     }
 
@@ -209,10 +205,13 @@
 
     }
 
-    &__block-descr {
-      &-descr {
-        background: $basic-grey;
+    &__block-title {
+      padding-top: 6px;
+      margin-bottom: 17px;
+    }
 
+    &__block-descr {
+      background: $basic-grey;
     }
 
     &__expenses {
@@ -228,17 +227,15 @@
       }
 
       &-summ {
+        margin: 0;
         flex-shrink: 0;
       }
+    }
 
-      &__container--slider-white {
-        padding: 0;
-        margin: 0;
-        align-self: end;
-
-
-      }
+    &__slider-container {
+      padding-bottom: 20px;
+      background: linear-gradient(to top, #f2f2f2 75.2%, #ffffff 75.2%);
     }
   }
-
 }
+

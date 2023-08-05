@@ -76,7 +76,7 @@
       font-size: 60px;
       line-height: 60px;
       font-weight: 400;
-      margin-bottom: 72px
+      margin-bottom: 76px
     }
 
     &__list {
@@ -155,12 +155,17 @@
 
 @media (min-width: $desktop-width) {
   .technology {
-    padding: 71px 110px 57px 110px;
+    padding: 0 110px 35px 110px;
     border-bottom: none;
+
+    &__title {
+      margin-bottom: 73px;
+    }
 
     &__list {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 82px;
 
       row-gap: 77px;
       //счётчик
