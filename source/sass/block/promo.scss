@@ -48,7 +48,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     &__container {
-      min-height: 800px;
+      min-height: 811px;
       position: relative;
       align-items: start;
       margin-left: 120px;
@@ -79,6 +79,7 @@
     }
 
     &__image {
+      margin-top: -140px;
       display: block;
       position: absolute;
       z-index: -1;

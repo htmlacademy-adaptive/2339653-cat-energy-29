@@ -76,6 +76,7 @@
       line-height: 26px;
       font-weight: 400;
       grid-column: 1;
+      margin-bottom: auto;
     }
 
     &__address {
@@ -87,10 +88,17 @@
       text-align: end;
       font-size: $font-medium;
       line-height: 20px;
+      margin-bottom: auto;
+    }
+
+    &__map {
+      height: 400px;
     }
 
     &__map-pin::before {
-      transform: translate(550%, -450%);
+      width: 113px;
+      height: 106px;
+      transform: translate(293%, -240%);
 
     }
   }
@@ -135,8 +143,8 @@
 
 
     &__map-pin::before {
-width: 113px;
-height: 106px;
+      width: 113px;
+      height: 106px;
       transform: translate(802%, -252%);
 
     }

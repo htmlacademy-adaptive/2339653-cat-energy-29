@@ -83,7 +83,6 @@
       padding-top: 10px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
       gap: 33px;
       border: none;
     }
@@ -92,7 +91,6 @@
       max-width: 180px;
       border: none;
       padding: 0;
-
     }
 
     &__item--current {

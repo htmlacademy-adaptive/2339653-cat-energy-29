@@ -67,7 +67,7 @@
 
 @media (min-width: $tablet-width) {
   .technology {
-    padding: 45px 30px 104px 30px;
+    padding: 45px 30px 83px 30px;
     border-bottom: 1px solid #e6e6e6;
 
     &__title {
@@ -82,7 +82,8 @@
     &__list {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      row-gap: 77px;
+      row-gap: 114px;
+      column-gap: 65px;
       //счётчик
       counter-reset: background-counter;
     }

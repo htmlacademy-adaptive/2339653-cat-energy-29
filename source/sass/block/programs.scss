@@ -8,8 +8,7 @@
     @include list-reset;
     display: flex;
     flex-direction: column;
-    background-color: $basic-grey;
-    padding: 20px 33px 18px 20px;
+
   }
 
   &__item {
@@ -17,6 +16,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     align-items: center;
+    background-color: $basic-grey;
   }
 
   &__logo {
@@ -90,12 +90,14 @@
 
 @media (min-width: $tablet-width) {
   .programs {
+    padding: 0 30px;
 
-    &__container {
-      padding: 77px 63px 57px 52px;
+    &__list {
+      gap: 30px;
     }
 
     &__item {
+      padding: 77px 63px 57px 52px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 4 1fr;
@@ -137,7 +139,11 @@
     }
 
     &__catalog-link {
+      font-size: 20px;
+      line-height: 20px;
       grid-area: link;
+      padding-top: 41px;
+
     }
   }
 }
@@ -167,7 +173,6 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 3 1fr;
       align-items: center;
-      background-color: $basic-grey;
       padding: 44px 55px 63px 51px;
       margin-bottom: 70px;
     }
@@ -218,7 +223,8 @@
       padding-top: 10px;
       color: $main-color;
       position: relative;
-margin-top: auto;
+      margin-top: auto;
+
       &::after {
         transform: translateX(500%);
       }

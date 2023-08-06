@@ -35,9 +35,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px 10px 5px;
-    border: 1px solid #d9d9d9;
-    border-radius: 5px;
+
+    // border: 1px solid #d9d9d9;
+    // border-radius: 5px;
   }
 
   &__block-title {
@@ -77,24 +77,27 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background-color: inherit;
+    background: linear-gradient(to top, $basic-grey 30%, $light-color 30%);
+
+    padding-bottom: 101px;
 
     &__container {
       padding: 45px 31px;
       padding-bottom: 0;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 4 1fr;
+
     }
 
     &__title {
-      margin-bottom: 40px;
+      margin-bottom: 60px;
       font-size: 60px;
       line-height: 60px;
       grid-column: 4 span;
     }
 
     &__descr {
+      margin: 0;
       padding: 0;
       font-size: $font-medium;
       line-height: 24px;
@@ -107,58 +110,44 @@
       justify-content: start;
       gap: 42px;
       margin: 0;
+      margin-bottom: auto;
     }
 
     &__block {
       display: flex;
       flex-direction: column;
-
-      align-items: center;
-      padding: 15px 10px 25px 10px;
-      border: 1px solid #d9d9d9;
-      border-radius: 5px;
-
-      &--size {
-        padding: 15px 25px 25px 25px;
-      }
     }
 
     &__block-title {
-      width: 102px;
+      width: 162px;
       font-size: 30px;
-      line-height: 37pxpx;
-      color: $main-color;
-      margin-bottom: 8px;
+      line-height: 37px;
+      margin-bottom: -9px;
+      align-items: center;
+      padding: 15px 10px 20px 10px;
+      border: 1px solid #d9d9d9;
+      border-radius: 5px;
     }
 
     &__block-descr {
-      margin-bottom: -30px;
       width: 140px;
       font-size: 14px;
       line-height: 14px;
-      text-align: center;
       padding: 0;
       background: $light-color;
-
-      &--size {
-        width: 110px;
-      }
     }
 
-    &__expenses {
-      grid-row: 4;
-      grid-column: 1/4 span;
-      max-width: 250px;
-      display: flex;
-      flex-direction: row;
 
+    &__expenses {
+      grid-column: 4;
+      max-width: 200px;
+      display: flex;
+      flex-direction: column;
       align-items: end;
-      margin: 0;
-      margin-left: auto;
       font-size: 20px;
-      color: $main-color;
       line-height: 20px;
-      text-transform: uppercase;
+      padding-top: 13px;
+      gap: 9px;
     }
 
     &__slider-container {
@@ -170,6 +159,7 @@
     }
   }
 }
+
 
 
 @media (min-width: $desktop-width) {
@@ -238,4 +228,3 @@
     }
   }
 }
-
