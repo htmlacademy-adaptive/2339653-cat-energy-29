@@ -1,0 +1,47 @@
+.gift {
+padding: 20px 20px;
+  &__container {
+
+    min-width: 245px;
+    max-width: 707px;
+    min-height: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+    align-items: center;
+    background:
+      url("../../img/catalog-image/gift-background-mobile.jpg"),
+      $basic-green;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__descr {
+    position: relative;
+    margin: 0;
+    padding: 0 50px;
+    text-align: center;
+    font-family: $font-second;
+    font-size: $font-medium;
+    line-height: 16px;
+  }
+
+  &__link-icon {
+    width: 78px;
+    height: 80px;
+  }
+
+  // &__descr::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 78px;
+  //   min-height: 80px;
+  //   background-image: url("../../img/catalog-image/icon_gift.svg");
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  // }
+}

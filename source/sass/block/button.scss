@@ -37,6 +37,11 @@
     }
   }
 
+  &--card,
+  &--cross-sell {
+    padding: 10px 0;
+  }
+
   &--mobile {
     width: 280px;
   }
@@ -46,6 +51,7 @@
     font-size: 20px;
     line-height: 20px;
   }
+
 }
 
 
