@@ -1,5 +1,4 @@
 .button {
-  min-width: 192px;
   padding: 8px 44px;
   border: none;
   font-family: inherit;
@@ -36,6 +35,10 @@
       background-color: rgba(235, 235, 235);
       color: rgba(68, 68, 68, 0.3);
     }
+  }
+
+  &--mobile {
+    width: 280px;
   }
 
   &--big {
