@@ -1,8 +1,12 @@
 .cross-sell {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  row-gap: 13px;
-  align-items: center;
+
+  &__container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 13px;
+    align-items: center;
+  }
 
   &__title {
     grid-column: 2 span;
@@ -23,11 +27,12 @@
   }
 
   &__item {
+    margin: 0 auto;
     max-width: 500px;
     padding-bottom: 19px;
     padding-left: 20px;
     padding-right: 20px;
-    border-bottom: 1px solid #cdcdcd;
+
   }
 
   &__item-title {

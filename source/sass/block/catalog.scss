@@ -42,3 +42,60 @@
     padding-bottom: 25px;
   }
 }
+
+
+@media (min-width: $tablet-width) {
+
+  .main-catalog {
+
+    &__container {
+      border-top: none;
+      padding: 0 30px;
+    }
+  }
+
+  .catalog {
+
+    &__title {
+      margin: 0;
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: 400;
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 41px;
+      border-bottom: none;
+    }
+
+    &__item-container {
+      border-bottom: none;
+      width: 50%;
+    }
+
+    &__list {
+      padding-top: 50px;
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 60px;
+    }
+
+
+    &__item {
+      width: 324px;
+      min-height: 208px;
+      margin: 0;
+      padding: 0 38px;
+      background: linear-gradient(to top, $basic-grey 85%, $light-color 85%);
+      margin-bottom: 60px;
+
+
+
+    }
+  }
+
+}
+
+
+
+

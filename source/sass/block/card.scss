@@ -2,7 +2,7 @@
 
   display: grid;
   grid-template-columns: 50% 50%;
-  row-gap: 13px;
+  padding-bottom: 40px;
   align-items: center;
 
 
@@ -29,14 +29,14 @@
   &__descr {
     display: flex;
     flex-direction: column;
+    font-family: $font-second;
+    font-size: $font-small;
+    line-height: 16px;
   }
 
   &__descr tr {
     display: flex;
     justify-content: space-between;
-    font-family: $font-second;
-    font-size: $font-small;
-    line-height: 16px;
   }
 
   &__button {
@@ -90,10 +90,98 @@
     }
   }
 
-&__show-all-descr {
-  margin: 0;
-  font-family: $font-second;
-  font-size: $font-small;
-  line-height: 16px;
+  &__show-all-descr {
+    margin: 0;
+
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .card {
+    grid-template-areas:
+      "image image"
+      "text text"
+      "button button";
+    row-gap: 33px;
+
+    &__link-img {
+      margin: 0 auto;
+      grid-area: image;
+    }
+
+    &__image {
+      margin: auto 0;
+    }
+
+    &__text-content {
+
+      grid-area: text;
+    }
+
+    &__title {
+      margin: 0 auto 21px auto;
+      font-size: 20px;
+      line-height: 24px;
+      max-width: 174px;
+      padding-right: 0;
+      padding: 0 10px;
+      text-align: center;
+    }
+
+    &__descr tr {
+      font-size: $font-medium;
+      line-height: 16px;
+      padding-bottom: 11px;
+      border-bottom: 1px solid #cdcdcd;
+      gap: 8px;
+    }
+
+    &_button {
+      grid-area: buttons;
+    }
+
+    &--show-all {
+      height: 429px;
+      margin-top: 75px;
+      padding-top: 78px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 2px solid $basic-grey;
+
+    }
+
+    &__show-all-descr {
+      margin: 0;
+      padding: 40px;
+      font-family: $font-page;
+      font-size: $font-medium;
+      line-height: 18px;
+
+    }
+
+    &__title-show-all {
+
+      &::after {
+        width: 60px;
+        height: 2px;
+        background-color: #d3d3d3;
+        left: 50%;
+        top: -37px;
+        transform: translateX(-50%);
+      }
+
+      &::before {
+       width: 60px;
+        left: 50%;
+        top: -37px;
+        transform: translateX(-50%) rotate(90deg);
+      }
+
+  }
+
 }
 }
