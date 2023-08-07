@@ -1,101 +1,90 @@
-.main-catalog {
-
-  &__container {
-    border-top: 1px solid #cdcdcd;
-  }
-}
-
 .catalog {
 
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+
   &__title {
+    padding: 20px;
+    padding-top: 27px;
+    padding-bottom: 41px;
     margin: 0;
     font-size: $font-huge;
     line-height: 36px;
     font-weight: 400;
-    padding-top: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 41px;
-    border-bottom: 1px solid #cdcdcd;
   }
 
   &__list {
     @include list-reset;
-    display: flex;
-    flex-wrap: wrap;
   }
 
   &__item-container {
-    border-bottom: 1px solid #cdcdcd;
-    width: 100%;
-  }
+    border-top: 1px solid #cdcdcd;
 
-
-  &__item {
-    min-width: 280px;
-    max-width: 500px;
-    min-height: 208px;
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 25px;
   }
 }
 
+//********************** TABLET **********************//
 
 @media (min-width: $tablet-width) {
 
-  .main-catalog {
-
-    &__container {
-      border-top: none;
-      padding: 0 30px;
-    }
-  }
-
   .catalog {
+    border-top: none;
+    border-bottom: none;
 
     &__title {
+
+      padding: 30px;
+      padding-top: 45px;
+      padding-bottom: 71px;
       margin: 0;
       font-size: 60px;
       line-height: 60px;
       font-weight: 400;
-      padding-top: 0;
-      padding-left: 0;
-      padding-right: 0;
-      padding-bottom: 41px;
-      border-bottom: none;
-    }
-
-    &__item-container {
-      border-bottom: none;
-      width: 50%;
     }
 
     &__list {
-      padding-top: 50px;
-      display: grid;
-      grid-template-columns: auto auto;
-      column-gap: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 30px;
+      gap: 52px;
     }
 
-
-    &__item {
+    &__item-container {
       width: 324px;
-      min-height: 208px;
-      margin: 0;
-      padding: 0 38px;
-      background: linear-gradient(to top, $basic-grey 85%, $light-color 85%);
-      margin-bottom: 60px;
-
-
-
+      border-top: none;
     }
   }
-
 }
 
+//********************** DESKTOP **********************//
 
+@media (min-width: $desktop-width) {
 
+  .catalog {
+    &__title {
 
+      padding: 110px;
+      padding-top: 60px;
+      padding-bottom: 85pxpx;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      padding: 0 110px;
+      gap: 72px;
+    }
+
+    &__item-container {
+      width: 245px;
+      // min-height: 511px;
+      border-top: none;
+    }
+  }
+}

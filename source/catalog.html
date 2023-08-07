@@ -11,7 +11,7 @@
 <body class="page__body">
 
   <header class="main-header">
-    <div class="main-header__container">
+    <div class="main-header__container main-header__container--catalog">
       <div class="main-header__top">
         <a href="index.html" class="main-header__logo">
           <picture>
@@ -28,13 +28,13 @@
         <div class="main-nav__container">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="index.html" class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link" href="#">Каталог продукции</a>
+              <a href="index.html" class="main-nav__link main-nav__link--catalog">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Подбор программы</a>
+              <a class="main-nav__link main-nav__link--catalog main-nav__link--current-catalog" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--catalog" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -43,54 +43,52 @@
   </header>
 
   <main class="main-catalog">
-    <div class="main-catalog__container">
-
-      <section class="catalog">
-        <h1 class="catalog__title">Каталог продукции</h1>
-        <ul class="catalog__list">
-          <div class="catalog__item-container">
-            <li class="catalog__item card">
-              <a href="#" class="card__link-img">
-                <picture>
-                  <!-- <source type="image/webp" media="(min-width: 1280x)"
+    <section class="catalog">
+      <h1 class="catalog__title">Каталог продукции</h1>
+      <ul class="catalog__list">
+        <div class="catalog__item-container">
+          <li class="catalog__item card">
+            <a href="#" class="card__link-img">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1280x)"
                     srcset="img/catalog-image/cat-chicken500-decktop@1x.webp, img/catalog-image/cat-chicken500-decktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 760px)"
                     srcset="img/catalog-image/cat-chicken500-tablet@1x.webp, img/catalog-image/cat-chicken500-tablet@2x.webp 2x">
                   <source type="image/webp"
                     srcset="img/catalog-image/cat-chicken500-mobile@1x.webp, img/catalog-image/cat-chicken500-mobile@2x.webp 2x"> -->
-                  <source media="(min-width: 1280px)"
-                    srcset="img/catalog-image/cat-chicken500-desktop@1x.png, img/catalog-image/cat-chicken500-desktop@2x.png 2x">
-                  <source media="(min-width: 760px)"
-                    srcset="img/catalog-image/cat-chicken500-tablet@1x.png, img/catalog-image/cat-chicken500-tablet@2x.png 2x">
-                  <img class="card__image" src="img/catalog-image/cat-chicken500-mobile@1x.jpg"
-                    srcset="img/catalog-image/cat-chicken500-mobile@2x.jpg 2x"
-                    alt="Картинка коробки с кормом Кэт Энерджи Курица 500 грамм.">
-                </picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog-image/cat-chicken500-desktop@1x.png, img/catalog-image/cat-chicken500-desktop@2x.png 2x">
+                <source media="(min-width: 760px)"
+                  srcset="img/catalog-image/cat-chicken500-tablet@1x.png, img/catalog-image/cat-chicken500-tablet@2x.png 2x">
+                <img class="card__image card__image--little" src="img/catalog-image/cat-chicken500-mobile@1x.jpg"
+                  srcset="img/catalog-image/cat-chicken500-mobile@2x.jpg 2x"
+                  alt="Картинка коробки с кормом Кэт Энерджи Курица 500 грамм.">
+              </picture>
+            </a>
+            <div class="card__text-content">
+              <a href="#" class="card__link">
+                <h3 class="card__title">Cat Energy Pro 500&nbsp;г</h3>
               </a>
-              <div class="card__text-content">
-                <a href="#" class="card__link">
-                  <h3 class="card__title">Cat Energy Pro 500&nbsp;г</h3>
-                </a>
-                <table class="card__descr">
-                  <tr>
-                    <td class="card__variable">Масса</td>
-                    <td class="value">500 г</td>
-                  </tr>
-                  <tr>
-                    <td class="card__variable">Вкус</td>
-                    <td class="value">Курица</td>
-                  </tr>
-                  <tr>
-                    <td class="card__variable">Цена</td>
-                    <td class="value">700 ₽</td>
-                  </tr>
-                </table>
-              </div>
-              <button class="card__button button button--green button--card" type="button">Заказать</button>
+              <table class="card__descr">
+                <tr>
+                  <td class="card__variable">Масса</td>
+                  <td class="value">500 г</td>
+                </tr>
+                <tr>
+                  <td class="card__variable">Вкус</td>
+                  <td class="value">Курица</td>
+                </tr>
+                <tr>
+                  <td class="card__variable">Цена</td>
+                  <td class="value card--last-letter">700 ₽</td>
+                </tr>
+              </table>
+            </div>
+            <button class="card__button button button--green button--card" type="button">Заказать</button>
 
-            </li>
-          </div>
-          <div class="catalog__item-container">
+          </li>
+        </div>
+        <div class="catalog__item-container">
           <li class="catalog__item card">
             <a href="#" class="card__link-img">
               <picture>
@@ -129,8 +127,9 @@
               </table>
             </div>
             <button class="card__button button button--green button--card" type="button">Заказать</button>
-          </li></div>
-          <div class="catalog__item-container">
+          </li>
+        </div>
+        <div class="catalog__item-container">
           <li class="catalog__item card">
             <a href="#" class="card__link-img">
               <picture>
@@ -144,7 +143,7 @@
                   srcset="img/catalog-image/cat-fish500-desktop@1x.png, img/catalog-image/cat-fish500-desktop@2x.png 2x">
                 <source media="(min-width: 760px)"
                   srcset="img/catalog-image/cat-fish500-tablet@1x.png, img/catalog-image/cat-fish500-tablet@2x.png 2x">
-                <img class="card__image" src="img/catalog-image/cat-fish500-mobile@1x.jpg"
+                <img class="card__image card__image--little" src="img/catalog-image/cat-fish500-mobile@1x.jpg"
                   srcset="img/catalog-image/cat-fish500-mobile@2x.jpg 2x"
                   alt="Картинка коробки с кормом Кэт Энерджи Рыба 500 грамм.">
               </picture>
@@ -169,8 +168,9 @@
               </table>
             </div>
             <button class="card__button button button--green button--card" type="button">Заказать</button>
-          </li></div>
-          <div class="catalog__item-container">
+          </li>
+        </div>
+        <div class="catalog__item-container">
           <li class="catalog__item card">
             <a href="#" class="card__link-img">
               <picture>
@@ -210,8 +210,8 @@
             </div>
             <button class="card__button button button--green button--card" type="button">Заказать</button>
           </li>
-          </div>
-          <div class="catalog__item-container">
+        </div>
+        <div class="catalog__item-container">
           <li class="catalog__item card">
             <a href="#" class="card__link-img">
               <picture>
@@ -225,7 +225,7 @@
                   srcset="img/catalog-image/cat-buckwheat500-desktop@1x.png, img/catalog-image/cat-buckwheat500-desktop@2x.png 2x">
                 <source media="(min-width: 760px)"
                   srcset="img/catalog-image/cat-buckwheat500-tablet@1x.png, img/catalog-image/cat-buckwheat500-tablet@2x.png 2x">
-                <img class="card__image" src="img/catalog-image/cat-buckwheat500-mobile@1x.jpg"
+                <img class="card__image card__image--little" src="img/catalog-image/cat-buckwheat500-mobile@1x.jpg"
                   srcset="img/catalog-image/cat-buckwheat500-mobile@2x.jpg 2x"
                   alt="Картинка коробки с кормом Кэт Энерджи Гречка 500 грамм.">
               </picture>
@@ -250,8 +250,9 @@
               </table>
             </div>
             <button class="card__button button button--green button--card" type="button">Заказать</button>
-          </li></div>
-          <div class="catalog__item-container">
+          </li>
+        </div>
+        <div class="catalog__item-container">
           <li class="catalog__item card">
             <a href="#" class="card__link-img">
               <picture>
@@ -290,8 +291,9 @@
               </table>
             </div>
             <button class="card__button button button--green button--card" type="button">Заказать</button>
-          </li></div>
-          <div class="catalog__item-container">
+          </li>
+        </div>
+        <div class="catalog__item-container">
           <li class="catalog__item card">
             <a href="#" class="card__link-img">
               <picture>
@@ -305,7 +307,7 @@
                   srcset="img/catalog-image/cat-rice500-desktop@1x.png, img/catalog-image/cat-rice500-desktop@2x.png 2x">
                 <source media="(min-width: 760px)"
                   srcset="img/catalog-image/cat-rice500-tablet@1x.png, img/catalog-image/cat-rice500-tablet@2x.png 2x">
-                <img class="card__image" src="img/catalog-image/cat-rice500-mobile@1x.jpg"
+                <img class="card__image card__image--little" src="img/catalog-image/cat-rice500-mobile@1x.jpg"
                   srcset="img/catalog-image/cat-rice500-mobile@2x.jpg 2x"
                   alt="Картинка коробки с кормом Кэт Энерджи Рис 500 грамм.">
               </picture>
@@ -330,26 +332,32 @@
               </table>
             </div>
             <button class="card__button button button--green button--card" type="button">Заказать</button>
-          </li></div>
-          <div class="catalog__item-container">
+          </li>
+        </div>
+        <div class="catalog__item-container">
           <li class="catalog__item card card--show-all">
-            <div class="card__text-content--show-all">
+            <a href="" class="card__link-img card__link-img--show-all">
+              <svg class="card__image card__image--show-all">
+                <use xlink:href="img/sprite.svg#plus" xmlns="http://www.w3.org/2000/svg"></use>
+              </svg>
+            </a>
+            <div class="card__text-content card__text-content--show-all">
               <a href="" class="card__link">
-                <h3 class="card__title card__title-show-all">Показать еще 100500 товаров</h3>
+                <h3 class="card__title card__title--show-all">Показать еще 100500 товаров</h3>
               </a>
-              <p class="card__show-all-descr">На самом деле вкусов гораздо больше!</p>
+              <p class="card__descr card__descr--show-all">На самом деле вкусов гораздо больше!</p>
             </div>
             <button class="card__button card__button--show-all button button--grey button--card" type="button">Показать
               все</button>
-          </li></div>
-        </ul>
-      </section>
+          </li>
+        </div>
+      </ul>
+    </section>
 
-      <section class="cross-sell">
-        <div class="cross-sell__container">
+    <section class="cross-sell">
+      <div class="cross-sell__container">
         <h2 class="cross-sell__title">Дополнительные товары</h2>
         <ul class="cross-sell__list">
-          <div class="catalog__item-container">
           <li class="cross-sell__item">
             <h3 class="cross-sell__item-title">Сахорозаменитель</h3>
             <p class="cross-sell__item-descr">
@@ -358,8 +366,6 @@
             </p>
             <button class="cross-sell__button button button--green" type="button">Заказать</button>
           </li>
-          </div>
-          <div class="catalog__item-container">
           <li class="cross-sell__item">
             <h3 class="cross-sell__item-title">Питьевая вода</h3>
             <p class="cross-sell__item-descr">
@@ -368,8 +374,6 @@
             </p>
             <button class="cross-sell__button button button--green" type="button">Заказать</button>
           </li>
-          </div>
-          <div class="catalog__item-container">
           <li class="cross-sell__item">
             <h3 class="cross-sell__item-title">Молоко</h3>
             <p class="cross-sell__item-descr">
@@ -377,8 +381,7 @@
               <span class="cross-sell__cost">100 ₽</span>
             </p>
             <button class="cross-sell__button button button--green" type="button">Заказать</button>
-          </li></div>
-          <div class="catalog__item-container">
+          </li>
           <li class="cross-sell__item">
             <h3 class="cross-sell__item-title">Витамины</h3>
             <p class="cross-sell__item-descr">
@@ -387,12 +390,9 @@
             </p>
             <button class="cross-sell__button button button--green" type="button">Заказать</button>
           </li>
-          </div>
         </ul>
-      </div>
-      </section>
 
-      <section class="gift">
+      <div class="gift">
         <div class="gift__container">
           <h2 class="visually-hidden">Подарочная акция</h2>
           <a href="#" class="gift__link" target="_blank">
@@ -400,21 +400,37 @@
               <use xlink:href="img/sprite.svg#icon-gift" xmlns="http://www.w3.org/2000/svg"></use>
             </svg>
           </a>
-          <p class="gift__descr">Закажите все и получите чехол для кота в подарок!</p>
+          <p class="gift__descr">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
         </div>
-      </section>
+      </div>
+    </div>
+    </section>
+
+    <!-- <section class="gift">
+      <div class="gift__container">
+        <h2 class="visually-hidden">Подарочная акция</h2>
+        <a href="#" class="gift__link" target="_blank">
+          <svg class="gift__link-icon">
+            <use xlink:href="img/sprite.svg#icon-gift" xmlns="http://www.w3.org/2000/svg"></use>
+          </svg>
+        </a>
+        <p class="gift__descr">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+      </div>
+    </section> -->
 
 
-      <section class="contacts">
-        <div class="contacts__text-content contacts__text-content--grey-background">
-          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
-        </div>
+    <section class="contacts">
+      <div class="contacts__text-content">
+        <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+      </div>
+      <div class="contacts__map-container">
         <iframe class="contacts__map"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ce5e59beeaad92a430c0a1f580c103606c84bb01859606abf5e28c924734dc4&amp;source=constructor">
         </iframe>
-      </section>
-    </div>
+        <div class="contacts__map-pin"></div>
+      </div>
+    </section>
   </main>
 
   <footer class="main-footer">

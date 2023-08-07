@@ -67,6 +67,9 @@
   }
 }
 
+//******************* TABLET ***********************//
+
+
 @media (min-width: $tablet-width) {
   .main-nav {
     display: flex;
@@ -109,6 +112,9 @@
   }
 }
 
+//******************* DESKTOP***********************//
+
+
 @media (min-width: $desktop-width) {
   .main-nav {
     max-width: 650px;
@@ -124,13 +130,21 @@
     &__link {
       font-size: 20px;
       line-height: 20px;
-      //color: $light-color;
       color: $light-color;
+      padding-bottom: 8px;
+
+    }
+
+    &__link--catalog {
+      color: $nav-desktop;
     }
 
     &__link--current {
       border-bottom: 2px solid $light-color;
-      padding-bottom: 11px;
+    }
+
+    &__link--current-catalog {
+      border-bottom: 2px solid $basic-green;
     }
   }
 }

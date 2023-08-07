@@ -24,6 +24,7 @@
   }
 
   &__address {
+    font-family: $font-second;
     line-height: 20px;
     font-weight: 400;
     font-style: normal;
@@ -63,6 +64,9 @@
 
 }
 
+//******************* TABLET ***********************//
+
+
 @media (min-width: $tablet-width) {
   .contacts {
 
@@ -99,11 +103,14 @@
     &__map-pin::before {
       width: 113px;
       height: 106px;
-      transform: translate(293%, -240%);
+      transform: translate(276%, -240%);
 
     }
   }
 }
+
+
+//******************* DESKTOP ***********************//
 
 @media (min-width: $desktop-width) {
   .contacts {
