@@ -96,8 +96,28 @@
 
   }
 }
+ //** Удалить эксперимент **//
+.cat-like {
+  display: none;
+}
+
+@media (min-width: 1150px) {
+  .cat-like {
+    display: block;
+    width: 550px;
+    position: absolute;
+    right: 20px;
+    top: 130px;
+  }
+}
 
 @media (min-width: $desktop-width) {
+
+   //** Удалить эксперимент **//
+.cat-like {
+  display: none;
+}
+
   .promo {
     position: relative;
 
