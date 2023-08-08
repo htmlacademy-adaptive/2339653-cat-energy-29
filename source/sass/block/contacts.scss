@@ -10,7 +10,6 @@
     &--grey-background {
       background-color: $basic-grey;
     }
-
   }
 
   &__title {
@@ -47,8 +46,11 @@
   &__map-pin {
     position: absolute;
     transition: opacity 0.3s ease-in-out;
-  }
 
+    &:hover {
+      opacity: 0;
+    }
+  }
 
   &__map-pin::before {
     position: absolute;
@@ -61,7 +63,6 @@
     z-index: 100;
     transform: translate(242%, -424%);
   }
-
 }
 
 //******************* TABLET ***********************//
