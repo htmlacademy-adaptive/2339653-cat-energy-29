@@ -96,7 +96,8 @@
 
   }
 }
- //** Удалить эксперимент **//
+
+//** Удалить эксперимент **//
 .cat-like {
   display: none;
 }
@@ -108,62 +109,81 @@
     position: absolute;
     right: 20px;
     top: 130px;
+
+    animation: fadeInFromNone 0.5s ease-in-out;
   }
-}
 
-@media (min-width: $desktop-width) {
-
-   //** Удалить эксперимент **//
-.cat-like {
-  display: none;
-}
-
-  .promo {
-    position: relative;
-
-    &--bcg::before {
-      content: "";
-      position: absolute;
-      background:
-        url("../../img/promo-background-desktop.jpg"),
-        $basic-green;
-      background-repeat: no-repeat;
-      width: 50%;
-      height: 100%;
-      background-size: cover;
-      right: 0;
-
+  @keyframes fadeInFromNone {
+    0% {
+      display: none;
+      opacity: 0;
     }
 
-    &__container {
-      width: 100%;
-      min-height: 694px;
-      position: relative;
-      margin: 0;
-      padding: 118px 190px 0 190px;
-      justify-content: flex-start;
-
-    }
-
-    &__text-content {
-      max-width: 480px;
-      min-height: 184px;
-      background: none;
-      margin-top: 107px;
-      padding: 0;
-
-    }
-
-
-    &__image {
+    1% {
       display: block;
-      position: absolute;
-      z-index: 1;
-      top: 16%;
-      left: 58%;
-      transform: translate(-50%, 33%);
+      opacity: 0;
+    }
 
-
+    100% {
+      display: block;
+      opacity: 1;
     }
   }
 }
+
+  @media (min-width: $desktop-width) {
+
+    //** Удалить эксперимент **//
+    .cat-like {
+      display: none;
+    }
+
+    .promo {
+      position: relative;
+
+      &--bcg::before {
+        content: "";
+        position: absolute;
+        background:
+          url("../../img/promo-background-desktop.jpg"),
+          $basic-green;
+        background-repeat: no-repeat;
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        right: 0;
+
+      }
+
+      &__container {
+        width: 100%;
+        min-height: 694px;
+        position: relative;
+        margin: 0;
+        padding: 118px 190px 0 190px;
+        justify-content: flex-start;
+
+      }
+
+      &__text-content {
+        max-width: 480px;
+        min-height: 184px;
+        background: none;
+        margin-top: 107px;
+        padding: 0;
+
+      }
+
+
+      &__image {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 16%;
+        left: 58%;
+        transform: translate(-50%, 33%);
+
+
+      }
+    }
+  }

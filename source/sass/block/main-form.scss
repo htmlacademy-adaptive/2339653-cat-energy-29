@@ -1,0 +1,119 @@
+.main-form {
+  &__container {
+    padding: 27px 20px 32px 20px;
+    border-top: 1px solid #d9d9d9;
+  }
+}
+
+.program-form {
+
+  &__title {
+    margin: 0;
+    font-family: $font-page;
+    color: $main-color;
+    font-size: $font-huge;
+    line-height: 36px;
+    font-weight: 400;
+    margin-bottom: 37px;
+  }
+
+  &__descr {
+    margin: 0;
+    color: $main-color;
+    text-transform: uppercase;
+    padding-right: 40px;
+    margin-bottom: 37px;
+  }
+
+  &__field {
+    margin: 0;
+    width: 100%;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  &__label {
+    padding: 0;
+    font-size: $font-medium;
+    text-transform: uppercase;
+    display: flex;
+    gap: 13px;
+    align-items: center;
+  }
+
+  &__label-text {
+    white-space: nowrap;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 14px 15px 13px 15px;
+
+    &::placeholder {
+      font-family: $font-page;
+      color: $main-color;
+      font-size: $font-medium;
+      line-height: 18px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__field--select-program {
+    border: none;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 22px 0 19px 0;
+    margin-bottom: 26px;
+  }
+
+  &__subtitle {
+    padding: 0;
+    padding: 0;
+    max-width: 250px;
+    font-size: $font-big;
+    line-height: 26px;
+    margin-bottom: 36px;
+  }
+
+  &__field--contacts {
+    margin-bottom: 24px;
+  }
+
+  &__field--comment {
+    margin-bottom: 23px;
+  }
+
+  &__textarea {
+    padding: 15px 13px;
+    min-height: 150px;
+
+    &::placeholder {
+      font-family: $font-page;
+      color: $main-color;
+      font-size: $font-medium;
+      line-height: 18px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  &__bottom-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__button {
+    width: 100%;
+  }
+
+  &__footnote {
+    padding-left: 25px;
+    width: 200px;
+  }
+}
