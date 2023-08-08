@@ -77,6 +77,14 @@
     font-size: $font-big;
     line-height: 26px;
     margin-bottom: 36px;
+
+    &--comment {
+      margin-bottom: 87px;
+    }
+
+    &--extra {
+      margin-bottom: 57px;
+    }
   }
 
   &__field--contacts {
@@ -206,9 +214,9 @@
     }
 
     &__field--extra {
-display: grid;
-grid-template-columns: 1fr 1fr;
-row-gap: 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 32px;
 
     }
 
@@ -233,5 +241,86 @@ row-gap: 32px;
       line-height: 16px;
     }
 
+  }
+}
+
+
+//********************** DESKTOP **********************//
+
+@media (min-width: $desktop-width) {
+  .main-form {
+    &__container {
+      padding: 60px 110px 80px 110px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-form {
+    grid-column: 2 span;
+
+    &__form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "user programs"
+        "contacts contacts"
+        "comment comment"
+        "extra extra"
+        "bottom bottom";
+      column-gap: 80px;
+    }
+
+    &__field--user-info {
+      grid-area: user;
+      margin-bottom: 70px;
+    }
+
+    &__field--select-program {
+      grid-area: programs;
+      border: 1px solid #e7e7e7;
+      padding: 23px 27px 27px 27px;
+      margin-bottom: 70px;
+      justify-content: space-around;
+
+    }
+
+    &__subtitle {
+      &--comment {
+        margin-bottom: 78px;
+      }
+    }
+
+    &__field--contacts {
+      grid-area: contacts;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 80px;
+      margin-bottom: 70px;
+    }
+
+    &__field--comment {
+      grid-area: comment;
+      margin-bottom: 70px;
+    }
+
+    &__textarea {
+      padding: 9px 20px;
+    }
+
+    &__field--extra {
+      grid-area: extra;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 80px;
+    }
+
+    &__bottom-container {
+      grid-area: bottom;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
   }
 }
