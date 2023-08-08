@@ -71,7 +71,7 @@
   }
 
   &__subtitle {
-    padding: 0;
+    margin: 0;
     padding: 0;
     max-width: 250px;
     font-size: $font-big;
@@ -115,5 +115,123 @@
   &__footnote {
     padding-left: 25px;
     width: 200px;
+  }
+}
+
+
+//********************** TABLET **********************//
+
+@media (min-width: $tablet-width) {
+  .main-form {
+    &__container {
+      padding: 50px 70px 60px 70px;
+      border-top: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-form {
+    grid-column: 2 span;
+
+    &__title {
+      font-size: 60px;
+      line-height: 60ppx;
+      margin-bottom: 54px;
+    }
+
+    &__descr {
+      width: 350px;
+      padding-right: 20px;
+      margin-bottom: 66px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__field {
+      gap: 20px;
+      margin-bottom: 72px;
+    }
+
+    &__label {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__input {
+      padding: 11px 20px 11px 20px;
+      font-size: 20px;
+      line-height: 20px;
+
+      &::placeholder {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+
+    &__field--select-program {
+      border: 1px solid #e7e7e7;
+      padding: 23px 27px 27px 27px;
+      margin-bottom: 65px;
+    }
+
+    &__subtitle {
+      max-width: 540px;
+      font-size: $font-huge;
+      line-height: 36px;
+      margin-bottom: 76px;
+    }
+
+    &__field--contacts {
+      margin-bottom: 65px;
+    }
+
+    &__field--comment {
+      margin-bottom: 65px;
+    }
+
+    &__textarea {
+      padding: 11px 20px;
+      min-height: 175px;
+      font-size: 20px;
+      line-height: 30px;
+
+      &::placeholder {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: start;
+      }
+    }
+
+    &__field--extra {
+display: grid;
+grid-template-columns: 1fr 1fr;
+row-gap: 32px;
+
+    }
+
+    &__bottom-container {
+      flex-direction: row;
+      gap: 64px;
+      align-items: center;
+      // justify-content: start;
+    }
+
+    &__button {
+      width: auto;
+      font-size: 20px;
+      line-height: 20px;
+      padding: 14px 45px;
+    }
+
+    &__footnote {
+      padding-left: 0px;
+      width: auto;
+      font-size: 16px;
+      line-height: 16px;
+    }
+
   }
 }
