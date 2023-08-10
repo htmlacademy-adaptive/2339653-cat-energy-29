@@ -1,5 +1,5 @@
 .example {
-  background-color: $basic-grey;
+  background-color: $light-grey2;
   padding-bottom: 37px;
 
   &__container {
@@ -11,8 +11,8 @@
   &__title {
     margin: 0;
     margin-bottom: 26px;
-    font-size: $font-huge;
-    color: $main-color;
+    font-size: $font-big;
+    color: $default-black;
     line-height: 40px;
     font-weight: 400;
   }
@@ -42,11 +42,11 @@
     padding-bottom: 17px;
     width: 124px;
     text-align: center;
-    font-size: $font-big;
+    font-size: $font-large;
     line-height: 24px;
-    color: $main-color;
+    color: $default-black;
     text-transform: uppercase;
-    border: 1px solid #d9d9d9;
+    border: 1px solid $light-grey9;
     border-radius: 5px;
   }
 
@@ -60,7 +60,7 @@
     padding: 0 10px 0;
     margin-left: auto;
     margin-right: auto;
-    background: $basic-grey;
+    background: $light-grey2;
   }
 
   &__expenses {
@@ -70,7 +70,7 @@
     align-self: center;
 
     margin-bottom: 20px;
-    color: $main-color;
+    color: $default-black;
     line-height: 20px;
     text-transform: uppercase;
   }
@@ -86,7 +86,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background: linear-gradient(to top, $basic-grey 30%, $light-color 30%);
+    background: linear-gradient(to top, $light-grey2 30%, $default-white 30%);
 
     padding-bottom: 101px;
 
@@ -100,7 +100,7 @@
 
     &__title {
       margin-bottom: 60px;
-      font-size: 60px;
+      font-size: $font-huge;
       line-height: 60px;
       grid-column: 4 span;
     }
@@ -141,7 +141,7 @@
       font-size: 14px;
       line-height: 14px;
       padding: 0;
-      background: $light-color;
+      background: $default-white;
     }
 
 
@@ -162,7 +162,7 @@
       padding: 0;
       display: flex;
       justify-content: center;
-      background: linear-gradient(to top, $basic-grey 70%, $light-color 70%);
+      background: linear-gradient(to top, $light-grey2 70%, $default-white 70%);
     }
   }
 }
@@ -171,7 +171,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient(to top, $basic-grey 70%, $light-color 70%);
+    background: linear-gradient(to top, $light-grey2 70%, $default-white 70%);
     display: flex;
     align-items: center;
     padding-bottom: 0;
@@ -209,7 +209,7 @@
     }
 
     &__block-descr {
-      background: $basic-grey;
+      background: $light-grey2;
     }
 
     &__expenses {

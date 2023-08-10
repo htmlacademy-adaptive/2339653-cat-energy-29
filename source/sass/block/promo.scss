@@ -19,16 +19,16 @@
   &__title {
     margin: 0;
     margin-bottom: 25px;
-    font-size: $font-huge;
+    font-size: $font-big;
     line-height: 36px;
     font-weight: 400;
-    color: $light-color;
+    color: $default-white;
     text-align: center;
   }
 
   &__descr {
     margin: 0;
-    color: $light-color;
+    color: $default-white;
     line-height: 14px;
     text-transform: uppercase;
     text-align: center;
@@ -63,15 +63,15 @@
     }
 
     &__title {
-      color: $main-color;
-      font-size: 60px;
+      color: $default-black;
+      font-size: $font-huge;
       line-height: 60px;
       text-align: start;
       margin-bottom: 40px;
     }
 
     &__descr {
-      color: $main-color;
+      color: $default-black;
       text-align: start;
       font-size: 20px;
       line-height: 20px;

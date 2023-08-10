@@ -19,7 +19,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     align-items: center;
-    background-color: $basic-grey;
+    background-color: $light-grey2;
   }
 
   &__logo {
@@ -40,8 +40,8 @@
 
   &__title {
     margin: 0;
-    font-size: $font-big;
-    color: $main-color;
+    font-size: $font-large;
+    color: $default-black;
     line-height: 37px;
     font-weight: 400;
     text-transform: uppercase;
@@ -54,7 +54,7 @@
     font-family: $font-second;
     line-height: 18px;
     grid-column: span 4;
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid $light-grey9;
   }
 
   &__catalog-link {
@@ -67,7 +67,7 @@
     align-items: center;
     gap: 15px;
     padding-top: 15px;
-    color: $main-color;
+    color: $default-black;
     position: relative;
 
     &::after {
@@ -114,7 +114,7 @@
 
     &__title {
       grid-area: title;
-      font-size: $font-huge;
+      font-size: $font-big;
       line-height: 36px;
     }
 
@@ -200,7 +200,7 @@
     &__title {
       margin-bottom: auto;
       padding-top: 36px;
-      font-size: $font-huge;
+      font-size: $font-big;
       line-height: 36px;
       grid-column: 2/4;
       grid-row: 1;
@@ -225,7 +225,7 @@
       display: flex;
       align-items: center;
       padding-top: 10px;
-      color: $main-color;
+      color: $default-black;
       position: relative;
       margin-top: auto;
 

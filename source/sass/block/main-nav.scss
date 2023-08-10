@@ -30,7 +30,7 @@
   &__container {
     display: block;
     position: absolute;
-    background-color: $light-color;
+    background-color: $default-white;
     width: 100%;
   }
 
@@ -48,7 +48,7 @@
     @include link-style;
     text-transform: uppercase;
     text-align: center;
-    color: $main-color;
+    color: $default-black;
     font-size: 20px;
     transition: opacity 0.3s ease-in-out;
 
@@ -130,7 +130,7 @@
     &__link {
       font-size: 20px;
       line-height: 20px;
-      color: $light-color;
+      color: $default-white;
       padding-bottom: 8px;
 
     }
@@ -140,7 +140,7 @@
     }
 
     &__link--current {
-      border-bottom: 2px solid $light-color;
+      border-bottom: 2px solid $default-white;
     }
 
     &__link--current-catalog {

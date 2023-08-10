@@ -36,7 +36,7 @@
 
   &__link {
     @include link-style;
-    color: $main-color;
+    color: $default-black;
     grid-column: 2;
   }
 
@@ -99,7 +99,7 @@
     padding-bottom: 37px;
     padding-left: 37px;
     padding-right: 37px;
-    background: linear-gradient(to top, $basic-grey 82%, $light-color 82%);
+    background: linear-gradient(to top, $light-grey2 82%, $default-white 82%);
 
     &--show-all {
       min-height: 429px;
@@ -107,7 +107,7 @@
       padding: 37px 20px;
       padding-top: 3px;
       background: none;
-      border: 2px solid $basic-grey;
+      border: 2px solid $light-grey2;
       margin-top: 92px;
     }
 
@@ -173,7 +173,7 @@
     &__descr tr {
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid #cdcdcd;
+      border-bottom: 1px solid $light-grey-d;
       margin-top: 4px;
       padding-bottom: 5px;
     }
@@ -198,7 +198,7 @@
       padding: 37px 20px;
       padding-top: 3px;
       background: none;
-      border: 2px solid $basic-grey;
+      border: 2px solid $light-grey2;
       margin-right: auto;
     }
 
@@ -266,7 +266,7 @@
     &__descr tr {
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid #cdcdcd;
+      border-bottom: 1px solid $light-grey-d;
       margin-top: 4px;
       padding-bottom: 5px;
     }

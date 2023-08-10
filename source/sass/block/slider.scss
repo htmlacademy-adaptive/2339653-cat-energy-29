@@ -2,7 +2,7 @@
   position: relative;
   // overflow: hidden;
   width: 100%;
-  // background-color: $basic-grey;
+  // background-color: $light-grey2;
 
   &__image {
     display: block;
@@ -21,7 +21,7 @@
     height: 100%;
     left: 0;
     top: 0;
-    background-color: $basic-grey;
+    background-color: $light-grey2;
   }
 
   &__toggle {
@@ -30,7 +30,7 @@
     top: 0;
     width: 2px;
     height: 100%;
-    background-color: #666666;
+    background-color: $grey600;
     padding: 0;
 
     &::after {
@@ -55,11 +55,11 @@
   .slider {
     width: 560px;
     height: 512px;
-    background: linear-gradient(to top, $basic-grey 70%, $light-color 70%);
+    background: linear-gradient(to top, $light-grey2 70%, $default-white 70%);
 
     &__before,
     &__after {
-      background: linear-gradient(to top, $basic-grey 70%, $light-color 70%);
+      background: linear-gradient(to top, $light-grey2 70%, $default-white 70%);
     }
   }
 }

@@ -4,15 +4,15 @@
   grid-template-columns: 1fr;
   justify-content: center;
 
-  border-top: 1px solid #cdcdcd;
-  border-bottom: 1px solid #cdcdcd;
+  border-top: 1px solid $light-grey-d;
+  border-bottom: 1px solid $light-grey-d;
 
   &__title {
     padding: 20px;
     padding-top: 27px;
     padding-bottom: 41px;
     margin: 0;
-    font-size: $font-huge;
+    font-size: $font-big;
     line-height: 36px;
     font-weight: 400;
   }
@@ -22,7 +22,7 @@
   }
 
   &__item-container {
-    border-top: 1px solid #cdcdcd;
+    border-top: 1px solid $light-grey-d;
 
   }
 }
@@ -41,7 +41,7 @@
       padding-top: 45px;
       padding-bottom: 71px;
       margin: 0;
-      font-size: 60px;
+      font-size: $font-huge;
       line-height: 60px;
       font-weight: 400;
     }

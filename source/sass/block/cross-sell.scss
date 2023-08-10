@@ -11,7 +11,7 @@
     grid-column: 2 span;
     padding-right: 20px;
     padding-bottom: 36px;
-    font-size: $font-big;
+    font-size: $font-large;
     line-height: 24px;
     font-weight: 400;
     position: relative;
@@ -35,12 +35,12 @@
   &__list {
     @include list-reset;
     grid-column: 2 span;
-    border-top: 1px solid #cdcdcd;
+    border-top: 1px solid $light-grey-d;
   }
 
   &__item {
     padding-bottom: 19px;
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $light-grey-d;
   }
 
   &__item-title {
@@ -78,7 +78,7 @@
       padding-left: 40px;
       padding-right: 20px;
       padding-bottom: 80px;
-      font-size: $font-huge;
+      font-size: $font-big;
       line-height: 36px;
 
       &::after {
@@ -120,7 +120,7 @@
       padding-bottom: 27px;
       padding-left: 38px;
       padding-right: 38px;
-      border-bottom: 1px solid #cdcdcd;
+      border-bottom: 1px solid $light-grey-d;
       padding-top: 6px;
     }
 
@@ -179,7 +179,7 @@
       padding-bottom: 17px;
       padding-left: 0;
       padding-right: 0;
-      border-bottom: 1px solid #cdcdcd;
+      border-bottom: 1px solid $light-grey-d;
     }
 
     &__item-title {

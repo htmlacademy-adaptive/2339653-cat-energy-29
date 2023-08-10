@@ -1,7 +1,7 @@
 .main-form {
   &__container {
     padding: 27px 20px 32px 20px;
-    border-top: 1px solid #d9d9d9;
+    border-top: 1px solid $light-grey9;
   }
 }
 
@@ -10,8 +10,8 @@
   &__title {
     margin: 0;
     font-family: $font-page;
-    color: $main-color;
-    font-size: $font-huge;
+    color: $default-black;
+    font-size: $font-big;
     line-height: 36px;
     font-weight: 400;
     margin-bottom: 37px;
@@ -19,7 +19,7 @@
 
   &__descr {
     margin: 0;
-    color: $main-color;
+    color: $default-black;
     text-transform: uppercase;
     padding-right: 40px;
     margin-bottom: 37px;
@@ -55,7 +55,7 @@
 
     &::placeholder {
       font-family: $font-page;
-      color: $main-color;
+      color: $default-black;
       font-size: $font-medium;
       line-height: 18px;
       text-transform: uppercase;
@@ -64,8 +64,8 @@
 
   &__field--select-program {
     border: none;
-    border-top: 1px solid #d9d9d9;
-    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid $light-grey9;
+    border-bottom: 1px solid $light-grey9;
     padding: 22px 0 19px 0;
     margin-bottom: 26px;
   }
@@ -74,7 +74,7 @@
     margin: 0;
     padding: 0;
     max-width: 250px;
-    font-size: $font-big;
+    font-size: $font-large;
     line-height: 26px;
     margin-bottom: 36px;
 
@@ -101,7 +101,7 @@
 
     &::placeholder {
       font-family: $font-page;
-      color: $main-color;
+      color: $default-black;
       font-size: $font-medium;
       line-height: 18px;
       text-transform: uppercase;
@@ -145,7 +145,7 @@
     grid-column: 2 span;
 
     &__title {
-      font-size: 60px;
+      font-size: $font-huge;
       line-height: 60ppx;
       margin-bottom: 54px;
     }
@@ -180,14 +180,14 @@
     }
 
     &__field--select-program {
-      border: 1px solid #e7e7e7;
+      border: 1px solid $light-grey7;
       padding: 23px 27px 27px 27px;
       margin-bottom: 65px;
     }
 
     &__subtitle {
       max-width: 540px;
-      font-size: $font-huge;
+      font-size: $font-big;
       line-height: 36px;
       margin-bottom: 76px;
     }
@@ -278,7 +278,7 @@
 
     &__field--select-program {
       grid-area: programs;
-      border: 1px solid #e7e7e7;
+      border: 1px solid $light-grey7;
       padding: 23px 27px 27px 27px;
       margin-bottom: 70px;
       justify-content: space-around;

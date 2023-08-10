@@ -8,7 +8,7 @@
     align-items: center;
 
     &--grey-background {
-      background-color: $basic-grey;
+      background-color: $light-grey2;
     }
   }
 
@@ -121,7 +121,7 @@
       position: absolute;
       z-index: 15;
       display: flex;
-      background-color: $light-color;
+      background-color: $default-white;
       width: 565px;
       padding: 60px 80px;
       top: 24%;

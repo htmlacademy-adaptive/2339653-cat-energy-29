@@ -10,7 +10,7 @@
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
   &--green {
-    color: $light-color;
+    color: $default-white;
     background-color: $basic-green;
 
     &:hover {
@@ -25,10 +25,10 @@
 
   &--grey {
 
-    background-color: $basic-grey;
+    background-color: $light-grey2;
 
     &:hover {
-      background-color: #ebebeb;
+      background-color: $light-grey-b;
     }
 
     &:active {
