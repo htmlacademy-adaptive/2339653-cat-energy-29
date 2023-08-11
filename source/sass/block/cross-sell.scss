@@ -1,5 +1,8 @@
 .cross-sell {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -28,7 +31,10 @@
       right: 0;
       transform: translateX(50%);
       overflow: hidden;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     }
   }
 
@@ -68,7 +74,10 @@
 
 @media (min-width: $tablet-width) {
   .cross-sell {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     &__container {
       padding: 70px 30px 0 30px;
     }
@@ -103,7 +112,10 @@
         left: -15px;
         transform: translateX(-50%);
         overflow: hidden;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
       }
     }
 
@@ -134,7 +146,11 @@
       font-size: 16px;
       line-height: 16px;
       display: flex;
+<<<<<<< HEAD
       gap: 49px
+=======
+      gap: 49px;
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     }
 
     &__button {
@@ -148,7 +164,10 @@
 
 @media (min-width: $desktop-width) {
   .cross-sell {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     &__container {
       grid-template-columns: 1fr 1fr 1fr;
       padding: 70px 30px 87px 110px;

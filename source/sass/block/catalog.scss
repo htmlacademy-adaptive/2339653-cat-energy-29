@@ -23,14 +23,20 @@
 
   &__item-container {
     border-top: 1px solid $light-grey-d;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
   }
 }
 
 //********************** TABLET **********************//
 
 @media (min-width: $tablet-width) {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
   .catalog {
     border-top: none;
     border-bottom: none;
@@ -64,13 +70,20 @@
 //********************** DESKTOP **********************//
 
 @media (min-width: $desktop-width) {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
   .catalog {
     &__title {
 
       padding: 110px;
       padding-top: 60px;
+<<<<<<< HEAD
       padding-bottom: 85pxpx;
+=======
+      padding-bottom: 85px;
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     }
 
     &__list {

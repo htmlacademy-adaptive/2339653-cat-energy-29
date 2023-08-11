@@ -1,10 +1,16 @@
 .main-header {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
   &__container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
   }
 
   &__top {
@@ -29,14 +35,21 @@
     &:active {
       opacity: 0.4;
     }
+<<<<<<< HEAD
 
   }
 
+=======
+  }
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
 }
 
 //******************* TABLET ***********************//
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
 @media (min-width: $tablet-width) {
   .main-header {
     width: 100%;
@@ -47,7 +60,10 @@
       justify-content: space-between;
       align-items: center;
       padding: 25px 30px 0 30px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     }
 
     &__top {
@@ -59,8 +75,11 @@
 
 //******************* DESKTOP***********************//
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
 @media (min-width: $desktop-width) {
   .main-header {
     &__container {
@@ -74,6 +93,9 @@
     &__container--visible {
       position: static;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
   }
 }

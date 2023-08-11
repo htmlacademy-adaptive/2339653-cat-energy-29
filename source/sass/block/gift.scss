@@ -26,7 +26,10 @@
     font-family: $font-second;
     color: $default-white;
     font-size: $font-medium;
+<<<<<<< HEAD
     line-height: 16px;
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     line-height: 20px;
   }
 
@@ -53,15 +56,23 @@
       background:
         url("../../img/catalog-image/gift-background-tablet.jpg"),
         $basic-green;
+<<<<<<< HEAD
         background-size: cover;
 
       justify-content: space-between;
 
+=======
+      background-size: cover;
+      justify-content: space-between;
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     }
 
     &__descr {
 
+<<<<<<< HEAD
       // padding: 0 100px;
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
       max-width: 161px;
       padding: 0;
       text-align: start;
@@ -74,7 +85,10 @@
       height: 82px;
     }
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
 }
 
 //******************* DESKTOP***********************//
@@ -95,8 +109,12 @@
       background:
         url("../../img/catalog-image/gift-background-desktop.jpg"),
         $basic-green;
+<<<<<<< HEAD
         background-size: cover;
 
+=======
+      background-size: cover;
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     }
 
     &__descr {
@@ -111,5 +129,8 @@
       height: 83px;
     }
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
 }

@@ -95,7 +95,10 @@
       padding-bottom: 95px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     }
 
     &__title {
@@ -167,7 +170,11 @@
   }
 }
 
+<<<<<<< HEAD
 
+=======
+//****** DESKTOP ******//
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
 
 @media (min-width: $desktop-width) {
   .example {
@@ -178,7 +185,10 @@
 
     &__container {
       width: 71%;
+<<<<<<< HEAD
       padding: 0;
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
       padding: 70px 114px 75px 110px;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -195,12 +205,18 @@
       margin-bottom: 70px;
       grid-column: 3 span;
       padding-right: 0;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     }
 
     &__blocks {
       margin-bottom: 55px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     }
 
     &__block-title {

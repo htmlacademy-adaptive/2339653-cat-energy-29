@@ -1,5 +1,8 @@
 .main-footer {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
   &__container {
     padding: 40px 20px;
     background-color: $light-grey2;
@@ -33,6 +36,10 @@
 
   &__link {
     width: 100%;
+<<<<<<< HEAD
+=======
+    /* stylelint-disable-next-line at-rule-empty-line-before */
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     @include link-style;
     display: flex;
     align-items: center;
@@ -65,7 +72,10 @@
 
 @media (min-width: $tablet-width) {
   .main-footer {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     &__container {
       padding: 61px 30px;
       background-color: $light-grey2;
@@ -87,7 +97,10 @@
 
 @media (min-width: $desktop-width) {
   .main-footer {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     &__container {
       padding: 70px 110px;
     }
