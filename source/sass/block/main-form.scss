@@ -6,10 +6,6 @@
 }
 
 .program-form {
-<<<<<<< HEAD
-
-=======
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
   &__title {
     margin: 0;
     font-family: $font-page;
@@ -37,11 +33,6 @@
     flex-direction: column;
     gap: 14px;
     margin-bottom: 14px;
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
   }
 
   &__label {
@@ -135,11 +126,7 @@
     cursor: pointer;
   }
 
-<<<<<<< HEAD
-  &__radio:checked+.program-form__label-text--radio::after {
-=======
   &__radio:checked + .program-form__label-text--radio::after {
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     opacity: 1;
   }
 
@@ -147,11 +134,7 @@
     cursor: pointer;
   }
 
-<<<<<<< HEAD
-  &__checkbox:checked+.program-form__label-text--checkbox::after {
-=======
   &__checkbox:checked + .program-form__label-text--checkbox::after {
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     opacity: 1;
   }
 
@@ -244,11 +227,7 @@
 
     &__title {
       font-size: $font-huge;
-<<<<<<< HEAD
-      line-height: 60ppx;
-=======
       line-height: 60px;
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
       margin-bottom: 54px;
     }
 
@@ -319,10 +298,6 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       row-gap: 32px;
-<<<<<<< HEAD
-
-=======
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     }
 
     &__bottom-container {
@@ -340,19 +315,11 @@
     }
 
     &__footnote {
-<<<<<<< HEAD
-      padding-left: 0px;
-=======
       padding-left: 0;
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
       width: auto;
       font-size: 16px;
       line-height: 16px;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
   }
 }
 
@@ -396,12 +363,6 @@
       justify-content: space-around;
     }
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     &__subtitle {
       &--comment {
         margin-bottom: 78px;

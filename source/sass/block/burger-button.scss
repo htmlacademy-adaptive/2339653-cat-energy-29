@@ -45,10 +45,6 @@
       background-repeat: no-repeat;
       box-shadow: none;
       transform: translateY(-1px);
-<<<<<<< HEAD
-
-=======
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     }
 
     &::after {
@@ -68,18 +64,6 @@
   &:active {
     opacity: 0.2;
   }
-<<<<<<< HEAD
-
-}
-
-@media (min-width: $tablet-width) {
-
-    .burger-button {
-      display: none;
-    }
-  }
-
-=======
 }
 
 @media (min-width: $tablet-width) {
@@ -87,4 +71,3 @@
     display: none;
   }
 }
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6

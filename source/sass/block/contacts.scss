@@ -16,11 +16,7 @@
     margin: 0;
     padding-right: 20px;
     font-size: $font-medium;
-<<<<<<< HEAD
-    color:$dark-color;
-=======
     color: $dark-color;
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     line-height: 20px;
     font-weight: 400;
     text-transform: uppercase;
@@ -38,11 +34,7 @@
     height: 362px;
     margin-bottom: -3px;
 
-<<<<<<< HEAD
-    &:hover+.contacts__map-pin {
-=======
     &:hover + .contacts__map-pin {
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
       opacity: 0;
     }
   }
@@ -78,10 +70,6 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-<<<<<<< HEAD
-
-=======
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     &__text-content {
       padding: 60px 70px;
       grid-template-columns: 1fr 1fr 1fr;
@@ -116,10 +104,6 @@
       width: 113px;
       height: 106px;
       transform: translate(276%, -240%);
-<<<<<<< HEAD
-
-=======
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     }
   }
 }
@@ -156,10 +140,6 @@
       text-align: start;
       font-size: $font-medium;
       line-height: 20px;
-<<<<<<< HEAD
-
-=======
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     }
 
     &__map {
@@ -172,10 +152,6 @@
       width: 113px;
       height: 106px;
       transform: translate(802%, -252%);
-<<<<<<< HEAD
-
-=======
->>>>>>> 218c866376107573cd242722dd44d52f1c6820a6
     }
   }
 }
