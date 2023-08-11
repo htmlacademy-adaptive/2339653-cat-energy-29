@@ -32,7 +32,6 @@
     line-height: 14px;
     text-transform: uppercase;
     text-align: center;
-
   }
 
   &__image {
@@ -75,7 +74,6 @@
       text-align: start;
       font-size: 20px;
       line-height: 20px;
-
     }
 
     &__image {
@@ -85,58 +83,17 @@
       z-index: -1;
       top: 42%;
       left: -14%;
-
-
     }
 
     &__button {
       margin: 0;
     }
-
-
   }
 }
 
-//** Удалить эксперимент **//
-.cat-like {
-  display: none;
-}
 
-@media (min-width: 1150px) {
-  .cat-like {
-    display: block;
-    width: 550px;
-    position: absolute;
-    right: 20px;
-    top: 130px;
-
-    animation: fadeInFromNone 0.5s ease-in-out;
-  }
-
-  @keyframes fadeInFromNone {
-    0% {
-      display: none;
-      opacity: 0;
-    }
-
-    1% {
-      display: block;
-      opacity: 0;
-    }
-
-    100% {
-      display: block;
-      opacity: 1;
-    }
-  }
-}
 
   @media (min-width: $desktop-width) {
-
-    //** Удалить эксперимент **//
-    .cat-like {
-      display: none;
-    }
 
     .promo {
       position: relative;
