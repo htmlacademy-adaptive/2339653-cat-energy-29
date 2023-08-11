@@ -86,7 +86,4 @@ x = e.changedTouches[i].pageX;
   beforeAfterSlider(x);
   pauseEvents(e);
 });
-
-
-
 }

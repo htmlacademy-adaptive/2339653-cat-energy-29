@@ -9,5 +9,4 @@ export let openNav = () => {
     burgerButton.classList.toggle('burger-button--close')
     mainNav.classList.toggle('main-nav--show')
   }
-
 }
