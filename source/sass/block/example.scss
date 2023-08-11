@@ -95,7 +95,6 @@
       padding-bottom: 95px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-
     }
 
     &__title {
@@ -167,7 +166,7 @@
   }
 }
 
-
+//****** DESKTOP ******//
 
 @media (min-width: $desktop-width) {
   .example {
@@ -178,7 +177,6 @@
 
     &__container {
       width: 71%;
-      padding: 0;
       padding: 70px 114px 75px 110px;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -195,12 +193,10 @@
       margin-bottom: 70px;
       grid-column: 3 span;
       padding-right: 0;
-
     }
 
     &__blocks {
       margin-bottom: 55px;
-
     }
 
     &__block-title {

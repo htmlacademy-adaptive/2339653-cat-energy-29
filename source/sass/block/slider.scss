@@ -1,16 +1,12 @@
 .slider {
   position: relative;
-  // overflow: hidden;
   width: 100%;
-  // background-color: $light-grey2;
 
   &__image {
     display: block;
     width: 100%;
     height: 100%;
-    display: block;
     object-fit: cover;
-
   }
 
   &__before {
@@ -46,7 +42,6 @@
       top: 50%;
       transform: translate(-50%, -50%);
       z-index: 10;
-
     }
   }
 }

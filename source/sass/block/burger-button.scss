@@ -45,7 +45,6 @@
       background-repeat: no-repeat;
       box-shadow: none;
       transform: translateY(-1px);
-
     }
 
     &::after {
@@ -65,12 +64,10 @@
   &:active {
     opacity: 0.2;
   }
-
 }
 
 @media (min-width: $tablet-width) {
-
-    .burger-button {
-      display: none;
-    }
+  .burger-button {
+    display: none;
   }
+}

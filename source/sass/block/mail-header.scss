@@ -1,10 +1,8 @@
 .main-header {
-
   &__container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-
   }
 
   &__top {
@@ -29,13 +27,10 @@
     &:active {
       opacity: 0.4;
     }
-
   }
-
 }
 
 //******************* TABLET ***********************//
-
 
 @media (min-width: $tablet-width) {
   .main-header {
@@ -47,7 +42,6 @@
       justify-content: space-between;
       align-items: center;
       padding: 25px 30px 0 30px;
-
     }
 
     &__top {
@@ -58,8 +52,6 @@
 }
 
 //******************* DESKTOP***********************//
-
-
 
 @media (min-width: $desktop-width) {
   .main-header {
@@ -74,6 +66,5 @@
     &__container--visible {
       position: static;
     }
-
   }
 }

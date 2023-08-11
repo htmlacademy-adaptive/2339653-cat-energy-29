@@ -16,7 +16,7 @@
     margin: 0;
     padding-right: 20px;
     font-size: $font-medium;
-    color:$dark-color;
+    color: $dark-color;
     line-height: 20px;
     font-weight: 400;
     text-transform: uppercase;
@@ -34,7 +34,7 @@
     height: 362px;
     margin-bottom: -3px;
 
-    &:hover+.contacts__map-pin {
+    &:hover + .contacts__map-pin {
       opacity: 0;
     }
   }
@@ -70,7 +70,6 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-
     &__text-content {
       padding: 60px 70px;
       grid-template-columns: 1fr 1fr 1fr;
@@ -105,7 +104,6 @@
       width: 113px;
       height: 106px;
       transform: translate(276%, -240%);
-
     }
   }
 }
@@ -142,7 +140,6 @@
       text-align: start;
       font-size: $font-medium;
       line-height: 20px;
-
     }
 
     &__map {
@@ -155,7 +152,6 @@
       width: 113px;
       height: 106px;
       transform: translate(802%, -252%);
-
     }
   }
 }

@@ -23,14 +23,12 @@
 
   &__item-container {
     border-top: 1px solid $light-grey-d;
-
   }
 }
 
 //********************** TABLET **********************//
 
 @media (min-width: $tablet-width) {
-
   .catalog {
     border-top: none;
     border-bottom: none;
@@ -64,13 +62,12 @@
 //********************** DESKTOP **********************//
 
 @media (min-width: $desktop-width) {
-
   .catalog {
     &__title {
 
       padding: 110px;
       padding-top: 60px;
-      padding-bottom: 85pxpx;
+      padding-bottom: 85px;
     }
 
     &__list {
