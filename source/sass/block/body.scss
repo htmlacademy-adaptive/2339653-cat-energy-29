@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  border: 2px solid $default-black;
+  margin: 0 auto;
+  padding: 0;
+  background-color: $default-white;
+  font-family: $font-page;
+  font-weight: 400;
+  color: $grey400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    max-width: 1440px;
+  }
+}

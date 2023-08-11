@@ -1,0 +1,237 @@
+.programs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+
+  &__list {
+    @include list-reset;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+    padding: 26px 23px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    align-items: center;
+    background-color: $light-grey2;
+  }
+
+  &__logo {
+    margin-bottom: auto;
+
+    &--slim {
+      width: 50px;
+      height: 50px;
+    }
+
+    &--mass {
+      width: 69px;
+      height: 49px;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: $font-large;
+    color: $default-black;
+    line-height: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    grid-column: span 3;
+  }
+
+  &__descr {
+    margin: 0;
+    padding: 24px 0;
+    font-family: $font-second;
+    line-height: 18px;
+    grid-column: span 4;
+    border-bottom: 1px solid $light-grey9;
+  }
+
+  &__catalog-link {
+    font-size: $font-medium;
+    line-height: 16px;
+    text-transform: uppercase;
+    grid-column: span 2;
+    /* stylelint-disable-next-line at-rule-empty-line-before */
+    @include link-style;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 15px;
+    color: $default-black;
+    position: relative;
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 25px;
+      height: 12px;
+      background-image: url("../../img/icon_arrow.svg");
+      transform: translateX(400%);
+    }
+
+    &:hover {
+      width: 10px;
+
+      transform: translateX(600%);
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .programs {
+    padding: 0 30px;
+
+    &__list {
+      gap: 30px;
+    }
+
+    &__item {
+      padding: 77px 63px 57px 52px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 4 1fr;
+      grid-template-areas:
+        "title title image"
+        "descr descr image"
+        "descr descr image"
+        "link link image";
+    }
+
+    &__title {
+      grid-area: title;
+      font-size: $font-big;
+      line-height: 36px;
+    }
+
+    &__logo {
+      grid-area: image;
+      align-self: end;
+
+      &--slim {
+        width: 200px;
+        height: 200px;
+      }
+
+      &--mass {
+        width: 268px;
+        height: 200px;
+        margin-right: -20px;
+      }
+    }
+
+    &__descr {
+      max-width: 345px;
+      grid-area: descr;
+      font-size: $font-medium;
+      line-height: 24px;
+      border: none;
+    }
+
+    &__catalog-link {
+      font-size: 20px;
+      line-height: 20px;
+      grid-area: link;
+      padding-top: 41px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .programs {
+    width: 100%;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // column-gap: 80px;
+    padding: 81px 110px 0 110px;
+
+    &__list {
+      background: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0;
+    }
+
+    &__item {
+      width: 570px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 3 1fr;
+      align-items: center;
+      padding: 44px 55px 63px 51px;
+      margin-bottom: 70px;
+    }
+
+    &__logo {
+      grid-column: 1/2;
+      grid-row: 1;
+
+      &--slim {
+        width: 100px;
+        height: 105px;
+      }
+
+      &--mass {
+        width: 134px;
+        height: 110px;
+        margin-left: -17px;
+      }
+    }
+
+    &__title {
+      margin-bottom: auto;
+      padding-top: 36px;
+      font-size: $font-big;
+      line-height: 36px;
+      grid-column: 2/4;
+      grid-row: 1;
+    }
+
+    &__descr {
+      max-width: 457px;
+      font-size: $font-medium;
+      line-height: 24px;
+      grid-column: 1/4;
+      grid-row: 2;
+      border-bottom: 0;
+      padding-top: 40px;
+      padding-bottom: 17px;
+    }
+
+    &__catalog-link {
+      font-size: 20px;
+      line-height: 20px;
+      grid-column: 1/3;
+      /* stylelint-disable-next-line at-rule-empty-line-before */
+      @include link-style;
+      display: flex;
+      align-items: center;
+      padding-top: 10px;
+      color: $default-black;
+      position: relative;
+      margin-top: auto;
+
+      &::after {
+        transform: translateX(500%);
+      }
+    }
+  }
+}

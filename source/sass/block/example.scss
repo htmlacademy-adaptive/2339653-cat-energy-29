@@ -1,0 +1,235 @@
+.example {
+  background-color: $light-grey2;
+  padding-bottom: 37px;
+
+  &__container {
+    padding: 25px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 26px;
+    font-size: $font-big;
+    color: $default-black;
+    line-height: 40px;
+    font-weight: 400;
+  }
+
+  &__descr {
+    font-family: $font-second;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__block-title {
+    margin: 0;
+    margin-bottom: -10px;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    width: 124px;
+    text-align: center;
+    font-size: $font-large;
+    line-height: 24px;
+    color: $default-black;
+    text-transform: uppercase;
+    border: 1px solid $light-grey9;
+    border-radius: 5px;
+  }
+
+  &__block-descr {
+    margin: 0;
+    width: 80px;
+    font-family: $font-second;
+    font-size: $font-small;
+    line-height: 12px;
+    text-align: center;
+    padding: 0 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: $light-grey2;
+  }
+
+  &__expenses {
+    margin: 0;
+    display: flex;
+    gap: 5px;
+    align-self: center;
+
+    margin-bottom: 20px;
+    color: $default-black;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  &__expenses-summ {
+    margin: 0;
+  }
+
+  &__slider-container {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background: linear-gradient(to top, $light-grey2 30%, $default-white 30%);
+
+    padding-bottom: 101px;
+
+    &__container {
+      padding: 45px 31px;
+      padding-bottom: 95px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    &__title {
+      margin-bottom: 60px;
+      font-size: $font-huge;
+      line-height: 60px;
+      grid-column: 4 span;
+    }
+
+    &__descr {
+      margin: 0;
+      padding: 0;
+      font-size: $font-medium;
+      line-height: 24px;
+      margin-bottom: 55px;
+      grid-column: 4 span;
+    }
+
+    &__blocks {
+      grid-column: 1/4;
+      justify-content: start;
+      gap: 42px;
+      margin: 0;
+      margin-bottom: auto;
+    }
+
+    &__block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__block-title {
+      width: 162px;
+      font-size: 30px;
+      line-height: 37px;
+      margin-bottom: -9px;
+      align-items: center;
+      padding: 15px 10px 20px 10px;
+    }
+
+    &__block-descr {
+      width: 140px;
+      font-size: 14px;
+      line-height: 14px;
+      padding: 0;
+      background: $default-white;
+    }
+
+
+    &__expenses {
+      grid-column: 4;
+      max-width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      font-size: 20px;
+      line-height: 20px;
+      padding-top: 13px;
+      gap: 9px;
+    }
+
+    &__slider-container {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(to top, $light-grey2 70%, $default-white 70%);
+    }
+  }
+}
+
+//****** DESKTOP ******//
+
+@media (min-width: $desktop-width) {
+  .example {
+    background: linear-gradient(to top, $light-grey2 70%, $default-white 70%);
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+
+    &__container {
+      width: 71%;
+      padding: 70px 114px 75px 110px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      margin-bottom: 0;
+    }
+
+    &__title {
+      margin-bottom: 146px;
+    }
+
+    &__descr {
+      margin: 0;
+      margin-bottom: 70px;
+      grid-column: 3 span;
+      padding-right: 0;
+    }
+
+    &__blocks {
+      margin-bottom: 55px;
+    }
+
+    &__block-title {
+      padding-top: 18px;
+      margin-bottom: -10px;
+    }
+
+    &__block-descr {
+      background: $light-grey2;
+    }
+
+    &__expenses {
+      grid-row: 4;
+      grid-column: 1/4;
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      padding-top: 0;
+      gap: 63px;
+
+      &-title {
+        flex-shrink: 0;
+      }
+
+      &-summ {
+        margin: 0;
+        flex-shrink: 0;
+      }
+    }
+
+    &__slider-container {
+      padding-bottom: 20px;
+      background: linear-gradient(to top, #f2f2f2 75.2%, #ffffff 75.2%);
+    }
+  }
+}

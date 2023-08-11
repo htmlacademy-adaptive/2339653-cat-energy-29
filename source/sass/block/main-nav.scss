@@ -1,0 +1,149 @@
+.main-nav {
+  display: none;
+  opacity: 0;
+
+  &--show {
+    display: block;
+    position: relativ;
+    opacity: 1;
+
+    animation: fadeInFromNone 0.5s ease-in-out;
+  }
+
+  @keyframes fadeInFromNone {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      display: block;
+      opacity: 0;
+    }
+
+    100% {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  &__container {
+    display: block;
+    position: absolute;
+    background-color: $default-white;
+    width: 100%;
+  }
+
+  &__list {
+    @include list-reset;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  &__item {
+    padding: 22px 20px 24px 20px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  &__link {
+    @include link-style;
+    text-transform: uppercase;
+    text-align: center;
+    color: $default-black;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+
+    &:focus {
+      opacity: 0.5;
+      outline: none;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
+  }
+}
+
+//******************* TABLET ***********************//
+
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 460px;
+    opacity: 1;
+
+    &__container {
+
+      position: static;
+    }
+
+    &__list {
+      padding-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 33px;
+      border: none;
+    }
+
+    &__item {
+      max-width: 180px;
+      border: none;
+      padding: 0;
+    }
+
+    &__item--current {
+      border-bottom: 1px solid $basic-green;
+    }
+
+    &__link {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__link--current {
+      border-bottom: 2px solid $basic-green;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+//******************* DESKTOP***********************//
+
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    max-width: 650px;
+
+    &__container {
+      background: none;
+    }
+
+    &__list {
+      padding: 20px 0;
+    }
+
+    &__link {
+      font-size: 20px;
+      line-height: 20px;
+      color: $default-white;
+      padding-bottom: 8px;
+    }
+
+    &__link--catalog {
+      color: $dark-color;
+    }
+
+    &__link--current {
+      border-bottom: 2px solid $default-white;
+    }
+
+    &__link--current-catalog {
+      border-bottom: 2px solid $basic-green;
+    }
+  }
+}

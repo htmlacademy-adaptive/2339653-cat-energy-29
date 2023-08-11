@@ -1,0 +1,87 @@
+.catalog {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+
+  border-top: 1px solid $light-grey-d;
+  border-bottom: 1px solid $light-grey-d;
+
+  &__title {
+    padding: 20px;
+    padding-top: 27px;
+    padding-bottom: 41px;
+    margin: 0;
+    font-size: $font-big;
+    line-height: 36px;
+    font-weight: 400;
+  }
+
+  &__list {
+    @include list-reset;
+  }
+
+  &__item-container {
+    border-top: 1px solid $light-grey-d;
+  }
+}
+
+//********************** TABLET **********************//
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    border-top: none;
+    border-bottom: none;
+
+    &__title {
+
+      padding: 30px;
+      padding-top: 45px;
+      padding-bottom: 71px;
+      margin: 0;
+      font-size: $font-huge;
+      line-height: 60px;
+      font-weight: 400;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 30px;
+      gap: 52px;
+    }
+
+    &__item-container {
+      width: 324px;
+      border-top: none;
+    }
+  }
+}
+
+//********************** DESKTOP **********************//
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    &__title {
+
+      padding: 110px;
+      padding-top: 60px;
+      padding-bottom: 85px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      padding: 0 110px;
+      gap: 72px;
+    }
+
+    &__item-container {
+      width: 245px;
+      // min-height: 511px;
+      border-top: none;
+    }
+  }
+}
