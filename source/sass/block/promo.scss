@@ -10,8 +10,9 @@
     width: 100%;
     background:
       url("../img/promo-background-mobile.jpg") no-repeat,
-      $basic-green;
-    background-size: cover;
+      linear-gradient(to right, #64a83d 50%, #62a63a 50%);
+    background-size: contain;
+    background-position: center;
     padding: 27px 30px 164px 30px;
   }
 
@@ -92,6 +93,7 @@
 
 @media (min-width: $desktop-width) {
   .promo {
+    height: 694px;
     position: relative;
 
     &--bcg::before {
