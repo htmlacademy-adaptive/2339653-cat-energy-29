@@ -47,7 +47,6 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
       padding: 0 30px;
       gap: 52px;
     }
@@ -75,7 +74,7 @@
       flex-wrap: wrap;
       justify-content: start;
       padding: 0 110px;
-      gap: 72px;
+      gap: 78px;
     }
 
     &__item-container {

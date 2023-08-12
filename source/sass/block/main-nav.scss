@@ -96,16 +96,12 @@
       padding: 0;
     }
 
-    &__item--current {
-      border-bottom: 1px solid $basic-green;
-    }
-
     &__link {
       font-size: 18px;
       line-height: 24px;
     }
 
-    &__link--current {
+    &__link-current {
       border-bottom: 2px solid $basic-green;
       padding-bottom: 10px;
     }
@@ -117,7 +113,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    max-width: 650px;
+    max-width: 500px;
 
     &__container {
       background: none;
@@ -130,20 +126,18 @@
     &__link {
       font-size: 20px;
       line-height: 20px;
-      color: $default-white;
+      color: $default-black;
       padding-bottom: 8px;
+
+      &--white {
+        color: $default-white;
+      }
     }
 
-    &__link--catalog {
-      color: $dark-color;
-    }
-
-    &__link--current {
-      border-bottom: 2px solid $default-white;
-    }
-
-    &__link--current-catalog {
-      border-bottom: 2px solid $basic-green;
+    &__link-current {
+      &--white {
+        border-color: $default-white;
+      }
     }
   }
 }
