@@ -179,6 +179,7 @@
 
   &__radio:checked + .program-form__label-text--radio::after {
     opacity: 1;
+    transition: opacity 0.5s ease-in-out;
   }
 
   &__radio:focus + .program-form__label-text--radio::before {
@@ -191,6 +192,7 @@
 
   &__checkbox:checked + .program-form__label-text--checkbox::after {
     opacity: 1;
+    transition: opacity 0.5s ease-in-out;
   }
 
   &__checkbox:focus + .program-form__label-text--checkbox::before {
