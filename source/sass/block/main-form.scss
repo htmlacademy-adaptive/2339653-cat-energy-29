@@ -42,6 +42,7 @@
     display: flex;
     gap: 13px;
     align-items: center;
+    position: relative;
   }
 
   &__label-radio,
@@ -145,6 +146,31 @@
       line-height: 18px;
       text-transform: uppercase;
     }
+  }
+
+  &__input--error {
+    border-color: $error-color;
+  }
+
+  &__input--error + &__input-contacts-icon {
+    stroke: $error-color;
+  }
+
+  &__input-contacts {
+    padding-right: 40px;
+  }
+
+  &__input-contacts-icon {
+    width: 20px;
+    height: 20px;
+    stroke: $grey200;
+    transition: stroke 0.3s ease-in-out;
+    position: absolute;
+    right: 15px;
+  }
+
+  &__input-contacts:focus + &__input-contacts-icon {
+    stroke: $basic-green;
   }
 
   &__radio {
