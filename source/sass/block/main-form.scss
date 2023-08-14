@@ -433,9 +433,13 @@
     &__field--contacts {
       grid-area: contacts;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       column-gap: 80px;
       margin-bottom: 70px;
+    }
+
+    &__label-contacts {
+      grid-column: 2 span;
     }
 
     &__field--comment {
