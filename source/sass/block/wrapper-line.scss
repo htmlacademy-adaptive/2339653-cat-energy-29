@@ -16,6 +16,10 @@
     border-bottom: 2px solid $basic-green;
     flex-grow: 1;
   }
+
+  &--programs {
+    margin: 0 -20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -30,6 +34,11 @@
     &::after {
       height: 22px;
     }
+
+    &--programs {
+      grid-column: 2 span;
+      margin: 0 -70px;
+    }
   }
 }
 
@@ -39,8 +48,13 @@
       width: calc(50% - 630px);
     }
 
-    &::after {
-      height: 22px;
+    &--programs {
+      grid-column: 4 span;
+      margin: 0 -110px;
+
+      &::before {
+        width: calc(50% - 650px);
+      }
     }
   }
 }
