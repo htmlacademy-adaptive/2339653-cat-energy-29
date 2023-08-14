@@ -50,8 +50,9 @@
       min-height: 811px;
       position: relative;
       align-items: start;
-      margin-left: 120px;
-      margin-bottom: 0;
+      // margin-left: 120px;
+      margin: 0 auto;
+      width: 530px;
     }
 
     &__text-content {
