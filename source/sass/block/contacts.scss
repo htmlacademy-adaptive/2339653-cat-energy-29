@@ -1,13 +1,13 @@
 .contacts {
+  &--grey {
+    background-color: $light-grey2;
+  }
+
   &__text-content {
     padding: 26px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-
-    &--grey-background {
-      background-color: $light-grey2;
-    }
   }
 
   &__title {

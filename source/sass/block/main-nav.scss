@@ -32,6 +32,7 @@
     position: absolute;
     background-color: $default-white;
     width: 100%;
+    z-index: 10;
   }
 
   &__list {

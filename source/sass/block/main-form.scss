@@ -216,13 +216,13 @@
     line-height: 26px;
     margin-bottom: 36px;
 
-    &--comment {
-      margin-bottom: 87px;
-    }
+    // &--comment {
+    //   margin-bottom: 78px;
+    // }
 
-    &--extra {
-      margin-bottom: 57px;
-    }
+    // &--extra {
+    //   margin-bottom: 57px;
+    // }
   }
 
   &__field--contacts {
@@ -261,9 +261,11 @@
 
   &__button {
     width: 100%;
+    margin-bottom: 21px;
   }
 
   &__footnote {
+    margin: 0;
     padding-left: 25px;
     width: 200px;
   }
@@ -373,6 +375,7 @@
       font-size: 20px;
       line-height: 20px;
       padding: 14px 45px;
+      margin-bottom: 0;
     }
 
     &__footnote {
