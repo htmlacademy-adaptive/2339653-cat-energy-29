@@ -26,7 +26,8 @@
     top: 0;
     width: 4px;
     height: 100%;
-    background-color: $grey600;
+    // background-color: $grey600;
+    background: linear-gradient(to top, $grey600 46.5%, #ffffff 46.5%, #ffffff 53.5%, $grey600 53.5%);
     padding: 0;
 
     &::after {
@@ -45,7 +46,7 @@
     }
 
     &:hover {
-      background-color: $basic-green;
+      background: linear-gradient(to top, $basic-green 46.5%, $default-white 46.5%, $default-white 53.5%, $basic-green 53.5%);
 
       /* stylelint-disable-next-line max-nesting-depth */
       &::after {
@@ -54,8 +55,7 @@
     }
 
     &:active {
-      background-color: #9ecc82;
-
+      background: linear-gradient(to top, #9ecc82 46.5%, rgba(225, 225, 225, 0.1) 46.5%, rgba(225, 225, 225, 0.1) 53.5%, #9ecc82 53.5%);
       /* stylelint-disable-next-line max-nesting-depth */
       &::after {
         opacity: 0.6;
@@ -76,7 +76,6 @@
     }
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .slider {
