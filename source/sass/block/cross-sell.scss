@@ -4,162 +4,160 @@
     grid-template-columns: 1fr 1fr;
     padding-top: 25px;
   }
+}
 
-  &__line {
-    grid-column: 2 span;
-  }
+.cross-sell__line {
+  grid-column: 2 span;
+}
 
-  &__title {
-    margin: 0;
-    padding-right: 0;
-    padding-bottom: 36px;
-    font-size: $font-large;
-    line-height: 24px;
-    font-weight: 400;
-  }
+.cross-sell__title {
+  margin: 0;
+  padding-right: 0;
+  padding-bottom: 36px;
+  font-size: $font-large;
+  line-height: 24px;
+  font-weight: 400;
+}
 
-  &__list {
-    @include list-reset;
-    padding: 0 20px;
-    grid-column: 2 span;
-    border-top: 1px solid $light-grey-d;
-  }
+.cross-sell__list {
+  @include list-reset;
+  padding: 0 20px;
+  grid-column: 2 span;
+  border-top: 1px solid $light-grey-d;
+}
 
-  &__item {
-    padding-bottom: 19px;
-    border-bottom: 1px solid $light-grey-d;
-  }
+.cross-sell__item {
+  padding-bottom: 19px;
+  border-bottom: 1px solid $light-grey-d;
+}
 
-  &__item-title {
-    font-size: $font-medium;
-    line-height: 16px;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
+.cross-sell__item-title {
+  font-size: $font-medium;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
 
-  &__item-descr {
-    font-family: $font-second;
-    line-height: 14px;
-    display: flex;
-    justify-content: space-between;
-  }
+.cross-sell__item-descr {
+  font-family: $font-second;
+  line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+}
 
-  &__button {
-    grid-column: 2 span;
-    width: 100%;
-  }
+.cross-sell__button {
+  grid-column: 2 span;
+  width: 100%;
 }
 
 
 //********************** TABLET **********************//
 
 @media (min-width: $tablet-width) {
-  .cross-sell {
-    &__container {
-      padding-top: 70px;
-    }
+  .cross-sell__container {
+    padding-top: 70px;
+  }
 
-    &__title {
-      margin: 0;
-      margin-bottom: 80px;
-      font-size: $font-big;
-      line-height: 36px;
-    }
+  .cross-sell__title {
+    margin: 0;
+    margin-bottom: 80px;
+    font-size: $font-big;
+    line-height: 36px;
+  }
 
-    &__list {
-      padding: 0 30px;
-      border-top: none;
-    }
+  .cross-sell__list {
+    padding: 0 30px;
+    border-top: none;
+  }
 
-    &__item {
-      flex-grow: 1;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding-bottom: 27px;
-      padding-left: 38px;
-      padding-right: 38px;
-      border: 1px solid $light-grey-d;
-      padding-top: 6px;
-    }
+  .cross-sell__item {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 27px;
+    padding-left: 38px;
+    padding-right: 38px;
+    border: 1px solid $light-grey-d;
+    padding-top: 6px;
+  }
 
-    &__item-title {
-      font-size: 20px;
-      line-height: 20px;
-      margin-bottom: 25px;
-    }
+  .cross-sell__item-title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
 
-    &__item-descr {
-      font-size: 16px;
-      line-height: 16px;
-      display: flex;
-      gap: 49px;
-    }
+  .cross-sell__item-descr {
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    gap: 49px;
+  }
 
-    &__button {
-      min-height: 40px;
-      width: 100%;
-    }
+  .cross-sell__button {
+    min-height: 40px;
+    width: 100%;
   }
 }
+
 
 //******************* DESKTOP***********************//
 
 @media (min-width: $desktop-width) {
-  .cross-sell {
-    &__container {
-      grid-template-columns: 1fr 1fr 355px;
-      padding: 70px 0 87px 0;
-    }
+  .cross-sell__container {
+    grid-template-columns: 1fr 1fr 355px;
+    padding: 70px 0 87px 0;
+  }
 
-    &__line {
-      grid-column: 3 span;
-    }
+  .cross-sell__line {
+    grid-column: 3 span;
+  }
 
-    &__list {
-      width: 100%;
-      padding: 0 80px 0 110px;
-    }
+  .cross-sell__list {
+    width: 100%;
+    padding: 0 80px 0 110px;
+  }
 
-    &__item {
-      flex-wrap: nowrap;
-      width: 100%;
-      padding-top: 15px;
-      padding-bottom: 17px;
-      padding-left: 0;
-      padding-right: 0;
-      border: none;
-      border-bottom: 1px solid $light-grey-d;
+  .cross-sell__item {
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    border-bottom: 1px solid $light-grey-d;
 
-      &:first-child {
-        border-top: 1px solid $light-grey-d;
-      }
-    }
-
-    &__item-title {
-      width: 245px;
-      font-size: 20px;
-      line-height: 20px;
-      margin-bottom: 0;
-      margin-top: 0;
-      margin-right: 80px;
-    }
-
-    &__item-descr {
-      margin: 0;
-      width: 285px;
-      margin-right: 40px;
-      font-size: 16px;
-      line-height: 16px;
-      display: flex;
-      gap: 0;
-    }
-
-    &__button {
-      min-width: 244px;
-      min-height: 40px;
-      width: auto;
+    &:first-child {
+      border-top: 1px solid $light-grey-d;
     }
   }
+
+  .cross-sell__item-title {
+    width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 80px;
+  }
+
+  .cross-sell__item-descr {
+    margin: 0;
+    width: 285px;
+    margin-right: 40px;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    gap: 0;
+  }
+
+  .cross-sell__button {
+    min-width: 244px;
+    min-height: 40px;
+    width: auto;
+  }
 }
+

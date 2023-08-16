@@ -1,96 +1,96 @@
-.promo {
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-
-  &__text-content {
-    width: 100%;
-    background:
-      url("../img/promo-background-mobile.jpg") no-repeat,
-      linear-gradient(to right, #64a83d 50%, #62a63a 50%);
-    background-size: contain;
-    background-position: center;
-    padding: 27px 30px 164px 30px;
-  }
-
-  &__title {
-    margin: 0;
-    margin-bottom: 25px;
-    font-size: $font-big;
-    line-height: 36px;
-    font-weight: 400;
-    color: $default-white;
-    text-align: center;
-  }
-
-  &__descr {
-    margin: 0;
-    color: $default-white;
-    line-height: 14px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  &__image {
-    margin-top: -135px;
-  }
-
-  &__button {
-    @include link-style;
-    margin: 0 auto;
-  }
+.promo__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
+
+.promo__text-content {
+  width: 100%;
+  background:
+    url("../img/promo-background-mobile.jpg") no-repeat,
+    linear-gradient(to right, #64a83d 50%, #62a63a 50%);
+  background-size: contain;
+  background-position: center;
+  padding: 27px 30px 164px 30px;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: $font-big;
+  line-height: 36px;
+  font-weight: 400;
+  color: $default-white;
+  text-align: center;
+}
+
+.promo__descr {
+  margin: 0;
+  color: $default-white;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.promo__image {
+  margin-top: -135px;
+}
+
+.promo__button {
+  @include link-style;
+  margin: 0 auto;
+}
+
+//**** TABLET ****//
 
 @media (min-width: $tablet-width) {
-  .promo {
-    &__container {
-      min-height: 811px;
-      position: relative;
-      align-items: start;
-      // margin-left: 120px;
-      margin: 0 auto;
-      width: 530px;
-    }
+  .promo__container {
+    min-height: 811px;
+    position: relative;
+    align-items: start;
+    // margin-left: 120px;
+    margin: 0 auto;
+    width: 530px;
+  }
 
-    &__text-content {
-      width: 520px;
-      background: none;
-      padding: 0;
-      margin-bottom: 50px;
-    }
+  .promo__text-content {
+    width: 520px;
+    background: none;
+    padding: 0;
+    margin-bottom: 50px;
+  }
 
-    &__title {
-      color: $default-black;
-      font-size: $font-huge;
-      line-height: 60px;
-      text-align: start;
-      margin-bottom: 40px;
-    }
+  .promo__title {
+    color: $default-black;
+    font-size: $font-huge;
+    line-height: 60px;
+    text-align: start;
+    margin-bottom: 40px;
+  }
 
-    &__descr {
-      color: $default-black;
-      text-align: start;
-      font-size: 20px;
-      line-height: 20px;
-    }
+  .promo__descr {
+    color: $default-black;
+    text-align: start;
+    font-size: 20px;
+    line-height: 20px;
+  }
 
-    &__image {
-      margin-top: -140px;
-      display: block;
-      position: absolute;
-      z-index: -1;
-      top: 42%;
-      left: -14%;
-    }
+  .promo__image {
+    margin-top: -140px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 42%;
+    left: -14%;
+  }
 
-    &__button {
-      margin: 0;
-    }
+  .promo__button {
+    margin: 0;
   }
 }
+
+//**** DESKTOP ****//
 
 @media (min-width: $desktop-width) {
   .promo {
@@ -109,32 +109,33 @@
       background-size: cover;
       right: 0;
     }
+  }
 
-    &__container {
-      width: 100%;
-      min-height: 694px;
-      position: relative;
-      margin: 0;
-      padding: 118px 190px 0 190px;
-      justify-content: flex-start;
-    }
+  .promo__container {
+    width: 100%;
+    min-height: 694px;
+    position: relative;
+    margin: 0;
+    padding: 118px 190px 0 190px;
+    justify-content: flex-start;
+  }
 
-    &__text-content {
-      max-width: 480px;
-      min-height: 184px;
-      background: none;
-      margin-top: 107px;
-      padding: 0;
-      z-index: 10;
-    }
+  .promo__text-content {
+    max-width: 480px;
+    min-height: 184px;
+    background: none;
+    margin-top: 107px;
+    padding: 0;
+    z-index: 10;
+  }
 
-    &__image {
-      display: block;
-      position: absolute;
-      z-index: 1;
-      top: 16%;
-      left: 58%;
-      transform: translate(-50%, 33%);
-    }
+  .promo__image {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 16%;
+    left: 58%;
+    transform: translate(-50%, 33%);
   }
 }
+

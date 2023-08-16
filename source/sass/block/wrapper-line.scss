@@ -16,11 +16,13 @@
     border-bottom: 2px solid $basic-green;
     flex-grow: 1;
   }
-
-  &--programs {
-    margin: 0 -20px;
-  }
 }
+
+.wrapper-line--programs {
+  margin: 0 -20px;
+}
+
+//**** TABLET ****//
 
 @media (min-width: $tablet-width) {
   .wrapper-line {
@@ -34,27 +36,29 @@
     &::after {
       height: 22px;
     }
+  }
 
-    &--programs {
-      grid-column: 2 span;
-      margin: 0 -70px;
-    }
+  .wrapper-line--programs {
+    grid-column: 2 span;
+    margin: 0 -70px;
   }
 }
+
+//**** DESKTOP ****//
 
 @media (min-width: $desktop-width) {
   .wrapper-line {
     &::before {
       width: calc(50% - 630px);
     }
+  }
 
-    &--programs {
-      grid-column: 4 span;
-      margin: 0 -110px;
+  .wrapper-line--programs {
+    grid-column: 4 span;
+    margin: 0 -110px;
 
-      &::before {
-        width: calc(50% - 650px);
-      }
+    &::before {
+      width: calc(50% - 650px);
     }
   }
 }

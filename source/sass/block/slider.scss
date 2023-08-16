@@ -1,79 +1,81 @@
 .slider {
   position: relative;
   width: 100%;
+}
 
-  &__image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.slider__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  &__before {
-    overflow: hidden;
+.slider__before {
+  overflow: hidden;
+  position: absolute;
+  z-index: 2;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: $light-grey2;
+}
+
+.slider__toggle {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  // background-color: $grey600;
+  background: linear-gradient(to top, $grey600 46.5%, #ffffff 46.5%, #ffffff 53.5%, $grey600 53.5%);
+  padding: 0;
+
+  &::after {
+    content: "";
     position: absolute;
-    z-index: 2;
-    width: 50%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: $light-grey2;
-  }
-
-  &__toggle {
-    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url("../../img/slider-toggle.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     left: 50%;
-    top: 0;
-    width: 4px;
-    height: 100%;
-    // background-color: $grey600;
-    background: linear-gradient(to top, $grey600 46.5%, #ffffff 46.5%, #ffffff 53.5%, $grey600 53.5%);
-    padding: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
 
+  &:hover {
+    background: linear-gradient(to top, $basic-green 46.5%, $default-white 46.5%, $default-white 53.5%, $basic-green 53.5%);
+
+    /* stylelint-disable-next-line max-nesting-depth */
     &::after {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-image: url("../../img/slider-toggle.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 10;
+      background-image: url("../../img/slider-toggle-green.svg");
     }
+  }
 
-    &:hover {
-      background: linear-gradient(to top, $basic-green 46.5%, $default-white 46.5%, $default-white 53.5%, $basic-green 53.5%);
-
-      /* stylelint-disable-next-line max-nesting-depth */
-      &::after {
-        background-image: url("../../img/slider-toggle-green.svg");
-      }
-    }
-
-    &:active {
-      background: linear-gradient(to top, #9ecc82 46.5%, rgba(225, 225, 225, 0.1) 46.5%, rgba(225, 225, 225, 0.1) 53.5%, #9ecc82 53.5%);
-      /* stylelint-disable-next-line max-nesting-depth */
-      &::after {
-        opacity: 0.6;
-      }
+  &:active {
+    background: linear-gradient(to top, #9ecc82 46.5%, rgba(225, 225, 225, 0.1) 46.5%, rgba(225, 225, 225, 0.1) 53.5%, #9ecc82 53.5%);
+    /* stylelint-disable-next-line max-nesting-depth */
+    &::after {
+      opacity: 0.6;
     }
   }
 }
+
+//**** TABLET ****//
 
 @media (min-width: $tablet-width) {
   .slider {
     width: 560px;
     height: 512px;
     background: linear-gradient(to top, $light-grey2 70%, $default-white 70%);
+  }
 
-    &__before,
-    &__after {
-      background: linear-gradient(to top, $light-grey2 70%, $default-white 70%);
-    }
+  .slider__before,
+  .slider__after {
+    background: linear-gradient(to top, $light-grey2 70%, $default-white 70%);
   }
 }
 
@@ -82,10 +84,11 @@
     width: 560px;
     height: 512px;
     background: none;
+  }
 
-    &__before,
-    &__after {
-      background: linear-gradient(to top, #f2f2f2 74.3%, #ffffff 74.3%);
-    }
+  .slider__before,
+  .slider__after {
+    background: linear-gradient(to top, #f2f2f2 74.3%, #ffffff 74.3%);
   }
 }
+
