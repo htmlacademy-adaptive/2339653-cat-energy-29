@@ -167,7 +167,7 @@
   right: 15px;
 }
 
-.program-form__input-contacts:focus + &__input-contacts-icon {
+.program-form__input-contacts:focus + .program-form__input-contacts-icon {
   stroke: $basic-green;
 }
 

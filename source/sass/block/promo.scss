@@ -1,26 +1,27 @@
 .promo {
   background:
     url("../img/promo-background-mobile.jpg") no-repeat,
-    linear-gradient(to right, #64a83d 50%, #62a63a 50%);
-  background-size: contain;
-  background-position: center;
+    linear-gradient(to bottom, #64a63a 64%, $default-white 64%);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .promo__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 27px;
   margin-bottom: 20px;
 }
 
 .promo__text-content {
   width: 100%;
-
-  padding: 27px 30px 164px 30px;
+  margin-bottom: 29px;
 }
 
 .promo__title {
-  margin: 0;
+  max-width: 480px;
+  margin: 0 auto;
   margin-bottom: 25px;
   font-size: $font-big;
   line-height: 36px;
@@ -37,9 +38,9 @@
   text-align: center;
 }
 
-.promo__image {
-  margin-top: -135px;
-}
+// .promo__image {
+//   margin-top: -135px;
+// }
 
 .promo__button {
   @include link-style;
