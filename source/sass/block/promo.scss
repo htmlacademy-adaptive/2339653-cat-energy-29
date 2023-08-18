@@ -1,3 +1,11 @@
+.promo {
+  background:
+    url("../img/promo-background-mobile.jpg") no-repeat,
+    linear-gradient(to right, #64a83d 50%, #62a63a 50%);
+  background-size: contain;
+  background-position: center;
+}
+
 .promo__container {
   display: flex;
   flex-direction: column;
@@ -7,11 +15,7 @@
 
 .promo__text-content {
   width: 100%;
-  background:
-    url("../img/promo-background-mobile.jpg") no-repeat,
-    linear-gradient(to right, #64a83d 50%, #62a63a 50%);
-  background-size: contain;
-  background-position: center;
+
   padding: 27px 30px 164px 30px;
 }
 
