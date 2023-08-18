@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width; initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
   <title>Кэт энерджи</title>
 </head>
 
@@ -15,8 +16,8 @@
       <div class="main-header__top">
         <a href="index.html" class="main-header__logo">
           <picture>
-            <source media="(min-width: 1280px)" srcset="img/header-logo-desktop.svg">
-            <source media="(min-width: 760px)" srcset="img/header-logo-tablet.svg">
+            <source media="(min-width: 1440px)" srcset="img/header-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg">
             <img class="main-header__logo-image" src="img/header-logo-mobile.svg" alt="Логотип Кэт энерджи.">
           </picture>
         </a>
@@ -28,13 +29,13 @@
         <div class="main-nav__container">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="index.html" class="main-nav__link main-nav__link--catalog">Главная</a>
+              <a href="index.html" class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--catalog main-nav__link--current-catalog" href="#">Подбор
+              <a class="main-nav__link main-nav__link-current" href="#">Подбор
                 программы</a>
             </li>
           </ul>
@@ -63,8 +64,8 @@
             </label>
             <label class="program-form__label">
               <span class="program-form__label-text">Возраст&nbsp;(лет):</span>
-              <input class="program-form__input" type="text" id="program-form-cat-age" name="cat-age" placeholder="7"
-                required>
+              <input class="program-form__input program-form__input--error" type="text" id="program-form-cat-age"
+                name="cat-age" placeholder="7" required>
             </label>
           </fieldset>
 
@@ -84,37 +85,51 @@
           </fieldset>
 
           <fieldset class="program-form__field program-form__field--contacts">
-            <legend class="program-form__subtitle">Контактные данные (владельца кота)</legend>
-            <label class="program-form__label">
+            <div class="program-form__line wrapper-line wrapper-line--programs">
+              <legend class="program-form__subtitle">Контактные данные (владельца кота)</legend>
+            </div>
+            <label class="program-form__label program-form__label-contacts">
               <span class="program-form__label-text program-form__label-text--email">E-mail:*</span>
-              <input class="program-form__input program-form__input--icon-mail" type="text" id="program-form-email"
+              <input class="program-form__input program-form__input-contacts" type="text" id="program-form-email"
                 placeholder="kuklachev@gmail.com">
+              <svg class="program-form__input-contacts-icon">
+                <use xlink:href="img/sprite.svg#mail" xmlns="http://www.w3.org/2000/svg"></use>
+              </svg>
             </label>
-            <label class="program-form__label">
+            <label class="program-form__label program-form__label-contacts">
               <span class="program-form__label-text">Телефон:*</span>
-              <input class="program-form__input program-form__input--icon-phone" type="text" id="program-form-phone"
-                placeholder="8 (960) 900-60-90">
+              <input class="program-form__input program-form__input-contacts program-form__input--error" type="text"
+                id="program-form-phone" placeholder="8 (960) 900-60-90">
+              <svg class="program-form__input-contacts-icon">
+                <use xlink:href="img/sprite.svg#phone" xmlns="http://www.w3.org/2000/svg"></use>
+              </svg>
             </label>
           </fieldset>
 
           <fieldset class="program-form__field program-form__field--comment">
-            <legend class="program-form__subtitle program-form__subtitle--comment">Комментарий</legend>
+            <div class="program-form__line wrapper-line wrapper-line--programs">
+              <legend class="program-form__subtitle program-form__subtitle--comment">Комментарий</legend>
+            </div>
             <textarea class="program-form__textarea" id="program-form-comment" name="comment"
               placeholder="Расскажите обо всех повадках кота" required></textarea>
           </fieldset>
 
           <fieldset class="program-form__field program-form__field--extra">
-            <legend class="program-form__subtitle program-form__subtitle--extra">Дополнительно</legend>
+            <div class="program-form__line wrapper-line wrapper-line--programs">
+              <legend class="program-form__subtitle program-form__subtitle--extra">Дополнительно</legend>
+            </div>
             <label class="program-form__label
             program-form__label-checkbox"><input class="program-form__checkbox" type="checkbox" name="extra-sweetener"
                 id="extra-sweetener-checkbox" checked>
               <span class="program-form__label-text program-form__label-text--checkbox">Cахарозаменитель</span></label>
-            <label class="program-form__label program-form__label-checkbox"><input class="program-form__checkbox" type="checkbox" name="extra-water" id="extra-water-checkbox">
+            <label class="program-form__label program-form__label-checkbox"><input class="program-form__checkbox"
+                type="checkbox" name="extra-water" id="extra-water-checkbox">
               <span class="program-form__label-text program-form__label-text--checkbox">Питьевая вода</span></label>
-            <label class="program-form__label program-form__label-checkbox"><input class="program-form__checkbox" type="checkbox" name="extra-milk" id="extra-milk-checkbox">
+            <label class="program-form__label program-form__label-checkbox"><input class="program-form__checkbox"
+                type="checkbox" name="extra-milk" id="extra-milk-checkbox">
               <span class="program-form__label-text program-form__label-text--checkbox">Молоко</span></label>
-            <label class="program-form__label program-form__label-checkbox"><input class="program-form__checkbox" type="checkbox" name="extra-vitamins"
-                id="extra-vitamins-checkbox">
+            <label class="program-form__label program-form__label-checkbox"><input class="program-form__checkbox"
+                type="checkbox" name="extra-vitamins" id="extra-vitamins-checkbox">
               <span class="program-form__label-text program-form__label-text--checkbox">Витамины</span></label>
           </fieldset>
 
@@ -126,7 +141,7 @@
       </section>
     </div>
 
-    <section class="contacts">
+    <section class="contacts contacts--grey">
       <div class="contacts__text-content">
         <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>

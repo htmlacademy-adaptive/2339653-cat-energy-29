@@ -4,30 +4,32 @@
   padding: 20px 0;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
+}
 
 
-  &__link {
-    display: block;
+.social-list__link {
+  display: block;
 
-    &:focus-within {
-      fill: $basic-green;
-      outline: none;
-    }
-  }
-
-  &__link-icon {
-    width: 28px;
-    height: 22px;
-
-    &:hover {
-      fill: $basic-green;
-    }
-
-    &:active {
-      fill: rgba(104, 183, 56, 0.3);
-    }
+  &:focus-within {
+    fill: $basic-green;
+    outline: none;
   }
 }
+
+.social-list__link-icon {
+  width: 28px;
+  height: 22px;
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: rgba(104, 183, 56, 0.3);
+  }
+}
+
+//**** TABLET ****//
 
 @media (min-width: $tablet-width) {
   .social-list {

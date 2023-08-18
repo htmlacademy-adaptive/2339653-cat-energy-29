@@ -29,42 +29,43 @@
     background: $default-black;
     transform: translateY(6px);
   }
+}
 
-  &--close {
+.burger-button--close {
+  height: 24px;
+  padding: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 24px;
     height: 24px;
-    padding: 0;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 24px;
-      height: 24px;
-      background: url("../../img/Burger-close.svg");
-      background-size: 18px 18px;
-      background-position: center;
-      background-repeat: no-repeat;
-      box-shadow: none;
-      transform: translateY(-1px);
-    }
-
-    &::after {
-      display: none;
-    }
+    background: url("../../img/Burger-close.svg");
+    background-size: 18px 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    transform: translateY(-1px);
   }
 
-  &:focus {
-    opacity: 0.5;
-    outline: none;
-  }
-
-  &:hover {
-    opacity: 0.5;
-  }
-
-  &:active {
-    opacity: 0.2;
+  &::after {
+    display: none;
   }
 }
+
+&:focus {
+  opacity: 0.5;
+  outline: none;
+}
+
+&:hover {
+  opacity: 0.5;
+}
+
+&:active {
+  opacity: 0.2;
+}
+
 
 @media (min-width: $tablet-width) {
   .burger-button {

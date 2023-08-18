@@ -5,18 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width; initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
   <title>Кэт энерджи</title>
 </head>
 
 <body class="page__body">
 
-  <header class="main-header">
+  <header class="main-header main-header--desktop">
     <div class="main-header__container">
       <div class="main-header__top">
         <a href="#" class="main-header__logo">
           <picture>
-            <source media="(min-width: 1280px)" srcset="img/header-logo-desktop.svg">
-            <source media="(min-width: 760px)" srcset="img/header-logo-tablet.svg">
+            <source media="(min-width: 1440px)" srcset="img/header-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg">
             <img class="main-header__logo-image" src="img/header-logo-mobile.svg" alt="Логотип Кэт энерджи.">
           </picture>
         </a>
@@ -28,13 +29,13 @@
         <div class="main-nav__container">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link main-nav__link--current">Главная</a>
+              <a href="#" class="main-nav__link main-nav__link--white main-nav__link-current main-nav__link-current--white">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link main-nav__link--white" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Подбор программы</a>
+              <a class="main-nav__link main-nav__link--white" href="form.html">Подбор программы</a>
             </li>
 
 
@@ -56,13 +57,8 @@
 
           </div>
           <picture class="promo__picture">
-            <source type="image/webp" media="(min-width: 1280px)"
-              srcset="img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 760px)"
-              srcset="img/index-can-tablet@1x.webp, img/index-can-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x">
-            <source media="(min-width: 1280px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
-            <source media="(min-width: 760px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
+            <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png, img/index-can-tablet@2x.png 2x">
             <img class="promo__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
               alt="Коробка с кормом Кэт Энерджи.">
           </picture>
@@ -170,7 +166,7 @@
     </section>
 
     <section class="contacts">
-      <div class="contacts__text-content">
+      <div class="contacts__text-content ">
         <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
       </div>
