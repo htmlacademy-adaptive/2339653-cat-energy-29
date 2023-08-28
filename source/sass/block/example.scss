@@ -172,15 +172,23 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient(to top, $light-grey2 70%, $default-white 70%);
-    display: flex;
+    background: linear-gradient(to top, $light-grey2 72.7%, $default-white 72.7%);
+  }
+
+  .example-wrapper {
+    margin: 0 auto;
+    width: 1440px;
+    display: grid;
+    grid-template-columns: 50% 50%;
     align-items: center;
+    padding: 0 110px;
     padding-bottom: 0;
   }
 
   .example__container {
+    grid-column: 1/2;
     width: 71%;
-    padding: 70px 114px 75px 110px;
+    padding: 70px 0 75px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -230,8 +238,13 @@
     flex-shrink: 0;
   }
 
+  .example__slider {
+    background: linear-gradient(to top, $light-grey2 74.3%, $default-white 74.3%);
+  }
+
   .example__slider-container {
+    grid-column: 2/-1;
     padding-bottom: 20px;
-    background: linear-gradient(to top, #f2f2f2 75.2%, #ffffff 75.2%);
+    background: linear-gradient(to top, #f2f2f2 75%, #ffffff 75%);
   }
 }

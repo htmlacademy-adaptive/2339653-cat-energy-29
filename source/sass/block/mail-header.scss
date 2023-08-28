@@ -55,13 +55,17 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    &--desktop {
+    width: 1220px;
+
+    &--index-desktop {
       position: absolute;
       z-index: 10;
+      margin: 0 auto;
     }
 
     .main-header__container {
-      padding: 56px 110px 0 110px;
+      padding: 0;
+      padding-top: 56px;
     }
 
     .main-header__container--visible {

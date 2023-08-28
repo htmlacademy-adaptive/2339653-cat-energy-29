@@ -1,6 +1,9 @@
+.main-footer {
+  background-color: $light-grey2;
+}
+
 .main-footer__container {
   padding: 40px 20px;
-  background-color: $light-grey2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,7 +66,6 @@
 @media (min-width: $tablet-width) {
   .main-footer__container {
     padding: 61px 30px;
-    background-color: $light-grey2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -82,6 +84,8 @@
 
 @media (min-width: $desktop-width) {
   .main-footer__container {
+    width: 1440px;
+    margin: 0 auto;
     padding: 70px 110px;
   }
 }

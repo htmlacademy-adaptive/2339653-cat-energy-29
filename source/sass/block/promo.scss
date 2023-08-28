@@ -50,6 +50,10 @@
 //**** TABLET ****//
 
 @media (min-width: $tablet-width) {
+  .promo {
+    background: none;
+  }
+
   .promo__container {
     min-height: 811px;
     position: relative;
@@ -71,6 +75,7 @@
     font-size: $font-huge;
     line-height: 60px;
     text-align: start;
+    margin: 0;
     margin-bottom: 40px;
   }
 
@@ -82,7 +87,7 @@
   }
 
   .promo__image {
-    margin-top: -140px;
+    margin-top: -110px;
     display: block;
     position: absolute;
     z-index: -1;
@@ -102,7 +107,7 @@
     height: 694px;
     position: relative;
 
-    &--bcg::before {
+    &::before {
       content: "";
       position: absolute;
       background:
@@ -121,7 +126,7 @@
     min-height: 694px;
     position: relative;
     margin: 0;
-    padding: 118px 190px 0 190px;
+    padding: 118px 80px 0 80px;
     justify-content: flex-start;
   }
 
@@ -139,7 +144,7 @@
     position: absolute;
     z-index: 1;
     top: 16%;
-    left: 58%;
-    transform: translate(-50%, 33%);
+    left: 50%;
+    transform: translate(-30%, 33%);
   }
 }
