@@ -38,13 +38,10 @@
   text-align: center;
 }
 
-// .promo__image {
-//   margin-top: -135px;
-// }
-
 .promo__button {
   @include link-style;
-  margin: 0 auto;
+  // margin: 0;
+  // width: 100%;
 }
 
 //**** TABLET ****//

@@ -3,52 +3,64 @@
   border: none;
   font-family: inherit;
   color: inherit;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   text-transform: uppercase;
-  line-height: 20px;
+  line-height: 18px;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
 
-  &--green {
-    color: $default-white;
-    background-color: $basic-green;
+.button--green {
+  color: $default-white;
+  background-color: $basic-green;
 
-    &:hover {
-      background-color: #5eaa2f;
-    }
-
-    &:active {
-      background-color: #5eaa2f;
-      color: rgba(255, 255, 255, 0.3);
-    }
+  &:hover {
+    background-color: #5eaa2f;
   }
 
-  &--grey {
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
 
-    background-color: $light-grey2;
+.button--grey {
+  background-color: $light-grey2;
 
-    &:hover {
-      background-color: $light-grey-b;
-    }
-
-    &:active {
-      background-color: rgba(235, 235, 235);
-      color: rgba(68, 68, 68, 0.3);
-    }
+  &:hover {
+    background-color: $light-grey-b;
   }
 
-  &--card,
-  &--cross-sell {
-    padding: 10px 0;
+  &:active {
+    background-color: rgba(235, 235, 235);
+    color: rgba(68, 68, 68, 0.3);
   }
+}
 
-  &--mobile {
-    width: 280px;
-  }
+.button--card,
+.button--cross-sell {
+  padding: 10px 0;
+}
 
-  &--big {
+.button--mobile {
+  width: 100%;
+}
+
+.button--big {
+  padding: 14px 26px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .button {
     padding: 14px 26px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .button--mobile {
+    width: auto;
   }
 }

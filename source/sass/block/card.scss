@@ -5,8 +5,8 @@
   row-gap: 17px;
   padding-top: 19px;
   padding-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
 
   &--show-all {
     grid-template-columns: 1fr;
@@ -24,7 +24,7 @@
 }
 
 .card__image {
-  margin-top: -6px;
+  // margin-top: -6px;
   display: block;
 
   &--show-all {
@@ -99,13 +99,13 @@
     background: linear-gradient(to top, $light-grey2 82%, $default-white 82%);
 
     &--show-all {
-      min-height: 429px;
+      min-height: 432px;
       grid-template-columns: 1fr;
       padding: 37px 20px;
       padding-top: 3px;
       background: none;
       border: 2px solid $light-grey2;
-      margin-top: 92px;
+      margin-top: 97px;
     }
   }
 
@@ -186,6 +186,8 @@
 
 @media (min-width: $desktop-width) {
   .card {
+    width: 245px;
+
     &--show-all {
 
       grid-template-columns: 1fr;
@@ -209,8 +211,7 @@
   }
 
   .card__image {
-    margin: 0 auto;
-    margin-top: 0;
+    margin-left: -10px;
     display: block;
 
     &--show-all {
