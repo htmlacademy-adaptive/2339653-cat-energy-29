@@ -1,5 +1,4 @@
   // Открытие/закрытие меню навигации
-
 export let openNav = () => {
 
   let burgerButton = document.querySelector('.burger-button');
