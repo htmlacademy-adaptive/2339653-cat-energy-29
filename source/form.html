@@ -10,150 +10,154 @@
 </head>
 
 <body class="page__body">
-
-  <header class="main-header">
-    <div class="main-header__container main-header__container--visible">
-      <div class="main-header__top">
-        <a href="index.html" class="main-header__logo">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/header-logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg">
-            <img class="main-header__logo-image" src="img/header-logo-mobile.svg" alt="Логотип Кэт энерджи.">
-          </picture>
-        </a>
-        <button class="main-header__toggle burger-button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
-      <nav class="main-nav">
-        <div class="main-nav__container">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html" class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link-current" href="#">Подбор
-                программы</a>
-            </li>
-          </ul>
+  <div class="wrapper">
+    <header class="main-header">
+      <div class="main-header__container main-header__container--visible">
+        <div class="main-header__top">
+          <a href="index.html" class="main-header__logo">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/header-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg">
+              <img class="main-header__logo-image" src="img/header-logo-mobile.svg" alt="Логотип Кэт энерджи.">
+            </picture>
+          </a>
+          <button class="main-header__toggle burger-button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
-      </nav>
-    </div>
-  </header>
-
-  <mian class="main-form">
-    <div class="main-form__container">
-      <section class="program-form">
-        <h1 class="program-form__title">Подбор программы</h1>
-        <p class="program-form__descr">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="program-form__form" action="https://echo.htmlacademy.ru" method="get">
-
-          <fieldset class="program-form__field program-form__field--user-info">
-            <label class="program-form__label">
-              <span class="program-form__label-text">Имя:*</span>
-              <input class="program-form__input" type="text" id="program-form-cat-name" name="cat-name"
-                placeholder="Барсик" required>
-            </label>
-            <label class="program-form__label">
-              <span class="program-form__label-text">Вес&nbsp;(кг):*</span>
-              <input class="program-form__input" type="text" id="program-form-cat-weight" name="cat-weight"
-                placeholder="7" required>
-            </label>
-            <label class="program-form__label">
-              <span class="program-form__label-text">Возраст&nbsp;(лет):</span>
-              <input class="program-form__input program-form__input--error" type="text" id="program-form-cat-age"
-                name="cat-age" placeholder="7" required>
-            </label>
-          </fieldset>
-
-          <fieldset class="program-form__field program-form__field--select-program">
-            <label class="program-form__label program-form__label-radio">
-              <input class="program-form__radio" type="radio" name="program-types" id="program-slim" checked>
-              <span class="program-form__label-text program-form__label-text--radio">Похудение</span>
-            </label>
-            <label class="program-form__label program-form__label-radio">
-              <input class="program-form__radio" type="radio" name="program-types" id="program-mass">
-              <span class="program-form__label-text program-form__label-text--radio">Набор массы</span>
-            </label>
-            <label class="program-form__label program-form__label-radio">
-              <input class="program-form__radio" type="radio" name="program-types" id="program-unknown">
-              <span class="program-form__label-text program-form__label-text--radio">Не знаю (Нужен ваш совет)</span>
-            </label>
-          </fieldset>
-
-          <fieldset class="program-form__field program-form__field--contacts">
-            <div class="program-form__line wrapper-line wrapper-line--programs">
-              <legend class="program-form__subtitle">Контактные данные (владельца кота)</legend>
-            </div>
-            <label class="program-form__label program-form__label-contacts">
-              <span class="program-form__label-text program-form__label-text--email">E-mail:*</span>
-              <input class="program-form__input program-form__input-contacts" type="text" id="program-form-email"
-                placeholder="kuklachev@gmail.com">
-              <svg class="program-form__input-contacts-icon">
-                <use xlink:href="img/sprite.svg#mail" xmlns="http://www.w3.org/2000/svg"></use>
-              </svg>
-            </label>
-            <label class="program-form__label program-form__label-contacts">
-              <span class="program-form__label-text">Телефон:*</span>
-              <input class="program-form__input program-form__input-contacts program-form__input--error" type="text"
-                id="program-form-phone" placeholder="8 (960) 900-60-90">
-              <svg class="program-form__input-contacts-icon">
-                <use xlink:href="img/sprite.svg#phone" xmlns="http://www.w3.org/2000/svg"></use>
-              </svg>
-            </label>
-          </fieldset>
-
-          <fieldset class="program-form__field program-form__field--comment">
-            <div class="program-form__line wrapper-line wrapper-line--programs">
-              <legend class="program-form__subtitle program-form__subtitle--comment">Комментарий</legend>
-            </div>
-            <textarea class="program-form__textarea" id="program-form-comment" name="comment"
-              placeholder="Расскажите обо всех повадках кота" required></textarea>
-          </fieldset>
-
-          <fieldset class="program-form__field program-form__field--extra">
-            <div class="program-form__line wrapper-line wrapper-line--programs">
-              <legend class="program-form__subtitle program-form__subtitle--extra">Дополнительно</legend>
-            </div>
-            <label class="program-form__label
-            program-form__label-checkbox"><input class="program-form__checkbox" type="checkbox" name="extra-sweetener"
-                id="extra-sweetener-checkbox" checked>
-              <span class="program-form__label-text program-form__label-text--checkbox">Cахарозаменитель</span></label>
-            <label class="program-form__label program-form__label-checkbox"><input class="program-form__checkbox"
-                type="checkbox" name="extra-water" id="extra-water-checkbox">
-              <span class="program-form__label-text program-form__label-text--checkbox">Питьевая вода</span></label>
-            <label class="program-form__label program-form__label-checkbox"><input class="program-form__checkbox"
-                type="checkbox" name="extra-milk" id="extra-milk-checkbox">
-              <span class="program-form__label-text program-form__label-text--checkbox">Молоко</span></label>
-            <label class="program-form__label program-form__label-checkbox"><input class="program-form__checkbox"
-                type="checkbox" name="extra-vitamins" id="extra-vitamins-checkbox">
-              <span class="program-form__label-text program-form__label-text--checkbox">Витамины</span></label>
-          </fieldset>
-
-          <div class="program-form__bottom-container">
-            <button class="program-form__button button button--green" type="submit">Отправить заявку</button>
-            <p class="program-form__footnote">* — Обязательные поля</p>
+        <nav class="main-nav">
+          <div class="main-nav__container">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html" class="main-nav__link">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link-current" href="#">Подбор
+                  программы</a>
+              </li>
+            </ul>
           </div>
-        </form>
-      </section>
-    </div>
+        </nav>
+      </div>
+    </header>
+  </div>
 
-    <section class="contacts contacts--grey">
-      <div class="contacts__text-content">
-        <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+
+    <main class="main-form">
+      <div class="main-form__container">
+        <section class="program-form">
+          <h1 class="program-form__title">Подбор программы</h1>
+          <p class="program-form__descr">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <form class="program-form__form" action="https://echo.htmlacademy.ru" method="get">
+
+            <fieldset class="program-form__field program-form__field--user-info">
+              <label class="program-form__label">
+                <span class="program-form__label-text">Имя:*</span>
+                <input class="program-form__input" type="text" id="program-form-cat-name" name="cat-name"
+                  placeholder="Барсик" required>
+              </label>
+              <label class="program-form__label">
+                <span class="program-form__label-text">Вес&nbsp;(кг):*</span>
+                <input class="program-form__input" type="text" id="program-form-cat-weight" name="cat-weight"
+                  placeholder="7" required>
+              </label>
+              <label class="program-form__label">
+                <span class="program-form__label-text">Возраст&nbsp;(лет):</span>
+                <input class="program-form__input" type="text" id="program-form-cat-age"
+                  name="cat-age" placeholder="7" required>
+              </label>
+            </fieldset>
+
+            <fieldset class="program-form__field program-form__field--select-program">
+              <label class="program-form__label program-form__label-radio">
+                <input class="program-form__radio" type="radio" name="program-types" id="program-slim" checked>
+                <span class="program-form__label-text program-form__label-text--radio">Похудение</span>
+              </label>
+              <label class="program-form__label program-form__label-radio">
+                <input class="program-form__radio" type="radio" name="program-types" id="program-mass">
+                <span class="program-form__label-text program-form__label-text--radio">Набор массы</span>
+              </label>
+              <label class="program-form__label program-form__label-radio">
+                <input class="program-form__radio" type="radio" name="program-types" id="program-unknown">
+                <span class="program-form__label-text program-form__label-text--radio">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </fieldset>
+
+            <fieldset class="program-form__field program-form__field--contacts">
+              <div class="program-form__line wrapper-line wrapper-line--programs">
+                <legend class="program-form__subtitle">Контактные данные (владельца кота)</legend>
+              </div>
+              <label class="program-form__label program-form__label-contacts">
+                <span class="program-form__label-text program-form__label-text--email">E-mail:*</span>
+                <input class="program-form__input program-form__input-contacts" type="text" id="program-form-email"
+                  placeholder="kuklachev@gmail.com">
+                <svg class="program-form__input-contacts-icon">
+                  <use xlink:href="img/sprite.svg#mail" xmlns="http://www.w3.org/2000/svg"></use>
+                </svg>
+              </label>
+              <label class="program-form__label program-form__label-contacts">
+                <span class="program-form__label-text">Телефон:*</span>
+                <input class="program-form__input program-form__input-contacts" type="text"
+                  id="program-form-phone" placeholder="8 (960) 900-60-90">
+                <svg class="program-form__input-contacts-icon">
+                  <use xlink:href="img/sprite.svg#phone" xmlns="http://www.w3.org/2000/svg"></use>
+                </svg>
+              </label>
+            </fieldset>
+
+            <fieldset class="program-form__field program-form__field--comment">
+              <div class="program-form__line wrapper-line wrapper-line--programs">
+                <legend class="program-form__subtitle program-form__subtitle--comment">Комментарий</legend>
+              </div>
+              <textarea class="program-form__textarea" id="program-form-comment" name="comment"
+                placeholder="Расскажите обо всех повадках кота" required></textarea>
+            </fieldset>
+
+            <fieldset class="program-form__field program-form__field--extra">
+              <div class="program-form__line wrapper-line wrapper-line--programs">
+                <legend class="program-form__subtitle program-form__subtitle--extra">Дополнительно</legend>
+              </div>
+              <label class="program-form__label
+            program-form__label-checkbox"><input class="program-form__checkbox" type="checkbox" name="extra-sweetener"
+                  id="extra-sweetener-checkbox" checked>
+                <span
+                  class="program-form__label-text program-form__label-text--checkbox">Cахарозаменитель</span></label>
+              <label class="program-form__label program-form__label-checkbox"><input class="program-form__checkbox"
+                  type="checkbox" name="extra-water" id="extra-water-checkbox">
+                <span class="program-form__label-text program-form__label-text--checkbox">Питьевая вода</span></label>
+              <label class="program-form__label program-form__label-checkbox"><input class="program-form__checkbox"
+                  type="checkbox" name="extra-milk" id="extra-milk-checkbox">
+                <span class="program-form__label-text program-form__label-text--checkbox">Молоко</span></label>
+              <label class="program-form__label program-form__label-checkbox"><input class="program-form__checkbox"
+                  type="checkbox" name="extra-vitamins" id="extra-vitamins-checkbox">
+                <span class="program-form__label-text program-form__label-text--checkbox">Витамины</span></label>
+            </fieldset>
+
+            <div class="program-form__bottom-container">
+              <button class="program-form__button button button--green" type="submit">Отправить заявку</button>
+              <p class="program-form__footnote">* — Обязательные поля</p>
+            </div>
+          </form>
+        </section>
       </div>
-      <div class="contacts__map-container">
-        <iframe class="contacts__map"
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ce5e59beeaad92a430c0a1f580c103606c84bb01859606abf5e28c924734dc4&amp;source=constructor">
-        </iframe>
-        <div class="contacts__map-pin"></div>
-      </div>
-    </section>
-  </mian>
+
+      <section class="contacts contacts--grey">
+        <div class="contacts__text-content">
+          <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+        </div>
+        <div class="contacts__map-container">
+          <iframe class="contacts__map"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ce5e59beeaad92a430c0a1f580c103606c84bb01859606abf5e28c924734dc4&amp;source=constructor">
+          </iframe>
+          <div class="contacts__map-pin"></div>
+        </div>
+      </section>
+    </main>
+
 
   <footer class="main-footer">
     <div class="main-footer__container">

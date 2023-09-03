@@ -1,13 +1,10 @@
-.cross-sell {
-  &__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 25px;
-  }
+.cross-sell__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .cross-sell__line {
-  grid-column: 2 span;
+  padding-top: 25px;
 }
 
 .cross-sell__title {
@@ -21,12 +18,13 @@
 
 .cross-sell__list {
   @include list-reset;
-  padding: 0 20px;
+  padding: 0;
   grid-column: 2 span;
   border-top: 1px solid $light-grey-d;
 }
 
 .cross-sell__item {
+  padding: 0 20px;
   padding-bottom: 19px;
   border-bottom: 1px solid $light-grey-d;
 }
@@ -54,10 +52,6 @@
 //********************** TABLET **********************//
 
 @media (min-width: $tablet-width) {
-  .cross-sell__container {
-    padding-top: 70px;
-  }
-
   .cross-sell__title {
     margin: 0;
     margin-bottom: 80px;
@@ -99,6 +93,10 @@
   .cross-sell__button {
     min-height: 40px;
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -106,18 +104,23 @@
 //******************* DESKTOP***********************//
 
 @media (min-width: $desktop-width) {
-  .cross-sell__container {
-    grid-template-columns: 1fr 1fr 355px;
-    padding: 70px 0 87px 0;
+  .cross-sell {
+    width: 1440px;
+    margin: 0 auto;
+    padding-left: 40px;
   }
 
-  .cross-sell__line {
-    grid-column: 3 span;
+  .cross-sell__container {
+    grid-template-columns: 1fr 1fr 355px;
+    width: 1440px;
+    padding: 0 150px 87px 70px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .cross-sell__list {
-    width: 100%;
-    padding: 0 80px 0 110px;
+    width: 895px;
+    padding: 0;
   }
 
   .cross-sell__item {

@@ -1,6 +1,5 @@
 .main-header__container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   margin: 0 auto;
 }
 
@@ -8,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 20px 14px 20px;
+  padding: 13px 0 14px 0;
 }
 
 .main-header__logo {
@@ -38,13 +37,14 @@
   }
 
   .main-header__container {
-    flex-direction: row;
+    grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 30px 0 30px;
+    padding: 25px 0 0 0;
   }
 
   .main-header__top {
+    grid-column: 1/2;
     padding: 0;
     margin-bottom: auto;
   }
@@ -55,13 +55,17 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    &--desktop {
+    width: 1220px;
+
+    &--index-desktop {
       position: absolute;
       z-index: 10;
+      margin: 0 auto;
     }
 
     .main-header__container {
-      padding: 56px 110px 0 110px;
+      padding: 0;
+      padding-top: 56px;
     }
 
     .main-header__container--visible {

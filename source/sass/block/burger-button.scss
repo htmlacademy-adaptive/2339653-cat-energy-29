@@ -51,21 +51,20 @@
   &::after {
     display: none;
   }
-}
 
-&:focus {
-  opacity: 0.5;
-  outline: none;
-}
+  &:focus {
+    opacity: 0.5;
+    outline: none;
+  }
 
-&:hover {
-  opacity: 0.5;
-}
+  &:hover {
+    opacity: 0.5;
+  }
 
-&:active {
-  opacity: 0.2;
+  &:active {
+    opacity: 0.2;
+  }
 }
-
 
 @media (min-width: $tablet-width) {
   .burger-button {

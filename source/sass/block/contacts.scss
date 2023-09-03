@@ -13,7 +13,6 @@
 
 .contacts__title {
   margin: 0;
-  padding-right: 20px;
   font-size: $font-medium;
   color: $dark-color;
   line-height: 20px;
@@ -32,35 +31,7 @@
   width: 100%;
   height: 362px;
   margin-bottom: -3px;
-
-  &:hover + .contacts__map-pin {
-    opacity: 0;
-  }
-}
-
-.contacts__map-container {
-  position: relative;
-}
-
-.contacts__map-pin {
-  position: absolute;
-  transition: opacity 0.3s ease-in-out;
-
-  &:hover {
-    opacity: 0;
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 57px;
-    height: 53px;
-    background-image: url("../../img/map-pin.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 100;
-    transform: translate(242%, -424%);
-  }
+  border: none;
 }
 
 //******************* TABLET ***********************//
