@@ -2,12 +2,11 @@
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 25px;
   }
 }
 
 .cross-sell__line {
-  grid-column: 2 span;
+  padding-top: 25px;
 }
 
 .cross-sell__title {
@@ -21,7 +20,7 @@
 
 .cross-sell__list {
   @include list-reset;
-  padding: 0 20px;
+  padding: 0;
   grid-column: 2 span;
   border-top: 1px solid $light-grey-d;
 }
@@ -54,7 +53,11 @@
 //********************** TABLET **********************//
 
 @media (min-width: $tablet-width) {
-  .cross-sell__container {
+  // .cross-sell__container {
+  //   padding-top:
+  // }
+
+  .cross-sell__line {
     padding-top: 70px;
   }
 
@@ -66,7 +69,7 @@
   }
 
   .cross-sell__list {
-    padding: 0 30px;
+    padding: 0;
     border-top: none;
   }
 
@@ -108,7 +111,10 @@
 @media (min-width: $desktop-width) {
   .cross-sell__container {
     grid-template-columns: 1fr 1fr 355px;
-    padding: 70px 0 87px 0;
+    width: 1220px;
+    padding: 0 0 87px 0;
+    display: flex;
+    justify-content: space-between;
   }
 
   .cross-sell__line {
@@ -116,8 +122,8 @@
   }
 
   .cross-sell__list {
-    width: 100%;
-    padding: 0 80px 0 110px;
+    width: 895px;
+    padding: 0;
   }
 
   .cross-sell__item {

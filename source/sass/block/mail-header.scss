@@ -1,6 +1,5 @@
 .main-header__container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   margin: 0 auto;
 }
 
@@ -38,13 +37,14 @@
   }
 
   .main-header__container {
-    flex-direction: row;
+    grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
     padding: 25px 30px 0 30px;
   }
 
   .main-header__top {
+    grid-column: 1/2;
     padding: 0;
     margin-bottom: auto;
   }
