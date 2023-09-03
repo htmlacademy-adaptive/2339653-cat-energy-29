@@ -12,4 +12,3 @@ export let openNav = () => {
     mainNav.classList.remove('main-nav--no-js')
   }
 }
-
