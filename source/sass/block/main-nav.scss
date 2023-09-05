@@ -85,7 +85,6 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 460px;
-    opacity: 1;
   }
 
   .main-nav__container {
@@ -99,6 +98,8 @@
     gap: 33px;
     border: none;
     margin: 0;
+    position: static;
+    opacity: 1;
   }
 
   .main-nav__item {
