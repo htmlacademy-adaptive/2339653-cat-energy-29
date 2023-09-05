@@ -1,19 +1,16 @@
 // Открытие/закрытие меню навигации
 
 let burgerButton = document.querySelector('.burger-button');
-let mainNav = document.querySelector('.main-nav');
-let noJs = document.querySelector('.main-nav--no-js');
+let mainNav = document.querySelector('.main-nav__list');
 
 burgerButton.onclick = function () {
-  burgerButton.classList.toggle('burger-button--close')
-  mainNav.classList.toggle('main-nav--show')
-  mainNav.classList.remove('main-nav--no-js')
+  burgerButton.classList.toggle('burger-button--close');
+  burgerButton.classList.remove('burger-button-no-js');
+  mainNav.classList.remove('main-nav__list-no-js');
+  mainNav.classList.toggle('main-nav__list--show');
 }
 
-
-// Бегунок на слайдере
-
-
+// Cлайдер
 
 let slider = document.querySelector('.slider');
 let before = slider.querySelector('.slider__before');

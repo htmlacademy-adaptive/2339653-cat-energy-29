@@ -21,13 +21,13 @@
               <img class="main-header__logo-image" src="img/header-logo-mobile.svg" alt="Логотип Кэт энерджи.">
             </picture>
           </a>
-          <button class="main-header__toggle burger-button" type="button">
+          <button class="main-header__toggle burger-button burger-button-no-js" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <nav class="main-nav main-nav--no-js">
+        <nav class="main-nav">
           <div class="main-nav__container">
-            <ul class="main-nav__list">
+            <ul class="main-nav__list main-nav__list-no-js">
               <li class="main-nav__item">
                 <a href="#"
                   class="main-nav__link main-nav__link--white main-nav__link-current main-nav__link-current--white">Главная</a>
@@ -142,9 +142,6 @@
           <div class="slider">
             <div class="slider__before">
               <picture>
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
                 <img class="slider__before-image slider__image" src="img/before-mobile@1x.png"
                   srcset="img/before-mobile@2x.png 2x" alt="Фотография толстого кота.">
@@ -152,9 +149,6 @@
             </div>
             <div class="slider__after">
               <picture>
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
                 <img class="slider__after-image slider__image" src="img/after-mobile@1x.png"
                   srcset="img/after-mobile@2x.png 2x" alt="Фотография худого кота">
