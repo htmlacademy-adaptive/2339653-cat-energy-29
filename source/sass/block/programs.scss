@@ -22,19 +22,20 @@
 
 .programs__logo {
   margin-bottom: auto;
-
-  &--slim {
-    width: 50px;
-    height: 50px;
-  }
-
-  &--mass {
-    width: 69px;
-    height: 49px;
-    margin-left: -8px;
-    margin-right: -8px;
-  }
 }
+
+.programs__logo--slim {
+  width: 50px;
+  height: 50px;
+}
+
+.programs__logo--mass {
+  width: 69px;
+  height: 49px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
 
 .programs__title {
   margin: 0;
@@ -115,17 +116,18 @@
   .programs__logo {
     grid-area: image;
     align-self: end;
+  }
 
-    &--slim {
-      width: 200px;
-      height: 200px;
-    }
 
-    &--mass {
-      width: 268px;
-      height: 200px;
-      margin-right: -20px;
-    }
+  .programs__logo--slim {
+    width: 200px;
+    height: 211px;
+  }
+
+  .programs__logo--mass {
+    width: 268px;
+    height: 200px;
+    margin-right: -20px;
   }
 
   .programs__descr {
@@ -178,17 +180,17 @@
   .programs__logo {
     grid-column: 1/2;
     grid-row: 1;
+  }
 
-    &--slim {
-      width: 100px;
-      height: 105px;
-    }
+  .programs__logo--slim {
+    width: 100px;
+    height: 105px;
+  }
 
-    &--mass {
-      width: 134px;
-      height: 110px;
-      margin-left: -17px;
-    }
+  .programs__logo--mass {
+    width: 134px;
+    height: 110px;
+    margin-left: -17px;
   }
 
   .programs__title {
