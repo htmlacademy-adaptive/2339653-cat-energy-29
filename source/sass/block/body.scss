@@ -15,8 +15,13 @@ body {
   line-height: 18px;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 @media (min-width: $desktop-width) {
   body {
     position: relative;
   }
 }
+
