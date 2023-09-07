@@ -57,17 +57,17 @@
               <label class="program-form__label">
                 <span class="program-form__label-text">Имя:*</span>
                 <input class="program-form__input" type="text" id="program-form-cat-name" name="cat-name"
-                  placeholder="Барсик" required>
+                  placeholder="Барсик" required aria-label="Ввод имени кота">
               </label>
               <label class="program-form__label">
                 <span class="program-form__label-text">Вес&nbsp;(кг):*</span>
                 <input class="program-form__input" type="text" id="program-form-cat-weight" name="cat-weight"
-                  placeholder="7" required>
+                  placeholder="7" required aria-label="Ввод веса кота">
               </label>
               <label class="program-form__label">
                 <span class="program-form__label-text">Возраст&nbsp;(лет):</span>
                 <input class="program-form__input" type="text" id="program-form-cat-age"
-                  name="cat-age" placeholder="7" required>
+                  name="cat-age" placeholder="7" required aria-label="Ввод возраста кота">
               </label>
             </fieldset>
 
@@ -93,7 +93,7 @@
               <label class="program-form__label program-form__label-contacts">
                 <span class="program-form__label-text program-form__label-text--email">E-mail:*</span>
                 <input class="program-form__input program-form__input-contacts" type="text" id="program-form-email"
-                  placeholder="kuklachev@gmail.com">
+                  placeholder="kuklachev@gmail.com" aria-label="Ввод адреса электронной почты">
                 <svg class="program-form__input-contacts-icon">
                   <use xlink:href="img/sprite.svg#mail" xmlns="http://www.w3.org/2000/svg"></use>
                 </svg>
@@ -101,7 +101,7 @@
               <label class="program-form__label program-form__label-contacts">
                 <span class="program-form__label-text">Телефон:*</span>
                 <input class="program-form__input program-form__input-contacts" type="text"
-                  id="program-form-phone" placeholder="8 (960) 900-60-90">
+                  id="program-form-phone" placeholder="8 (960) 900-60-90" aria-label="Ввод номера телефона">
                 <svg class="program-form__input-contacts-icon">
                   <use xlink:href="img/sprite.svg#phone" xmlns="http://www.w3.org/2000/svg"></use>
                 </svg>
@@ -113,7 +113,7 @@
                 <span class="program-form__subtitle program-form__subtitle--comment">Комментарий</span>
               </legend>
               <textarea class="program-form__textarea" id="program-form-comment" name="comment"
-                placeholder="Расскажите обо всех повадках кота" required></textarea>
+                placeholder="Расскажите обо всех повадках кота" required aria-label="Поле ввода комментария"></textarea>
             </fieldset>
 
             <fieldset class="program-form__field program-form__field--extra">
