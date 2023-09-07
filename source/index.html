@@ -54,6 +54,11 @@
             <p class="promo__descr">Занялся собой? Займись котом!</p>
           </div>
           <picture class="promo__picture">
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png, img/index-can-tablet@2x.png 2x">
             <img class="promo__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
@@ -142,6 +147,9 @@
           <div class="slider">
             <div class="slider__before">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
                 <img class="slider__before-image slider__image" src="img/before-mobile@1x.png"
                   srcset="img/before-mobile@2x.png 2x" alt="Фотография толстого кота.">
@@ -149,6 +157,9 @@
             </div>
             <div class="slider__after">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
                 <img class="slider__after-image slider__image" src="img/after-mobile@1x.png"
                   srcset="img/after-mobile@2x.png 2x" alt="Фотография худого кота">
@@ -170,7 +181,23 @@
       <iframe class="contacts__map"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ce5e59beeaad92a430c0a1f580c103606c84bb01859606abf5e28c924734dc4&amp;source=constructor">
       </iframe>
-
+      <div class="contacts__map-no-js">
+        <noscript>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/map-noscript-desktop@1x.webp 1x, img/map-noscript-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/map-noscript-tablet@1x.webp 1x, img/map-noscript-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-noscript-mobile@1x.webp 1x, img/map-noscript-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)"
+              srcset="img/map-noscript-desktop@1x.jpg, img/map-noscript-desktop@1x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/map-noscript-tablet@1x.jpg, img/map-noscript-tablet@1x.jpg 2x">
+            <img class="map-image" src="img/map-noscript-mobile@1x.jpg" srcset="img/map-noscript-mobile@1x.jpg 2x"
+              alt="Местоположение организации на карте.">
+          </picture>
+        </noscript>
+      </div>
     </section>
 
   </main>

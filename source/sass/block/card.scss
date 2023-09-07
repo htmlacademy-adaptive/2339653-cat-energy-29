@@ -93,12 +93,15 @@
 
   &:hover {
     cursor: pointer;
-    opacity: 0.5;
   }
 }
 
 .card__button--show-all {
   @include link-style();
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 //********************** TABLET **********************//
