@@ -73,14 +73,14 @@
     content: "";
     width: 32px;
     height: 16px;
-    background-image: url("../../img/icon_arrow.svg");
+    background-image: url("../img/icon_arrow.svg");
     margin-left: 15px;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   &:hover::after {
-    background-image: url("../../img/icon_arrow-large.svg");
+    background-image: url("../img/icon_arrow-large.svg");
   }
 
   &:active {

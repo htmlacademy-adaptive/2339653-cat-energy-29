@@ -14,7 +14,7 @@
   gap: 48px;
   align-items: center;
   background:
-    url("../../img/catalog-image/gift-background-mobile@1x.jpg"),
+    url("../img/catalog-image/gift-background-mobile@1x.jpg"),
     $basic-green;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +23,7 @@
 @media (min-resolution: 2dppx) {
   .gift__container {
     background:
-      url("../../img/catalog-image/gift-background-mobile@2x.jpg"),
+      url("../img/catalog-image/gift-background-mobile@2x.jpg"),
       $basic-green;
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,7 +61,7 @@
     flex-direction: row;
     gap: 48px;
     background:
-      url("../../img/catalog-image/gift-background-tablet@1x.jpg"),
+      url("../img/catalog-image/gift-background-tablet@1x.jpg"),
       $basic-green;
     background-size: cover;
     justify-content: space-between;
@@ -70,7 +70,7 @@
   @media (min-resolution: 2dppx) {
     .gift__container {
       background:
-        url("../../img/catalog-image/gift-background-tablet@2x.jpg"),
+        url("../img/catalog-image/gift-background-tablet@2x.jpg"),
         $basic-green;
       background-size: cover;
     }
@@ -110,7 +110,7 @@
     justify-content: center;
     gap: 46px;
     background:
-      url("../../img/catalog-image/gift-background-desktop@1x.jpg"),
+      url("../img/catalog-image/gift-background-desktop@1x.jpg"),
       $basic-green;
     background-size: cover;
   }
@@ -118,7 +118,7 @@
   @media (min-resolution: 2dppx) {
     .gift__container {
       background:
-        url("../../img/catalog-image/gift-background-desktop@2x.jpg"),
+        url("../img/catalog-image/gift-background-desktop@2x.jpg"),
         $basic-green;
       background-size: cover;
     }

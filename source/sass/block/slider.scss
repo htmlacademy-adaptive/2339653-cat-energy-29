@@ -36,7 +36,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-image: url("../../img/slider-toggle.svg");
+    background-image: url("../img/slider-toggle.svg");
     background-repeat: no-repeat;
     background-size: cover;
     left: 50%;
@@ -50,7 +50,7 @@
 
     /* stylelint-disable-next-line max-nesting-depth */
     &::after {
-      background-image: url("../../img/slider-toggle-green.svg");
+      background-image: url("../img/slider-toggle-green.svg");
     }
   }
 
