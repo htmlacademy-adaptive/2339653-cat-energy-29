@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width; initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <title>Кэт энерджи</title>
 </head>
@@ -57,17 +57,17 @@
               <label class="program-form__label">
                 <span class="program-form__label-text">Имя:*</span>
                 <input class="program-form__input" type="text" id="program-form-cat-name" name="cat-name"
-                  placeholder="Барсик" required>
+                  placeholder="Барсик" required aria-label="Ввод имени кота">
               </label>
               <label class="program-form__label">
                 <span class="program-form__label-text">Вес&nbsp;(кг):*</span>
                 <input class="program-form__input" type="text" id="program-form-cat-weight" name="cat-weight"
-                  placeholder="7" required>
+                  placeholder="7" required aria-label="Ввод веса кота">
               </label>
               <label class="program-form__label">
                 <span class="program-form__label-text">Возраст&nbsp;(лет):</span>
                 <input class="program-form__input" type="text" id="program-form-cat-age"
-                  name="cat-age" placeholder="7" required>
+                  name="cat-age" placeholder="7" required aria-label="Ввод возраста кота">
               </label>
             </fieldset>
 
@@ -87,13 +87,13 @@
             </fieldset>
 
             <fieldset class="program-form__field program-form__field--contacts">
-              <div class="program-form__line wrapper-line wrapper-line--programs">
-                <legend class="program-form__subtitle">Контактные данные (владельца кота)</legend>
-              </div>
+              <legend class="program-form__line wrapper-line wrapper-line--programs">
+                <span class="program-form__subtitle">Контактные данные (владельца кота)</span>
+              </legend>
               <label class="program-form__label program-form__label-contacts">
                 <span class="program-form__label-text program-form__label-text--email">E-mail:*</span>
                 <input class="program-form__input program-form__input-contacts" type="text" id="program-form-email"
-                  placeholder="kuklachev@gmail.com">
+                  placeholder="kuklachev@gmail.com" aria-label="Ввод адреса электронной почты">
                 <svg class="program-form__input-contacts-icon">
                   <use xlink:href="img/sprite.svg#mail" xmlns="http://www.w3.org/2000/svg"></use>
                 </svg>
@@ -101,7 +101,7 @@
               <label class="program-form__label program-form__label-contacts">
                 <span class="program-form__label-text">Телефон:*</span>
                 <input class="program-form__input program-form__input-contacts" type="text"
-                  id="program-form-phone" placeholder="8 (960) 900-60-90">
+                  id="program-form-phone" placeholder="8 (960) 900-60-90" aria-label="Ввод номера телефона">
                 <svg class="program-form__input-contacts-icon">
                   <use xlink:href="img/sprite.svg#phone" xmlns="http://www.w3.org/2000/svg"></use>
                 </svg>
@@ -109,17 +109,17 @@
             </fieldset>
 
             <fieldset class="program-form__field program-form__field--comment">
-              <div class="program-form__line wrapper-line wrapper-line--programs">
-                <legend class="program-form__subtitle program-form__subtitle--comment">Комментарий</legend>
-              </div>
+              <legend class="program-form__line wrapper-line wrapper-line--programs">
+                <span class="program-form__subtitle program-form__subtitle--comment">Комментарий</span>
+              </legend>
               <textarea class="program-form__textarea" id="program-form-comment" name="comment"
-                placeholder="Расскажите обо всех повадках кота" required></textarea>
+                placeholder="Расскажите обо всех повадках кота" required aria-label="Поле ввода комментария"></textarea>
             </fieldset>
 
             <fieldset class="program-form__field program-form__field--extra">
-              <div class="program-form__line wrapper-line wrapper-line--programs">
-                <legend class="program-form__subtitle program-form__subtitle--extra">Дополнительно</legend>
-              </div>
+              <legend class="program-form__line wrapper-line wrapper-line--programs">
+                <span class="program-form__subtitle program-form__subtitle--extra">Дополнительно</span>
+              </legend>
               <label class="program-form__label
             program-form__label-checkbox"><input class="program-form__checkbox" type="checkbox" name="extra-sweetener"
                   id="extra-sweetener-checkbox" checked>
@@ -162,7 +162,7 @@
   <footer class="main-footer">
     <div class="main-footer__container">
       <a class="main-footer__logo" href="#">
-        <svg lass="main-footer__logo-image" width="128" height="24" role="img" aria-label="Logo Cat Enerdgy.">
+        <svg class="main-footer__logo-image" width="128" height="24" role="img" aria-label="Logo Cat Enerdgy.">
           <use xlink:href="img/sprite.svg#footer-logo" xmlns="http://www.w3.org/2000/svg"></use>
         </svg>
       </a>

@@ -175,6 +175,11 @@
   cursor: pointer;
 }
 
+.program-form__radio:disabled + .program-form__label-text {
+  opacity: 0.3;
+  cursor: auto;
+}
+
 .program-form__radio:checked + .program-form__label-text--radio::after {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
@@ -186,6 +191,11 @@
 
 .program-form__checkbox {
   cursor: pointer;
+}
+
+.program-form__checkbox:disabled + .program-form__label-text {
+  opacity: 0.3;
+  cursor: auto;
 }
 
 .program-form__checkbox:checked + .program-form__label-text--checkbox::after {

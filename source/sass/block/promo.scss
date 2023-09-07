@@ -1,9 +1,19 @@
 .promo {
   background:
-    url("../img/promo-background-mobile.jpg") no-repeat,
+    url("../img/promo-background-mobile@1x.jpg") no-repeat,
     linear-gradient(to bottom, #64a63a 64%, $default-white 64%);
   background-repeat: no-repeat;
   background-position: top;
+}
+
+@media (min-resolution: 2dppx) {
+  .promo {
+    background:
+      url("../img/promo-background-mobile@2x.jpg") no-repeat,
+      linear-gradient(to bottom, #64a63a 64%, $default-white 64%);
+    background-repeat: no-repeat;
+    background-position: top;
+  }
 }
 
 .promo__container {
@@ -108,13 +118,25 @@
       content: "";
       position: absolute;
       background:
-        url("../../img/promo-background-desktop.jpg"),
+        url("../../img/promo-background-desktop@1x.jpg"),
         $basic-green;
       background-repeat: no-repeat;
       width: 50%;
       height: 100%;
       background-size: cover;
       right: 0;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .promo {
+      &::before {
+        background:
+          url("../../img/promo-background-desktop@2x.jpg"),
+          $basic-green;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     }
   }
 

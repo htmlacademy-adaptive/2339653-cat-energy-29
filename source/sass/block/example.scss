@@ -245,6 +245,6 @@
   .example__slider-container {
     grid-column: 2/-1;
     padding-bottom: 20px;
-    background: linear-gradient(to top, #f2f2f2 75%, #ffffff 75%);
+    background: linear-gradient(to top, #f2f2f2 75%, $default-white 75%);
   }
 }

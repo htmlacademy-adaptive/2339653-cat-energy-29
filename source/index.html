@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width; initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <title>Кэт энерджи</title>
 </head>
@@ -21,13 +21,13 @@
               <img class="main-header__logo-image" src="img/header-logo-mobile.svg" alt="Логотип Кэт энерджи.">
             </picture>
           </a>
-          <button class="main-header__toggle burger-button" type="button">
+          <button class="main-header__toggle burger-button burger-button-no-js" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <nav class="main-nav main-nav--no-js">
+        <nav class="main-nav">
           <div class="main-nav__container">
-            <ul class="main-nav__list">
+            <ul class="main-nav__list main-nav__list-no-js">
               <li class="main-nav__item">
                 <a href="#"
                   class="main-nav__link main-nav__link--white main-nav__link-current main-nav__link-current--white">Главная</a>
@@ -54,6 +54,11 @@
             <p class="promo__descr">Занялся собой? Займись котом!</p>
           </div>
           <picture class="promo__picture">
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png, img/index-can-tablet@2x.png 2x">
             <img class="promo__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
@@ -143,8 +148,8 @@
             <div class="slider__before">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
+                  srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
                 <img class="slider__before-image slider__image" src="img/before-mobile@1x.png"
                   srcset="img/before-mobile@2x.png 2x" alt="Фотография толстого кота.">
@@ -153,8 +158,8 @@
             <div class="slider__after">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
+                  srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
                 <img class="slider__after-image slider__image" src="img/after-mobile@1x.png"
                   srcset="img/after-mobile@2x.png 2x" alt="Фотография худого кота">
@@ -176,7 +181,23 @@
       <iframe class="contacts__map"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ce5e59beeaad92a430c0a1f580c103606c84bb01859606abf5e28c924734dc4&amp;source=constructor">
       </iframe>
-
+      <div class="contacts__map-no-js">
+        <noscript>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/map-noscript-desktop@1x.webp 1x, img/map-noscript-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/map-noscript-tablet@1x.webp 1x, img/map-noscript-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-noscript-mobile@1x.webp 1x, img/map-noscript-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)"
+              srcset="img/map-noscript-desktop@1x.jpg, img/map-noscript-desktop@1x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/map-noscript-tablet@1x.jpg, img/map-noscript-tablet@1x.jpg 2x">
+            <img class="map-image" src="img/map-noscript-mobile@1x.jpg" srcset="img/map-noscript-mobile@1x.jpg 2x"
+              alt="Местоположение организации на карте.">
+          </picture>
+        </noscript>
+      </div>
     </section>
 
   </main>
@@ -184,7 +205,7 @@
   <footer class="main-footer">
     <div class="main-footer__container">
       <a class="main-footer__logo" href="#">
-        <svg lass="main-footer__logo-image" width="128" height="24" role="img" aria-label="Logo Cat Enerdgy.">
+        <svg class="main-footer__logo-image" width="128" height="24" role="img" aria-label="Logo Cat Enerdgy.">
           <use xlink:href="img/sprite.svg#footer-logo" xmlns="http://www.w3.org/2000/svg"></use>
         </svg>
       </a>

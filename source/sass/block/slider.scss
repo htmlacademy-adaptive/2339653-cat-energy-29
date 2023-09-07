@@ -27,8 +27,7 @@
   top: 0;
   width: 4px;
   height: 100%;
-  // background-color: $grey600;
-  background: linear-gradient(to top, $grey600 46.5%, #ffffff 46.5%, #ffffff 53.5%, $grey600 53.5%);
+  background: linear-gradient(to top, $grey600 46.5%, $default-white 46.5%, $default-white 53.5%, $grey600 53.5%);
   padding: 0;
 
   &::after {
@@ -88,6 +87,6 @@
 
   .slider__before,
   .slider__after {
-    background: linear-gradient(to top, #f2f2f2 74.3%, #ffffff 74.3%);
+    background: linear-gradient(to top, $light-grey2 74.3%, $default-white 74.3%);
   }
 }
