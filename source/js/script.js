@@ -3,10 +3,11 @@
 let burgerButton = document.querySelector('.burger-button');
 let mainNav = document.querySelector('.main-nav__list');
 
+mainNav.classList.remove('main-nav__list-no-js');
+burgerButton.classList.remove('burger-button-no-js');
+
 burgerButton.onclick = function () {
   burgerButton.classList.toggle('burger-button--close');
-  burgerButton.classList.remove('burger-button-no-js');
-  mainNav.classList.remove('main-nav__list-no-js');
   mainNav.classList.toggle('main-nav__list--show');
 }
 

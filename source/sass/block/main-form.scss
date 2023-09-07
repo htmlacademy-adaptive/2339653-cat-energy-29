@@ -416,7 +416,7 @@
 
   .program-form__form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 570px 570px;
     grid-template-areas:
       "user programs"
       "contacts contacts"
@@ -452,13 +452,9 @@
   .program-form__field--contacts {
     grid-area: contacts;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 570px 570px;
     column-gap: 80px;
     margin-bottom: 70px;
-  }
-
-  .program-form__label-contacts {
-    grid-column: 2 span;
   }
 
   .program-form__field--comment {
@@ -467,14 +463,20 @@
   }
 
   .program-form__textarea {
+    width: 1220px;
     padding: 9px 20px;
   }
 
   .program-form__field--extra {
+    width: 1220px;
     grid-area: extra;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 245px 245px 245px 245px;
     column-gap: 80px;
+  }
+
+  .program-form__label-checkbox {
+    width: 326px;
   }
 
   .program-form__bottom-container {
@@ -483,5 +485,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     align-items: center;
+    padding: 0;
   }
 }
