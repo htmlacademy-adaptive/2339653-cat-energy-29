@@ -1,7 +1,7 @@
 .promo {
   background:
     url("../img/promo-background-mobile@1x.jpg") no-repeat,
-    linear-gradient(to bottom, #64a63a 64%, $default-white 64%);
+    linear-gradient(to bottom, #64a63a 63%, $default-white 63%);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -10,7 +10,7 @@
   .promo {
     background:
       url("../img/promo-background-mobile@2x.jpg") no-repeat,
-      linear-gradient(to bottom, #64a63a 64%, $default-white 64%);
+      linear-gradient(to bottom, #64a63a 63%, $default-white 63%);
     background-repeat: no-repeat;
     background-position: top;
   }
@@ -50,8 +50,8 @@
 
 .promo__button {
   @include link-style;
-  // margin: 0;
-  // width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 //**** TABLET ****//

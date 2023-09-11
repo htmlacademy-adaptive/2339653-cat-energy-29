@@ -325,10 +325,9 @@
         </li>
         <li class="catalog__item-container">
           <div class="catalog__item card card--show-all">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/plus60.svg">
-              <img class="card__image card__image--show-all" src="img/plus30.svg" alt="Знак плюс.">
-            </picture>
+            <svg class="card__image card__image--show-all" width="30" height="30">
+              <use xlink:href="img/sprite.svg#plus" xmlns="http://www.w3.org/2000/svg"></use>
+            </svg>
             <div class="card__text-content card__text-content--show-all">
               <h3 class="card__title card__title--show-all">Показать еще 100500 товаров</h3>
               <p class="card__descr card__descr--show-all">На самом деле вкусов гораздо больше!</p>
