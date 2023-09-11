@@ -40,12 +40,6 @@
   line-height: 20px;
 }
 
-.gift__link-icon {
-  width: 78px;
-  height: 80px;
-}
-
-
 //********************** TABLET **********************//
 
 @media (min-width: $tablet-width) {
@@ -83,11 +77,6 @@
     text-align: start;
     font-family: $font-second;
     line-height: 20px;
-  }
-
-  .gift__link-icon {
-    width: 80px;
-    height: 82px;
   }
 }
 
@@ -129,10 +118,5 @@
     max-width: 161px;
     padding: 0;
     text-align: center;
-  }
-
-  .gift__link-icon {
-    width: 80px;
-    height: 83px;
   }
 }

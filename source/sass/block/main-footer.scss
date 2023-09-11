@@ -32,9 +32,8 @@
 }
 
 .main-footer__link {
-  width: 100%;
-  /* stylelint-disable-next-line at-rule-empty-line-before */
   @include link-style;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;

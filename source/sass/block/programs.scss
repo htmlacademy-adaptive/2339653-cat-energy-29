@@ -30,8 +30,6 @@
 }
 
 .programs__logo--mass {
-  width: 69px;
-  height: 49px;
   margin-left: -8px;
   margin-right: -8px;
 }
@@ -57,12 +55,11 @@
 }
 
 .programs__catalog-link {
+  @include link-style;
   font-size: $font-medium;
   line-height: 16px;
   text-transform: uppercase;
   grid-column: span 2;
-  /* stylelint-disable-next-line at-rule-empty-line-before */
-  @include link-style;
   padding-top: 15px;
   color: $default-black;
   position: relative;
