@@ -172,7 +172,8 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient(to top, $light-grey2 72.7%, $default-white 72.7%);
+    padding-bottom: 0;
+    background: linear-gradient(to top, $light-grey2 69.1%, $default-white 69.1%);
   }
 
   .example__wrapper {
@@ -201,7 +202,7 @@
 
   .example__descr {
     margin: 0;
-    margin-bottom: 70px;
+    margin-bottom: 69px;
     grid-column: 3 span;
     padding-right: 0;
   }
@@ -212,7 +213,7 @@
 
   .example__block-title {
     padding-top: 18px;
-    margin-bottom: -10px;
+    margin-bottom: -12px;
   }
 
   .example__block-descr {
@@ -231,10 +232,12 @@
 
   .example__expenses-title {
     flex-shrink: 0;
+    margin-left: 2px;
   }
 
   .example__expenses-summ {
     margin: 0;
+    margin-left: 3px;
     flex-shrink: 0;
   }
 
