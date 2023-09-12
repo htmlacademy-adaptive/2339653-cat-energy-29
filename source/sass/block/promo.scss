@@ -1,7 +1,7 @@
 .promo {
   background:
     url("../img/promo-background-mobile@1x.jpg") no-repeat,
-    linear-gradient(to bottom, #64a63a 64%, $default-white 64%);
+    linear-gradient(to bottom, #64a63a 63%, $default-white 63%);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -10,7 +10,7 @@
   .promo {
     background:
       url("../img/promo-background-mobile@2x.jpg") no-repeat,
-      linear-gradient(to bottom, #64a63a 64%, $default-white 64%);
+      linear-gradient(to bottom, #64a63a 63%, $default-white 63%);
     background-repeat: no-repeat;
     background-position: top;
   }
@@ -50,8 +50,8 @@
 
 .promo__button {
   @include link-style;
-  // margin: 0;
-  // width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 //**** TABLET ****//
@@ -65,8 +65,9 @@
     min-height: 811px;
     position: relative;
     align-items: start;
-    // margin-left: 120px;
     margin: 0 auto;
+    margin-bottom: 46px;
+    padding-top: 48px;
     width: 530px;
   }
 
@@ -94,12 +95,12 @@
   }
 
   .promo__image {
-    margin-top: -110px;
+    margin-top: -101px;
     display: block;
     position: absolute;
     z-index: -1;
-    top: 42%;
-    left: -14%;
+    top: 43%;
+    left: -17%;
   }
 
   .promo__button {
@@ -154,6 +155,7 @@
     min-height: 184px;
     background: none;
     margin-top: 107px;
+    margin-bottom: 48px;
     padding: 0;
     z-index: 10;
   }
@@ -162,7 +164,7 @@
     display: block;
     position: absolute;
     z-index: 1;
-    top: 16%;
+    top: 11%;
     left: 50%;
     transform: translate(-30%, 33%);
   }

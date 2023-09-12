@@ -1,6 +1,7 @@
 .cross-sell__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 0 20px;
 }
 
 .cross-sell__line {
@@ -10,7 +11,7 @@
 .cross-sell__title {
   margin: 0;
   padding-right: 0;
-  padding-bottom: 36px;
+  padding-bottom: 34px;
   font-size: $font-large;
   line-height: 24px;
   font-weight: 400;
@@ -24,12 +25,17 @@
 }
 
 .cross-sell__item {
-  padding: 0 20px;
-  padding-bottom: 19px;
+  padding: 13px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $light-grey-d;
+}
+
+.cross-sell__item:first-child {
   border-bottom: 1px solid $light-grey-d;
 }
 
 .cross-sell__item-title {
+  margin: 0;
   font-size: $font-medium;
   line-height: 16px;
   text-transform: uppercase;
@@ -39,11 +45,14 @@
 .cross-sell__item-descr {
   font-family: $font-second;
   line-height: 14px;
+  margin: 13px 0;
   display: flex;
   justify-content: space-between;
 }
 
 .cross-sell__button {
+  @include link-style;
+  display: block;
   grid-column: 2 span;
   width: 100%;
 }
@@ -52,15 +61,19 @@
 //********************** TABLET **********************//
 
 @media (min-width: $tablet-width) {
+  .cross-sell__container {
+    padding: 0 30px;
+  }
+
   .cross-sell__title {
     margin: 0;
-    margin-bottom: 80px;
+    margin-bottom: 45px;
     font-size: $font-big;
     line-height: 36px;
   }
 
   .cross-sell__list {
-    padding: 0 30px;
+    padding: 0;
     border-top: none;
   }
 
@@ -70,11 +83,11 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding-top: 25px;
     padding-bottom: 27px;
     padding-left: 38px;
     padding-right: 38px;
     border: 1px solid $light-grey-d;
-    padding-top: 6px;
   }
 
   .cross-sell__item-title {
@@ -88,6 +101,7 @@
     line-height: 16px;
     display: flex;
     gap: 49px;
+    margin-top: -3px;
   }
 
   .cross-sell__button {
@@ -110,10 +124,14 @@
     padding-left: 40px;
   }
 
+  .cross-sell__title {
+    margin-bottom: 44px;
+  }
+
   .cross-sell__container {
     grid-template-columns: 1fr 1fr 355px;
     width: 1440px;
-    padding: 0 150px 87px 70px;
+    padding: 0 150px 85px 70px;
     display: flex;
     justify-content: space-between;
   }

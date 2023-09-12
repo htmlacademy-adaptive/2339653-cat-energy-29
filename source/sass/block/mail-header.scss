@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 0 14px 0;
+  padding: 13px 0 11px 0;
 }
 
 .main-header__logo {
@@ -26,7 +26,6 @@
     opacity: 0.4;
   }
 }
-
 
 //******************* TABLET ***********************//
 
@@ -65,7 +64,7 @@
 
     .main-header__container {
       padding: 0;
-      padding-top: 56px;
+      padding-top: 54px;
     }
 
     .main-header__container--visible {

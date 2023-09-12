@@ -15,6 +15,7 @@
     width: 10px;
     border-bottom: 2px solid $basic-green;
     flex-grow: 1;
+    margin-right: -2500px;
   }
 }
 
@@ -80,7 +81,7 @@
 
     &::before {
       width: calc(50% + 1000px);
-      margin-left: -935px;
+      margin-left: -1043px;
     }
 
     &::after {

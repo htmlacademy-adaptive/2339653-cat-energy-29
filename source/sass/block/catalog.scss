@@ -41,7 +41,7 @@
     margin: 0;
     margin-right: auto;
     padding-left: 30px;
-    padding-top: 45px;
+    padding-top: 47px;
     padding-bottom: 71px;
     font-size: $font-huge;
     line-height: 60px;
@@ -54,7 +54,8 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    gap: 52px;
+    column-gap: 60px;
+    row-gap: 48px;
   }
 
   .catalog__item-container {
@@ -73,7 +74,7 @@
     margin: 0 auto;
     margin-bottom: 76px;
     padding-left: 0;
-    padding-top: 60px;
+    padding-top: 44px;
     padding-bottom: 0;
   }
 
@@ -84,7 +85,8 @@
     flex-wrap: wrap;
     justify-content: start;
     padding: 0;
-    gap: 78px;
+    column-gap: 80px;
+    row-gap: 49px;
   }
 
   .catalog__item-container {

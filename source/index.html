@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-touch-icon.png">
@@ -13,6 +13,10 @@
   <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+
   <title>Кэт энерджи</title>
 </head>
 
@@ -28,13 +32,13 @@
               <img class="main-header__logo-image" src="img/header-logo-mobile.svg" alt="Логотип Кэт энерджи.">
             </picture>
           </a>
-          <button class="main-header__toggle burger-button burger-button-no-js" type="button">
+          <button class="main-header__toggle burger-button burger-button--no-js" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
         <nav class="main-nav">
           <div class="main-nav__container">
-            <ul class="main-nav__list main-nav__list-no-js">
+            <ul class="main-nav__list main-nav__list--no-js">
               <li class="main-nav__item">
                 <a href="#"
                   class="main-nav__link main-nav__link--white main-nav__link-current main-nav__link-current--white">Главная</a>
@@ -81,7 +85,7 @@
         <h2 class="visually-hidden">Программы питания для котов</h2>
         <ul class="programs__list">
           <li class="programs__item">
-            <svg class="programs__logo programs__logo--slim" role="img" aria-label="Logo Programs">
+            <svg class="programs__logo programs__logo--slim" width="51" height="54" role="img" aria-label="Logo Programs">
               <use xlink:href="img/sprite.svg#cat-program-slim" xmlns="http://www.w3.org/2000/svg"></use>
             </svg>
             <h3 class="programs__title">Похудение</h3>
@@ -92,7 +96,7 @@
             </a>
           </li>
           <li class="programs__item">
-            <svg class="programs__logo programs__logo--mass" role="img" aria-label="Logo Programs">
+            <svg class="programs__logo programs__logo--mass" width="69" height="54" role="img" aria-label="Logo Programs">
               <use xlink:href="img/sprite.svg#cat-program-mass" xmlns="http://www.w3.org/2000/svg"></use>
             </svg>
             <h3 class="programs__title">Набор массы</h3>
@@ -129,7 +133,7 @@
     </div>
 
     <section class="example">
-      <div class="example-wrapper">
+      <div class="example__wrapper">
         <div class="example__container">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__descr">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
@@ -158,7 +162,7 @@
                   srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
-                <img class="slider__before-image slider__image" src="img/before-mobile@1x.png"
+                <img class="slider__before-image slider__image" src="img/before-mobile@1x.png" width="280"
                   srcset="img/before-mobile@2x.png 2x" alt="Фотография толстого кота.">
               </picture>
             </div>
@@ -168,11 +172,11 @@
                   srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
-                <img class="slider__after-image slider__image" src="img/after-mobile@1x.png"
+                <img class="slider__after-image slider__image" src="img/after-mobile@1x.png" width="280"
                   srcset="img/after-mobile@2x.png 2x" alt="Фотография худого кота">
               </picture>
             </div>
-            <div class="slider__toggle"></div>
+            <button class="slider__toggle" type="button"></button>
           </div>
         </div>
       </div>
@@ -200,8 +204,8 @@
               srcset="img/map-noscript-desktop@1x.jpg, img/map-noscript-desktop@1x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="img/map-noscript-tablet@1x.jpg, img/map-noscript-tablet@1x.jpg 2x">
-            <img class="map-image" src="img/map-noscript-mobile@1x.jpg" srcset="img/map-noscript-mobile@1x.jpg 2x"
-              alt="Местоположение организации на карте.">
+            <img class="contacts__map-image" src="img/map-noscript-mobile@1x.jpg"
+              srcset="img/map-noscript-mobile@1x.jpg 2x" alt="Местоположение организации на карте.">
           </picture>
         </noscript>
       </div>
@@ -219,29 +223,30 @@
       <ul class="main-footer__list social-list">
         <li class="social-list__item">
           <a href="#" class="social-list__link" aria-label="Вконтакте" target="_blank">
-            <svg class="social-list__link-icon">
+            <svg class="social-list__link-icon" width="28" height="22">
               <use xlink:href="img/sprite.svg#icon-vk" xmlns="http://www.w3.org/2000/svg"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#" class="social-list__link" aria-label="Youtube" target="_blank">
-            <svg class="social-list__link-icon">
+            <svg class="social-list__link-icon" width="28" height="22">
               <use xlink:href="img/sprite.svg#icon-youtube" xmlns="http://www.w3.org/2000/svg"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#" class="social-list__link" aria-label="Telegram" target="_blank">
-            <svg class="social-list__link-icon">
+            <svg class="social-list__link-icon" width="28" height="22">
               <use xlink:href="img/sprite.svg#icon-telegram" xmlns="http://www.w3.org/2000/svg"></use>
             </svg>
           </a>
         </li>
       </ul>
 
-      <a href="#" class="main-footer__link" target="_blank"><span>HTML Academy</span>
-        <svg class="main-footer__link-icon" role="img" aria-label="Logo HTML Academy">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="main-footer__link" target="_blank"><span>HTML
+          Academy</span>
+        <svg class="main-footer__link-icon" width="27" height="34" role="img" aria-label="Logo HTML Academy">
           <use xlink:href="img/sprite.svg#logo-html-academy" xmlns="http://www.w3.org/2000/svg"></use>
         </svg>
       </a>
@@ -249,7 +254,7 @@
     </div>
   </footer>
 
-  <script type="module" src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
