@@ -110,7 +110,7 @@
 
   .main-nav__link-current {
     border-bottom: 2px solid $basic-green;
-    padding-bottom: 10px;
+    padding-bottom: 6px;
   }
 }
 
@@ -145,6 +145,8 @@
   }
 
   .main-nav__link-current {
+    padding-bottom: 13px;
+
     &--white {
       border-color: $default-white;
     }

@@ -1,13 +1,13 @@
 .gift {
   grid-column: 1/3;
-  padding: 35px 20px;
-  // padding-bottom: 0;
+  padding: 36px 0;
+  padding-bottom: 35px;
 }
 
 .gift__container {
   margin: 0 auto;
   min-width: 245px;
-  min-height: 288px;
+  min-height: 290px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,6 +30,10 @@
   }
 }
 
+.gift__icon {
+  margin-top: 14px;
+}
+
 .gift__descr {
   margin: 0;
   padding: 0 50px;
@@ -44,7 +48,7 @@
 
 @media (min-width: $tablet-width) {
   .gift {
-    padding: 70px 30px 75px 30px;
+    padding: 70px 0 75px 0;
   }
 
   .gift__container {
@@ -68,6 +72,10 @@
         $basic-green;
       background-size: cover;
     }
+  }
+
+  .gift__icon {
+    margin-top: 0;
   }
 
   .gift__descr {
@@ -111,6 +119,10 @@
         $basic-green;
       background-size: cover;
     }
+  }
+
+  .gift__icon {
+    margin-top: 10px;
   }
 
   .gift__descr {
