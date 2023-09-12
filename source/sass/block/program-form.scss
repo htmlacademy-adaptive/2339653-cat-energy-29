@@ -15,7 +15,7 @@
   color: $default-black;
   text-transform: uppercase;
   padding-right: 40px;
-  margin-bottom: 37px;
+  margin-bottom: 41px;
 }
 
 .program-form__field {
@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
-  margin-bottom: 14px;
+  margin-bottom: 23px;
 }
 
 .program-form__label {
@@ -38,8 +38,19 @@
   position: relative;
 }
 
-.program-form__label-radio,
+.program-form__label-radio {
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
 .program-form__label-checkbox {
+  padding-left: 10px;
+  padding-top: 5px;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
 
@@ -65,7 +76,7 @@
     background-color: $default-white;
     border: 1px solid $light-grey-d;
     border-radius: 50%;
-    left: -38px;
+    left: -46px;
     transition: border-color 0.3s ease-in-out;
   }
 
@@ -76,7 +87,7 @@
     height: 12px;
     background-color: $basic-green;
     border-radius: 50%;
-    left: -28.5px;
+    left: -37.4px;
     opacity: 0;
   }
 
@@ -97,7 +108,7 @@
     height: 30px;
     background-color: $default-white;
     border: 1px solid $light-grey-d;
-    left: -38px;
+    left: -43px;
     transition: border-color 0.3s ease-in-out;
   }
 
@@ -109,7 +120,7 @@
     background-image: url("../../img/tick.svg");
     background-size: cover;
     background-position: center;
-    left: -35px;
+    left: -41px;
     opacity: 0;
   }
 
@@ -208,9 +219,14 @@
   border: none;
   border-top: 1px solid $light-grey9;
   border-bottom: 1px solid $light-grey9;
-  padding: 22px 20px 19px 20px;
+  padding: 27px 31px;
   margin-bottom: 26px;
-  gap: 25px;
+  gap: 24px;
+}
+
+.program-form__line {
+  margin-left: -20px;
+  margin-right: -2500px;
 }
 
 .program-form__subtitle {
@@ -245,8 +261,8 @@
 }
 
 .program-form__field--extra {
-  gap: 25px;
-  margin-bottom: 34px;
+  gap: 19px;
+  margin-bottom: 37px;
 }
 
 .program-form__bottom-container {
@@ -284,15 +300,15 @@
   }
 
   .program-form__descr {
-    width: 400px;
+    width: 380px;
     padding: 0;
-    margin-bottom: 66px;
+    margin-bottom: 67px;
     font-size: 20px;
     line-height: 30px;
   }
 
   .program-form__field {
-    gap: 20px;
+    gap: 22px;
     margin-bottom: 72px;
     padding: 0;
   }
@@ -302,8 +318,40 @@
     line-height: 20px;
   }
 
+  .program-form__label-checkbox {
+    padding-left: 26px;
+  }
+
+  .program-form__label-text--radio {
+    &::before {
+      width: 40px;
+      height: 40px;
+      left: -59px;
+    }
+
+    &::after {
+      width: 16px;
+      height: 16px;
+      left: -46.4px;
+    }
+  }
+
+  .program-form__label-text--checkbox {
+    &::before {
+      width: 40px;
+      height: 40px;
+      left: -59px;
+    }
+
+    &::after {
+      width: 36px;
+      height: 36px;
+      left: -55.4px;
+    }
+  }
+
   .program-form__input {
-    padding: 11px 20px 11px 20px;
+    padding: 13px 20px;
     font-size: 20px;
     line-height: 20px;
 
@@ -315,9 +363,14 @@
 
   .program-form__field--select-program {
     border: 1px solid $light-grey7;
-    padding: 23px 27px 27px 27px;
+    padding: 31px 52px;
     margin: 0;
-    margin-bottom: 65px;
+    margin-bottom: 69px;
+    gap: 34px;
+  }
+
+  .program-form__line {
+    margin-left: 0;
   }
 
   .program-form__subtitle {
@@ -336,6 +389,7 @@
   }
 
   .program-form__textarea {
+    margin-top: 12px;
     padding: 11px 20px;
     min-height: 175px;
     font-size: 20px;
@@ -351,26 +405,34 @@
   .program-form__field--extra {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 32px;
+    row-gap: 47px;
+    column-gap: 60px;
+    margin-bottom: 63px;
+  }
+
+  .program-form__subtitle--extra {
+    margin-bottom: 61px;
   }
 
   .program-form__bottom-container {
     flex-direction: row;
     gap: 64px;
     align-items: center;
+    padding: 0;
   }
 
   .program-form__button {
-    width: auto;
+    width: 284px;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 45px;
+    padding: 16px 55px;
     margin-bottom: 0;
   }
 
   .program-form__footnote {
     padding-left: 0;
     width: auto;
+    font-family: $font-second;
     font-size: 16px;
     line-height: 16px;
   }
@@ -418,7 +480,7 @@
   .program-form__field--select-program {
     grid-area: programs;
     border: 1px solid $light-grey7;
-    padding: 23px 27px 27px 27px;
+    padding: 33px 51px 34px;
     margin-bottom: 70px;
     justify-content: space-around;
   }
@@ -445,6 +507,7 @@
   .program-form__textarea {
     width: 1220px;
     padding: 9px 20px;
+    margin-top: 0;
   }
 
   .program-form__field--extra {
@@ -453,6 +516,7 @@
     display: grid;
     grid-template-columns: 245px 245px 245px 245px;
     column-gap: 80px;
+    margin-bottom: 70px;
   }
 
   .program-form__label-checkbox {
@@ -466,5 +530,10 @@
     gap: 80px;
     align-items: center;
     padding: 0;
+  }
+
+  .program-form__button {
+    width: 100%;
+    padding: 17px 55px;
   }
 }

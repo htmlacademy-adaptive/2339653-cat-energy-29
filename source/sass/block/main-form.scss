@@ -7,7 +7,7 @@
 
 @media (min-width: $tablet-width) {
   .main-form__container {
-    padding: 50px 70px 60px 70px;
+    padding: 47px 70px 60px 70px;
     border-top: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -18,6 +18,6 @@
 
 @media (min-width: $desktop-width) {
   .main-form__container {
-    padding: 60px 110px 80px 110px;
+    padding: 45px 110px 80px 110px;
   }
 }
