@@ -51,6 +51,8 @@
 }
 
 .cross-sell__button {
+  @include link-style;
+  display: block;
   grid-column: 2 span;
   width: 100%;
 }
