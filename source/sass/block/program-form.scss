@@ -224,12 +224,13 @@
   gap: 24px;
 }
 
-.program-form__line {
-  margin-left: -20px;
-  margin-right: -2500px;
-}
+// .program-form__line {
+//   margin-left: -20px;
+//   margin-right: -2500px;
+// }
 
 .program-form__subtitle {
+  display: block;
   margin: 0;
   padding: 0;
   max-width: 182px;
@@ -369,9 +370,9 @@
     gap: 34px;
   }
 
-  .program-form__line {
-    margin-left: 0;
-  }
+  // .program-form__line {
+  //   margin-left: 0;
+  // }
 
   .program-form__subtitle {
     max-width: 540px;
