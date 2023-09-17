@@ -224,19 +224,29 @@
   gap: 24px;
 }
 
-// .program-form__line {
-//   margin-left: -20px;
-//   margin-right: -2500px;
-// }
+.program-form__line {
+  margin-left: -42px;
+  width: calc(100% + 62px);
+
+  &::before {
+    top: 16px;
+  }
+}
 
 .program-form__subtitle {
   display: block;
+  font-weight: 400;
+  width: max-content;
   margin: 0;
-  padding: 0;
-  max-width: 182px;
+  padding: 0 20px;
   font-size: $font-large;
   line-height: 26px;
   margin-bottom: 36px;
+  background-color: $default-white;
+}
+
+.program-form__subtitle--contacts {
+  max-width: 226px;
 }
 
 .program-form__field--contacts {
@@ -290,6 +300,7 @@
 
 @media (min-width: $tablet-width) {
   .program-form {
+    width: 100%;
     grid-column: 2 span;
   }
 
@@ -297,12 +308,12 @@
     font-size: $font-huge;
     line-height: 60px;
     margin-bottom: 54px;
-    padding: 0;
+    padding: 0 70px;
   }
 
   .program-form__descr {
-    width: 380px;
-    padding: 0;
+    width: 505px;
+    padding: 0 70px;
     margin-bottom: 67px;
     font-size: 20px;
     line-height: 30px;
@@ -311,12 +322,16 @@
   .program-form__field {
     gap: 22px;
     margin-bottom: 72px;
-    padding: 0;
+    padding: 0 70px;
   }
 
   .program-form__label {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .program-form__label-contacts {
+    margin: 0 70px;
   }
 
   .program-form__label-checkbox {
@@ -365,31 +380,49 @@
   .program-form__field--select-program {
     border: 1px solid $light-grey7;
     padding: 31px 52px;
-    margin: 0;
+    margin: 0 70px;
     margin-bottom: 69px;
     gap: 34px;
   }
 
-  // .program-form__line {
-  //   margin-left: 0;
-  // }
+  .program-form__line {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .program-form__line--extra {
+    margin-left: -70px;
+    width: calc(100% + 140px);
+  }
 
   .program-form__subtitle {
-    max-width: 540px;
+    max-width: none;
+    width: max-content;
     font-size: $font-big;
     line-height: 36px;
     margin-bottom: 76px;
+    position: relative;
+    padding: 0 40px;
+    background-color: $default-white;
+  }
+
+  .program-form__subtitle--contacts {
+    max-width: none;
   }
 
   .program-form__field--contacts {
     margin-bottom: 65px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .program-form__field--comment {
     margin-bottom: 65px;
+    padding: 0;
   }
 
   .program-form__textarea {
+    margin: 0 70px;
     margin-top: 12px;
     padding: 11px 20px;
     min-height: 175px;
@@ -419,7 +452,7 @@
     flex-direction: row;
     gap: 64px;
     align-items: center;
-    padding: 0;
+    padding: 0 70px;
   }
 
   .program-form__button {
@@ -444,29 +477,42 @@
 
 @media (min-width: $desktop-width) {
   .program-form {
-    grid-column: 2 span;
-    width: 1220px;
+    // grid-column: 2 span;
+    // width: 1220px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 325px 895px 1fr;
   }
 
   .program-form__title {
+    width: 1220px;
     padding: 0;
+    grid-column: 4 span;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .program-form__descr {
     padding: 0;
+    width: 325px;
+    grid-column: 2/3;
+    margin-left: auto;
+    margin-right: auto;
   }
 
+
+
   .program-form__form {
+    grid-column: 4 span;
     display: grid;
-    grid-template-columns: 570px 570px;
+    grid-template-columns: 1fr 570px 570px 1fr;
     grid-template-areas:
       "user programs"
       "contacts contacts"
       "comment comment"
       "extra extra"
       "bottom bottom";
-    column-gap: 80px;
+    // column-gap: 80px;
   }
 
   .program-form__field {
@@ -476,14 +522,27 @@
   .program-form__field--user-info {
     grid-area: user;
     margin-bottom: 70px;
+    grid-column: 2/3;
+    margin-left: -40px;
+    margin-right: 40px;
   }
 
   .program-form__field--select-program {
     grid-area: programs;
+    grid-column: 3/4;
     border: 1px solid $light-grey7;
     padding: 33px 51px 34px;
+    margin: 0;
+    margin-left: 40px;
+    margin-right: -40px;
     margin-bottom: 70px;
     justify-content: space-around;
+  }
+
+  .program-form__line {
+    &::before {
+      top: 21px;
+    }
   }
 
   .program-form__subtitle {
@@ -495,29 +554,50 @@
   .program-form__field--contacts {
     grid-area: contacts;
     display: grid;
-    grid-template-columns: 570px 570px;
+    grid-template-columns: 1fr 570px 570px 1fr;
     column-gap: 80px;
     margin-bottom: 70px;
+    grid-column: 4 span;
+  }
+
+  .program-form__label-contacts {
+    margin: 0;
+  }
+
+  .program-form__label-contacts--email {
+    grid-column: 2/3;
+  }
+
+  .program-form__label-contacts--phone {
+    grid-column: 3/4;
   }
 
   .program-form__field--comment {
     grid-area: comment;
     margin-bottom: 70px;
+    grid-column: 4 span;
   }
 
   .program-form__textarea {
     width: 1220px;
     padding: 9px 20px;
-    margin-top: 0;
+    margin: 0 auto;
   }
 
   .program-form__field--extra {
-    width: 1220px;
+    // width: 1220px;
     grid-area: extra;
     display: grid;
     grid-template-columns: 245px 245px 245px 245px;
     column-gap: 80px;
     margin-bottom: 70px;
+    grid-column: 4 span;
+    justify-content: center;
+  }
+
+  .program-form__line--extra {
+    margin-left: 0;
+    width: 100%;
   }
 
   .program-form__label-checkbox {
@@ -527,10 +607,12 @@
   .program-form__bottom-container {
     grid-area: bottom;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 570px 1fr;
+    margin-left: -40px;
     gap: 80px;
     align-items: center;
     padding: 0;
+    grid-column: 2/4;
   }
 
   .program-form__button {
