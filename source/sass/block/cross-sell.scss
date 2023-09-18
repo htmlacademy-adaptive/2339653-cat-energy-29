@@ -9,12 +9,18 @@
 }
 
 .cross-sell__title {
-  margin: 0;
-  padding-right: 0;
-  padding-bottom: 34px;
+  max-width: 266px;
+  display: block;
   font-size: $font-large;
   line-height: 24px;
   font-weight: 400;
+  position: relative;
+  z-index: 2;
+  width: max-content;
+  padding: 0 20px;
+  padding-bottom: 34px;
+  margin: 0 -20px;
+  background-color: #ffffff;
 }
 
 .cross-sell__list {
@@ -40,6 +46,7 @@
   line-height: 16px;
   text-transform: uppercase;
   font-weight: 400;
+  max-width: 50%;
 }
 
 .cross-sell__item-descr {
@@ -48,6 +55,10 @@
   margin: 13px 0;
   display: flex;
   justify-content: space-between;
+}
+
+.cross-sell__weight {
+  max-width: 70%;
 }
 
 .cross-sell__button {
@@ -66,6 +77,9 @@
   }
 
   .cross-sell__title {
+    max-width: 430px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin: 0;
     margin-bottom: 45px;
     font-size: $font-big;
@@ -104,6 +118,10 @@
     margin-top: -3px;
   }
 
+  .cross-sell__weight--position {
+    margin-right: 10px;
+  }
+
   .cross-sell__button {
     min-height: 40px;
     width: 100%;
@@ -119,9 +137,8 @@
 
 @media (min-width: $desktop-width) {
   .cross-sell {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
-    padding-left: 40px;
   }
 
   .cross-sell__title {
@@ -131,7 +148,8 @@
   .cross-sell__container {
     grid-template-columns: 1fr 1fr 355px;
     width: 1440px;
-    padding: 0 150px 85px 70px;
+    margin: 0 auto;
+    padding: 0 109px 85px 110px;
     display: flex;
     justify-content: space-between;
   }
@@ -173,6 +191,10 @@
     line-height: 16px;
     display: flex;
     gap: 0;
+  }
+
+  .cross-sell__cost {
+    min-width: 41px;
   }
 
   .cross-sell__button {

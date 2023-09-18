@@ -8,7 +8,6 @@
   display: block;
   width: 280px;
   height: 256px;
-  // object-fit: cover;
 }
 
 .slider__before {
@@ -73,7 +72,12 @@
     background: linear-gradient(to top, $light-grey2 70%, $default-white 70%);
   }
 
-  .slider__before,
+  .slider__before {
+    width: 280px;
+    height: 512px;
+    background: linear-gradient(to top, $light-grey2 70%, $default-white 70%);
+  }
+
   .slider__after {
     width: 560px;
     height: 512px;

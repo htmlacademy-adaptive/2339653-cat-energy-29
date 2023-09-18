@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   font-family: $font-second;
   line-height: 18px;
 
@@ -97,7 +97,8 @@
     flex-direction: column;
     gap: 30px;
     align-items: start;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-bottom: auto;
     font-family: $font-second;
     font-size: $font-medium;
     line-height: 24px;

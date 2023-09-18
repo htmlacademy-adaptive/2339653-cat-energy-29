@@ -102,41 +102,41 @@
           </div>
         </li>
         <li class=" catalog__item-container">
-              <div class="catalog__item card">
-                <a href="#" class="card__link-img">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/catalog-image/cat-chicken1000-tablet@1x.webp 1x, img/catalog-image/cat-chicken1000-tablet@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="img/catalog-image/cat-chicken1000-mobile@1x.webp 1x, img/catalog-image/cat-chicken1000-mobile@2x.webp 2x">
-                    <source media="(min-width: 768px)"
-                      srcset="img/catalog-image/cat-chicken1000-tablet@1x.png, img/catalog-image/cat-chicken1000-tablet@2x.png 2x">
-                    <img class="card__image" src="img/catalog-image/cat-chicken1000-mobile@1x.jpg"
-                      srcset="img/catalog-image/cat-chicken1000-mobile@2x.jpg 2x"
-                      alt="Картинка коробки с кормом Кэт Энерджи Курица 1000 грамм.">
-                  </picture>
-                </a>
-                <div class="card__text-content">
-                  <a href="" class="card__link">
-                    <h3 class="card__title">Cat Energy Pro 1000&nbsp;г</h3>
-                  </a>
-                  <table class="card__descr">
-                    <tr>
-                      <td class="card__variable">Масса</td>
-                      <td class="value">1000 г</td>
-                    </tr>
-                    <tr>
-                      <td class="card__variable">Вкус</td>
-                      <td class="value">Курица</td>
-                    </tr>
-                    <tr>
-                      <td class="card__variable">Цена</td>
-                      <td class="value">1000 ₽</td>
-                    </tr>
-                  </table>
-                </div>
-                <a class="card__button button button--green button--card" href="form.html">Заказать</a>
-              </div>
+          <div class="catalog__item card">
+            <a href="#" class="card__link-img">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog-image/cat-chicken1000-tablet@1x.webp 1x, img/catalog-image/cat-chicken1000-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-image/cat-chicken1000-mobile@1x.webp 1x, img/catalog-image/cat-chicken1000-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog-image/cat-chicken1000-tablet@1x.png, img/catalog-image/cat-chicken1000-tablet@2x.png 2x">
+                <img class="card__image" src="img/catalog-image/cat-chicken1000-mobile@1x.jpg"
+                  srcset="img/catalog-image/cat-chicken1000-mobile@2x.jpg 2x"
+                  alt="Картинка коробки с кормом Кэт Энерджи Курица 1000 грамм.">
+              </picture>
+            </a>
+            <div class="card__text-content">
+              <a href="" class="card__link">
+                <h3 class="card__title">Cat Energy Pro 1000&nbsp;г</h3>
+              </a>
+              <table class="card__descr">
+                <tr>
+                  <td class="card__variable">Масса</td>
+                  <td class="value">1000 г</td>
+                </tr>
+                <tr>
+                  <td class="card__variable">Вкус</td>
+                  <td class="value">Курица</td>
+                </tr>
+                <tr>
+                  <td class="card__variable">Цена</td>
+                  <td class="value">1000 ₽</td>
+                </tr>
+              </table>
+            </div>
+            <a class="card__button button button--green button--card" href="form.html">Заказать</a>
+          </div>
         </li>
         <li class="catalog__item-container">
           <div class="catalog__item card">
@@ -341,12 +341,14 @@
 
     <section class="cross-sell">
       <div class="wrapper-line">
-        <h2 class="cross-sell__title">Дополнительные товары</h2>
+        <div class="wrapper-line__container">
+          <h2 class="cross-sell__title">Дополнительные товары</h2>
+        </div>
       </div>
       <div class="cross-sell__container">
         <ul class="cross-sell__list">
           <li class="cross-sell__item">
-            <h3 class="cross-sell__item-title">Сахорозаменитель</h3>
+            <h3 class="cross-sell__item-title">Сахарозаменитель</h3>
             <p class="cross-sell__item-descr">
               <span class="cross-sell__weight">1 упаковка (100 г)</span>
               <span class="cross-sell__cost">200 ₽</span>
@@ -356,7 +358,7 @@
           <li class="cross-sell__item">
             <h3 class="cross-sell__item-title">Питьевая вода</h3>
             <p class="cross-sell__item-descr">
-              <span class="cross-sell__weight">5 литров</span>
+              <span class="cross-sell__weight cross-sell__weight--position">5 литров</span>
               <span class="cross-sell__cost">50 ₽</span>
             </p>
             <a class="cross-sell__button button button--green" href="form.html">Заказать</a>

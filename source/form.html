@@ -77,7 +77,8 @@
             </label>
             <label class="program-form__label">
               <span class="program-form__label-text">Возраст&nbsp;(лет):</span>
-              <input class="program-form__input" type="text" id="program-form-cat-age" name="cat-age" placeholder="7" required aria-label="Ввод возраста кота">
+              <input class="program-form__input" type="text" id="program-form-cat-age" name="cat-age" placeholder="7"
+                required aria-label="Ввод возраста кота">
             </label>
           </fieldset>
 
@@ -97,40 +98,52 @@
           </fieldset>
 
           <fieldset class="program-form__field program-form__field--contacts">
-            <legend class="program-form__line wrapper-line wrapper-line--programs">
-              <span class="program-form__subtitle">Контактные данные (владельца кота)</span>
+            <legend class="program-form__line wrapper-line">
+              <h2 class="wrapper-line__container">
+                <span class="program-form__subtitle program-form__subtitle--contacts">Контактные данные (владельца кота)</span>
+              </h2>
             </legend>
-            <label class="program-form__label program-form__label-contacts">
+            <label class="program-form__label program-form__label-contacts program-form__label-contacts--email">
               <span class="program-form__label-text program-form__label-text--email">E-mail:*</span>
               <input class="program-form__input program-form__input-contacts" type="email" id="program-form-email"
                 placeholder="kuklachev@gmail.com" aria-label="Ввод адреса электронной почты">
-              <svg class="program-form__input-contacts-icon">
+              <svg class="program-form__input-contacts-icon" width="17" height="13">
                 <use xlink:href="img/sprite.svg#mail" xmlns="http://www.w3.org/2000/svg"></use>
               </svg>
             </label>
-            <label class="program-form__label program-form__label-contacts">
+            <label class="program-form__label program-form__label-contacts program-form__label-contacts--phone">
               <span class="program-form__label-text">Телефон:*</span>
               <input class="program-form__input program-form__input-contacts" type="tel" id="program-form-phone"
                 placeholder="8 (960) 900-60-90" aria-label="Ввод номера телефона">
-              <svg class="program-form__input-contacts-icon">
+              <svg class="program-form__input-contacts-icon" width="15" height="15">
                 <use xlink:href="img/sprite.svg#phone" xmlns="http://www.w3.org/2000/svg"></use>
               </svg>
             </label>
           </fieldset>
 
           <fieldset class="program-form__field program-form__field--comment">
-            <legend class="program-form__line wrapper-line wrapper-line--programs">
-              <span class="program-form__subtitle program-form__subtitle--comment">Комментарий</span>
+            <legend class="program-form__line wrapper-line">
+              <h2 class="wrapper-line__container">
+                <span class="program-form__subtitle program-form__subtitle--comment">Комментарий</span>
+              </h2>
             </legend>
-            <textarea class="program-form__textarea" id="program-form-comment" name="comment" placeholder="Расскажите обо всех повадках кота" required aria-label="Поле ввода комментария"></textarea>
+
+            <textarea class="program-form__textarea" id="program-form-comment" name="comment"
+              placeholder="Расскажите обо всех повадках кота" required aria-label="Поле ввода комментария"></textarea>
           </fieldset>
 
           <fieldset class="program-form__field program-form__field--extra">
-            <legend class="program-form__line wrapper-line wrapper-line--programs">
-              <span class="program-form__subtitle program-form__subtitle--extra">Дополнительно</span>
+
+            <legend class="program-form__line program-form__line--extra wrapper-line">
+              <h2 class="wrapper-line__container">
+                <span class="program-form__subtitle program-form__subtitle--extra">Дополнительно</span>
+              </h2>
             </legend>
+
+
             <label class="program-form__label program-form__label-checkbox">
-              <input class="program-form__checkbox" type="checkbox" name="extra-sweetener" id="extra-sweetener-checkbox" checked>
+              <input class="program-form__checkbox" type="checkbox" name="extra-sweetener" id="extra-sweetener-checkbox"
+                checked>
               <span class="program-form__label-text program-form__label-text--checkbox">Cахарозаменитель</span>
             </label>
             <label class="program-form__label program-form__label-checkbox">
@@ -177,8 +190,8 @@
               srcset="img/map-noscript-desktop@1x.jpg, img/map-noscript-desktop@1x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="img/map-noscript-tablet@1x.jpg, img/map-noscript-tablet@1x.jpg 2x">
-            <img class="contacts__map-image" src="img/map-noscript-mobile@1x.jpg" srcset="img/map-noscript-mobile@1x.jpg 2x"
-              alt="Местоположение организации на карте.">
+            <img class="contacts__map-image" src="img/map-noscript-mobile@1x.jpg"
+              srcset="img/map-noscript-mobile@1x.jpg 2x" alt="Местоположение организации на карте.">
           </picture>
         </noscript>
       </div>
@@ -216,7 +229,8 @@
         </li>
       </ul>
 
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="main-footer__link" target="_blank"><span>HTML Academy</span>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="main-footer__link" target="_blank"><span>HTML
+          Academy</span>
         <svg class="main-footer__link-icon" width="27" height="34" role="img" aria-label="Logo HTML Academy">
           <use xlink:href="img/sprite.svg#logo-html-academy" xmlns="http://www.w3.org/2000/svg"></use>
         </svg>
