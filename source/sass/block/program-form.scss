@@ -64,6 +64,8 @@
 }
 
 .program-form__label-text--radio {
+  max-width: 200px;
+  white-space: pre-wrap;
   position: relative;
   display: flex;
   align-items: center;
@@ -97,6 +99,8 @@
 }
 
 .program-form__label-text--checkbox {
+  max-width: 200px;
+  white-space: pre-wrap;
   position: relative;
   display: flex;
   align-items: center;
@@ -156,7 +160,7 @@
   border-color: $error-color;
 }
 
-.program-form__input--error + .program-form__input-contacts-icon {
+.program-form__input--error+.program-form__input-contacts-icon {
   stroke: $error-color;
 }
 
@@ -173,7 +177,7 @@
   right: 15px;
 }
 
-.program-form__input-contacts:focus + .program-form__input-contacts-icon {
+.program-form__input-contacts:focus+.program-form__input-contacts-icon {
   stroke: $basic-green;
 }
 
@@ -182,17 +186,17 @@
   opacity: 0;
 }
 
-.program-form__radio:disabled + .program-form__label-text {
+.program-form__radio:disabled+.program-form__label-text {
   opacity: 0.3;
   cursor: auto;
 }
 
-.program-form__radio:checked + .program-form__label-text--radio::after {
+.program-form__radio:checked+.program-form__label-text--radio::after {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
 
-.program-form__radio:focus + .program-form__label-text--radio::before {
+.program-form__radio:focus+.program-form__label-text--radio::before {
   border-color: $light-grey-a;
 }
 
@@ -201,17 +205,17 @@
   opacity: 0;
 }
 
-.program-form__checkbox:disabled + .program-form__label-text {
+.program-form__checkbox:disabled+.program-form__label-text {
   opacity: 0.3;
   cursor: auto;
 }
 
-.program-form__checkbox:checked + .program-form__label-text--checkbox::after {
+.program-form__checkbox:checked+.program-form__label-text--checkbox::after {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
 
-.program-form__checkbox:focus + .program-form__label-text--checkbox::before {
+.program-form__checkbox:focus+.program-form__label-text--checkbox::before {
   border-color: $light-grey-a;
 }
 
@@ -339,6 +343,8 @@
   }
 
   .program-form__label-text--radio {
+    max-width: 250px;
+
     &::before {
       width: 40px;
       height: 40px;
@@ -353,6 +359,8 @@
   }
 
   .program-form__label-text--checkbox {
+    max-width: 210px;
+
     &::before {
       width: 40px;
       height: 40px;
@@ -413,13 +421,17 @@
   }
 
   .program-form__subtitle--contacts {
-    max-width: none;
+    max-width: 595px;
   }
 
   .program-form__field--contacts {
     margin-bottom: 65px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .program-form__subtitle--comment {
+    max-width: 260px;
   }
 
   .program-form__field--comment {
@@ -451,6 +463,7 @@
   }
 
   .program-form__subtitle--extra {
+    max-width: 290px;
     margin-bottom: 61px;
   }
 
@@ -471,6 +484,7 @@
 
   .program-form__footnote {
     padding-left: 0;
+    max-width: 210px;
     width: auto;
     font-family: $font-second;
     font-size: 16px;
