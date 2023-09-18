@@ -160,7 +160,7 @@
   border-color: $error-color;
 }
 
-.program-form__input--error+.program-form__input-contacts-icon {
+.program-form__input--error + .program-form__input-contacts-icon {
   stroke: $error-color;
 }
 
@@ -177,7 +177,7 @@
   right: 15px;
 }
 
-.program-form__input-contacts:focus+.program-form__input-contacts-icon {
+.program-form__input-contacts:focus + .program-form__input-contacts-icon {
   stroke: $basic-green;
 }
 
@@ -186,17 +186,17 @@
   opacity: 0;
 }
 
-.program-form__radio:disabled+.program-form__label-text {
+.program-form__radio:disabled + .program-form__label-text {
   opacity: 0.3;
   cursor: auto;
 }
 
-.program-form__radio:checked+.program-form__label-text--radio::after {
+.program-form__radio:checked + .program-form__label-text--radio::after {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
 
-.program-form__radio:focus+.program-form__label-text--radio::before {
+.program-form__radio:focus + .program-form__label-text--radio::before {
   border-color: $light-grey-a;
 }
 
@@ -205,17 +205,17 @@
   opacity: 0;
 }
 
-.program-form__checkbox:disabled+.program-form__label-text {
+.program-form__checkbox:disabled + .program-form__label-text {
   opacity: 0.3;
   cursor: auto;
 }
 
-.program-form__checkbox:checked+.program-form__label-text--checkbox::after {
+.program-form__checkbox:checked + .program-form__label-text--checkbox::after {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
 
-.program-form__checkbox:focus+.program-form__label-text--checkbox::before {
+.program-form__checkbox:focus + .program-form__label-text--checkbox::before {
   border-color: $light-grey-a;
 }
 
@@ -396,9 +396,7 @@
   .program-form__line {
     width: 100%;
     margin-left: 0;
-  }
 
-  .program-form__line {
     &::before {
       top: 22px;
     }
