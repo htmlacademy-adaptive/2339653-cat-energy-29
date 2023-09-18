@@ -390,6 +390,12 @@
     margin-left: 0;
   }
 
+  .program-form__line {
+    &::before {
+      top: 22px;
+    }
+  }
+
   .program-form__line--extra {
     margin-left: -70px;
     width: calc(100% + 140px);
